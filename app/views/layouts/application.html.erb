@@ -7,6 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header id="nav_bar" class="mdl-layout__header mdl-layout__header--transparent">
+  <div class="mdl-layout__header-row">
+    <!-- Title -->
+    <span class="mdl-layout-title">Title</span>
+    <!-- Add spacer, to align navigation to the right -->
+    <div class="mdl-layout-spacer"></div>
+    <!-- Navigation -->
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Login</a>
+      <a class="mdl-navigation__link" href="">Register</a>
+      <a class="mdl-navigation__link" href="">Cart</a>
+    </nav>
+  </div>
+</header>
 
 <%= yield %>
 

@@ -3,15 +3,23 @@
 </div>
 <div class="home_navigation">
   <div class="plan_trip">
-    <span>Plan Trip By:</span>
-  <button class="mdl-button mdl-js-button mdl-button--raised">
-    <%= link_to "Destinations" %>
-  </button>
-  <button class="mdl-button mdl-js-button mdl-button--raised">
-    <%= link_to "Activities" %>
-  </button>
+    <div class="demo-grid-2 mdl-grid">
+     <div class="mdl-cell mdl-cell--6-col">
+       <div class="plan_trip_question">Where Do You Want to Go?</div>
+       <div><button id="destination_button" class="mdl-button mdl-js-button mdl-button--fab">
+         <!-- link to Destinations index page -->
+       </button></div>
+     </div>
+     <div class="mdl-cell mdl-cell--6-col">
+       <div class="plan_trip_question">What Do You Want to Do?</div>
+       <div><button id="activity_button" class="mdl-button mdl-js-button mdl-button--raised">
+         <!-- link to Activities index page -->
+       </button></div>
+     </div>
+    </div>
   </div>
 </div>
+
 <div class="home_about_us">
     <%= link_to "Contact Us" %>
 </div>

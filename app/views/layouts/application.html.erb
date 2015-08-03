@@ -6,26 +6,23 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<header id="nav_bar" class="mdl-layout__header mdl-layout__header--transparent">
-  <div class="mdl-layout__header-row">
-    <!-- Title -->
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Login</a>
-      <a class="mdl-navigation__link" href="">Register</a>
-    </nav>
-    <span class="mdl-layout-title">Endangerous Outfitters</span>
-    <!-- Add spacer, to align navigation to the right -->
-    <div class="mdl-layout-spacer"></div>
-    <!-- Navigation -->
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Cart</a>
-    </nav>
-  </div>
-</header>
-
-<%= yield %>
-
-</body>
+    <header id="nav_bar" class="mdl-layout__header mdl-layout__header--transparent">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Login</a>
+          <a class="mdl-navigation__link" href="">Register</a>
+        </nav>
+        <span class="mdl-layout-title">Endangerous Outfitters</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Cart</a>
+        </nav>
+      </div>
+    </header>
+    <body>
+    <%= yield %>
+    </body>
 </html>

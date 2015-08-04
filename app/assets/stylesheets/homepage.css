@@ -121,9 +121,29 @@
    width: 280px;
    height: 280px;
  }
+
  #alex.demo-card-square > .mdl-card__title {
    color: #fff;
-   background: url('alex-headshot.jpg') bottom right 15% no-repeat #46B6AC;
+   background: url('alex-headshot.jpg') bottom right 15% no-repeat #000000;
+   background-size: 200px 200px;
+ }
+
+ #max.demo-card-square > .mdl-card__title {
+     color: #fff;
+     background: url('max-headshot.jpg') top right 15% no-repeat #000000;
+     background-size: 200px 200px;
+ }
+
+ #david.demo-card-square > .mdl-card__title {
+     color: #fff;
+     background: url('david-headshot.jpg') bottom right 15% no-repeat #000000;
+     background-size: 200px 200px;
+ }
+
+ #adam.demo-card-square > .mdl-card__title {
+     color: #fff;
+     background: url('adam-headshot.jpg') bottom right 15% no-repeat #000000;
+     background-size: 200px 200px;
  }
 
  .demo-card-square-reviews.mdl-card {

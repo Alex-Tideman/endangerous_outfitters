@@ -19,14 +19,14 @@
   font-weight: 200;
 }
 
-#nav-bar a {
+.nav-bar-link {
   font-family: 'Yellowtail', cursive;
   color: white;
   font-size: 28px;
   text-shadow: green 2px 1px 1px;
   border-radius: 40px;
   box-shadow: 10px 10px 50px 20px rgba(255,255,255,.3) inset;
-
+    padding: 20px;
 }
 
  #cart-count.mdl-badge[data-badge]::after {

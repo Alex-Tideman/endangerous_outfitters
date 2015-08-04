@@ -15,15 +15,15 @@
       <div class="mdl-layout__header-row">
         <!-- Title -->
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Login</a>
-          <a class="mdl-navigation__link" href="">Register</a>
+          <span class="mdl-navigation__link"><%= link_to "Login", cart_path, class: "nav-bar-link" %></span>
+          <span class="mdl-navigation__link"><%= link_to "Register", cart_path, class: "nav-bar-link" %></span>
         </nav>
         <h1 class="mdl-layout-title"><%= link_to "Endangerous Outfitters", root_path %></h1>
         <!-- Add spacer, to align navigation to the right -->
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation -->
         <nav class="mdl-navigation">
-          <div id="cart-count" class="material-icons mdl-badge" data-badge="1"><span class="mdl-navigation__link"><%= link_to "Cart", cart_path %></span></div>
+          <div id="cart-count" class="material-icons mdl-badge" data-badge="1"><span class="mdl-navigation__link"><%= link_to "Cart", cart_path, class: "nav-bar-link" %></span></div>
         </nav>
       </div>
     </header>

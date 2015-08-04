@@ -2,15 +2,6 @@ body {
     background: transparent url("texture.png");
 }
 
-#nav_bar {
-    color: black;
-    background-color: white;
-}
-
-#nav_bar a {
-    color: black;
-}
-
 .mdl-layout-title {
     padding-left: 30%;
 }

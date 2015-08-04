@@ -1,0 +1,25 @@
+
+.cart-picture {
+    background: transparent url("checkout.jpg") center;
+}
+
+.cart-picture {
+    height:350px;
+}
+
+#cart-table {
+    margin-left:250px;
+}
+
+#cart-table th {
+    text-align: left;
+}
+
+
+#cart-total  {
+    margin-left: 250px;
+}
+
+#checkout {
+    background: green;
+}

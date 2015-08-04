@@ -21,8 +21,7 @@
 article {
   margin: 0 100px 0 100px;
   background-color: white;
-  top: 64px;
-  position: absolute;
+  padding-top: 64px;
 }
 
 .description {

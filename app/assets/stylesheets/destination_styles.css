@@ -1,0 +1,59 @@
+body {
+    background: transparent url("texture.png");
+}
+
+#nav_bar {
+    color: black;
+    background-color: white;
+}
+
+#nav_bar a {
+    color: black;
+}
+
+
+.mdl-layout-title {
+    padding-left: 30%;
+}
+
+
+#destination-header {
+    text-align: center;
+}
+
+.africa-picture {
+    background: transparent url("Simian.jpg") no-repeat center;
+    height: 185px;
+    background-size: cover
+}
+
+.asia-picture {
+    background: transparent url("Pakistan.jpg") no-repeat center;
+    height: 185px;
+    background-size: cover;
+}
+
+.new-zealand-picture {
+    background: transparent url("NewMilford.jpg") no-repeat center;
+    height: 185px;
+    background-size: cover;
+}
+
+.north-america-picture {
+    background: transparent url("glacier.jpg") no-repeat center;
+    background-size: cover;
+    height: 185px;
+}
+
+.south-america-picture {
+    background: transparent url("Chile.jpg") no-repeat center;
+    height: 185px;
+    background-size: cover
+}
+
+.europe-picture {
+    background: transparent url("dolomites.jpg") no-repeat center;
+    height: 185px;
+    background-size: cover
+}
+

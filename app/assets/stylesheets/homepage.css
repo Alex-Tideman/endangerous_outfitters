@@ -7,19 +7,19 @@
      font-family: "Roboto","Helvetica","Arial",sans-serif;
  }
 
-#nav_bar {
+#nav-bar {
   position:absolute;
   background-color: rgba(255,255,255,0);
 }
 
-#nav_bar h1 {
+#nav-bar h1 {
   font-family: 'Yellowtail', cursive;
   padding-left: 15%;
   font-size: 48px;
   font-weight: 200;
 }
 
-#nav_bar a {
+#nav-bar a {
   font-family: 'Yellowtail', cursive;
   color: white;
   font-size: 28px;
@@ -29,7 +29,7 @@
 
 }
 
- #cart_count.mdl-badge[data-badge]::after {
+ #cart-count.mdl-badge[data-badge]::after {
    font-family: 'Sans-Serif';
    background: green;
    box-shadow: white 1px 1px 1px;
@@ -37,57 +37,57 @@
   right: 0;
 }
 
-.home_picture {
+.home-picture {
   height: 550px;
   background: transparent url("homepage.png") no-repeat center -50px;
   background-size: cover;
 }
 
-.plan_trip button {
+.plan-trip button {
   padding: 50px;
 }
 
-.destination_col {
+.destination-col {
   padding: 15%;
   margin-left: 20%;
 }
 
-.activity_col {
+.activity-col {
   padding: 15%;
   margin-left: 20%;
 }
 
-#destination_button {
+#destination-button {
   background: transparent url("globe_button.jpg") center;
   background-size: contain;
 
 }
 
-#activity_button {
+#activity-button {
   background: transparent url("paddles.jpg") center;
   background-size: contain;
   padding: 20px;
 }
 
-.button_text {
+.button-text {
   font-size: 36px;
  }
 
-.plan_trip_question {
+.plan-trip-question {
   font-size: 24px;
   font-weight: 700;
 }
 
-.us_and_reviews {
+.us-and-reviews {
  background: transparent url('texture.png') center;
 }
 
-.home_mission {
+.home-mission {
     text-align: center;
     height: 400px;
 }
 
- .home_mission p {
+ .home-mission p {
      text-align: center;
      font-size: 24px;
      font-weight: 200;
@@ -96,13 +96,13 @@
      text-shadow: black 2px 2px 2px;
  }
 
-.home_about_us {
+.home-about-us {
   text-align: center;
   height: 400px;
 
 }
 
-.home_trip_reviews {
+.home-trip-reviews {
   text-align: center;
   height: 400px;
 }

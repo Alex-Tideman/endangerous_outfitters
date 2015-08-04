@@ -1,3 +1,8 @@
+article {
+    padding-top: 64px;
+    margin: 0 100px 0 100px;
+}
+
 body {
     background: transparent url("texture.png");
 }
@@ -5,6 +10,7 @@ body {
 .mdl-layout-title {
     padding-left: 30%;
 }
+
 
 #destination-header {
     text-align: center;
@@ -41,7 +47,7 @@ body {
 }
 
 .south-america-picture {
-    background: transparent url("Chile.jpg") no-repeat center;
+    background: transparent url("chile.jpg") no-repeat center;
     height: 220px;
     width: auto;
     background-size: cover

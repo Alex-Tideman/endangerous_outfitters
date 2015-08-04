@@ -8,7 +8,7 @@
   -.01em -.01em .01em black;
 }
 
-#hiking_card{
+#hiking-card{
         height: 176px;
         background: url('hiker.jpg') center / cover;
         color: white;
@@ -21,7 +21,7 @@
 
 
 
-#rafting_card{
+#rafting-card{
       height: 176px;
       background: url('raft.jpg') center / cover;
       color: white;
@@ -32,7 +32,7 @@
       -.01em -.01em .01em black;
     }
 
-#scuba_card{
+#scuba-card{
           height: 176px;
           background: url('scuba.jpg') center / cover;
           color: white;

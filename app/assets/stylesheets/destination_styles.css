@@ -2,6 +2,8 @@ body {
     background: transparent url("texture.png");
 }
 
+
+
 #nav_bar {
     color: black;
     background-color: white;
@@ -19,41 +21,43 @@ body {
 
 #destination-header {
     text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    color: rgba(9, 5, 5, 0.75);
 }
 
 .africa-picture {
     background: transparent url("Simian.jpg") no-repeat center;
-    height: 185px;
+    height: 190px;
     background-size: cover
 }
 
 .asia-picture {
     background: transparent url("Pakistan.jpg") no-repeat center;
-    height: 185px;
+    height: 190px;
     background-size: cover;
 }
 
 .new-zealand-picture {
     background: transparent url("NewMilford.jpg") no-repeat center;
-    height: 185px;
+    height: 190px;
     background-size: cover;
 }
 
 .north-america-picture {
     background: transparent url("glacier.jpg") no-repeat center;
     background-size: cover;
-    height: 185px;
+    height: 190px;
 }
 
 .south-america-picture {
     background: transparent url("Chile.jpg") no-repeat center;
-    height: 185px;
+    height: 190px;
     background-size: cover
 }
 
 .europe-picture {
     background: transparent url("dolomites.jpg") no-repeat center;
-    height: 185px;
+    height: 190px;
     background-size: cover
 }
 

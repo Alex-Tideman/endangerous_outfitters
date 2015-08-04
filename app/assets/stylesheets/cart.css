@@ -1,10 +1,13 @@
+.cart {
+    background: white;
+}
 
 .cart-picture {
     background: transparent url("checkout.jpg") center;
 }
 
 .cart-picture {
-    height:350px;
+    height: 375px;
 }
 
 #cart-table {

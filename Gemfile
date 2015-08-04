@@ -40,8 +40,9 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'launchy'
   gem 'rubocop', require: false
+  gem 'awesome_print'
+  gem 'better_errors'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 end
-

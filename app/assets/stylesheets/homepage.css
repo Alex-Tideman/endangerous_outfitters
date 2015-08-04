@@ -3,6 +3,10 @@
   font-family: 'Yellowtail', cursive;
 }
 
+ p {
+     font-family: "Roboto","Helvetica","Arial",sans-serif;
+ }
+
 #nav_bar {
   position:absolute;
   background-color: rgba(255,255,255,0);
@@ -20,6 +24,9 @@
   color: white;
   font-size: 28px;
   text-shadow: green 2px 1px 1px;
+  border-radius: 40px;
+  box-shadow: 10px 10px 50px 20px rgba(255,255,255,.3) inset;
+
 }
 
  #cart_count.mdl-badge[data-badge]::after {
@@ -75,6 +82,20 @@
  background: transparent url('texture.png') center;
 }
 
+.home_mission {
+    text-align: center;
+    height: 400px;
+}
+
+ .home_mission p {
+     text-align: center;
+     font-size: 24px;
+     font-weight: 200;
+     padding: 75px;
+     color: white;
+     text-shadow: black 2px 2px 2px;
+ }
+
 .home_about_us {
   text-align: center;
   height: 400px;
@@ -84,10 +105,6 @@
 .home_trip_reviews {
   text-align: center;
   height: 400px;
-}
-
-.bubble {
-  //box-shadow: 5px 5px 5px #c8a95b;
 }
 
 .bubble h4 {
@@ -118,6 +135,4 @@
    margin-bottom: 100px;
  }
 
- .demo-card-square-reviews p {
-   font-family: "Roboto","Helvetica","Arial",sans-serif;
- }
+

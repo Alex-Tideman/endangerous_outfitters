@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get "/destinations", to: "destinations#index"
 
   get "/destinations/show", to: "destinations#show"
+
+  get '/cart', to: 'cart#show'
 end

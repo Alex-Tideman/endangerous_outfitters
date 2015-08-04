@@ -1,0 +1,46 @@
+.trips-header {
+  padding-left: 20px;
+}
+
+.trip-subheader {
+  margin-top: 0;
+}
+
+.trip-header-img {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.trip-header-img img {
+  width: 100%;
+  top: -140px;
+  position: absolute;
+}
+
+article {
+  margin: 0 100px 0 100px;
+  background-color: white;
+  top: 64px;
+  position: absolute;
+}
+
+.description {
+  padding-right: 15px;
+}
+
+.call-to-action {
+  display: block;
+  font-size: 1.2em;
+  color: white;
+  background-color: #9675EF;
+  padding: 20px 0 20px 20px;
+  text-decoration: none;
+}
+
+.call-to-action:hover {
+  text-decoration: underline;
+  -moz-box-shadow:    0px 3px 5px 0px #aaa;
+  -webkit-box-shadow: 0px 3px 5px 0px #aaa;
+  box-shadow:         0px 3px 5px 0px #aaa;
+}

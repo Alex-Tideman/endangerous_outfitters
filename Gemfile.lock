@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    MDL-rails (1.0.0)
     actionmailer (4.2.1)
       actionpack (= 4.2.1)
       actionview (= 4.2.1)
@@ -196,6 +197,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  MDL-rails
   bcrypt (~> 3.1.7)
   byebug
   capybara

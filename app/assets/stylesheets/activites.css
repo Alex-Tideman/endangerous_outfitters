@@ -1,0 +1,57 @@
+#title{
+  text-align: center;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#hiking_card{
+        height: 176px;
+        background: url('hiker.jpg') center / cover;
+        color: white;
+        text-shadow:
+        0.1em  .1em .1em black,
+        .05em -.05em .05em black,
+        -.01em  .01em .01em black,
+        -.01em -.01em .01em black;
+      }
+
+
+
+#rafting_card{
+      height: 176px;
+      background: url('raft.jpg') center / cover;
+      color: white;
+      text-shadow:
+      0.1em  .1em .1em black,
+      .05em -.05em .05em black,
+      -.01em  .01em .01em black,
+      -.01em -.01em .01em black;
+    }
+
+#scuba_card{
+          height: 176px;
+          background: url('scuba.jpg') center / cover;
+          color: white;
+          text-shadow:
+          0.1em  .1em .1em black,
+          .05em -.05em .05em black,
+          -.01em  .01em .01em black,
+          -.01em -.01em .01em black;
+        }
+
+
+
+
+
+  .demo-card-wide > .mdl-card_.mdl-card__title-text {
+    color: white;
+    text-shadow:
+    0.1em  .1em .1em black,
+    .05em -.05em .05em black,
+    -.01em  .01em .01em black,
+    -.01em -.01em .01em black;
+  }

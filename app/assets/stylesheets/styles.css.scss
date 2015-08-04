@@ -1,23 +1,33 @@
 
-body {
+ .homepage {
+  font-family: 'Yellowtail', cursive;
 }
 
 #nav_bar {
   position:absolute;
-  color: yellow;
   background-color: rgba(255,255,255,0);
-  font-size: 30px;
 }
 
-#nav_bar span {
-  padding-left: 25%;
-  font-size: 32px;
-  font-weight: 300;
+#nav_bar h1 {
+  font-family: 'Yellowtail', cursive;
+  padding-left: 15%;
+  font-size: 48px;
+  font-weight: 200;
 }
 
 #nav_bar a {
-  color: yellow;
-  font-size: 18px;
+  font-family: 'Yellowtail', cursive;
+  color: white;
+  font-size: 28px;
+  text-shadow: green 2px 1px 1px;
+}
+
+ #cart_count.mdl-badge[data-badge]::after {
+   font-family: 'Sans-Serif';
+   background: green;
+   box-shadow: white 1px 1px 1px;
+  top: 3px;
+  right: 0;
 }
 
 .home_picture {
@@ -26,38 +36,88 @@ body {
   background-size: cover;
 }
 
-.home_navigation {
-  text-align: center;
-  height: 150px;
-  background: #def1e1;
-}
-
 .plan_trip button {
   padding: 50px;
+}
+
+.destination_col {
+  padding: 15%;
+  margin-left: 20%;
+}
+
+.activity_col {
+  padding: 15%;
+  margin-left: 20%;
 }
 
 #destination_button {
   background: transparent url("globe_button.jpg") center;
   background-size: contain;
+
 }
 
 #activity_button {
   background: transparent url("paddles.jpg") center;
   background-size: contain;
+  padding: 20px;
 }
+
+.button_text {
+  font-size: 36px;
+ }
 
 .plan_trip_question {
   font-size: 24px;
   font-weight: 700;
 }
+
+.us_and_reviews {
+ background: transparent url('texture.png') center;
+}
+
 .home_about_us {
   text-align: center;
-  height: 150px;
-  background: #b8e0b4;
+  height: 400px;
+
 }
 
 .home_trip_reviews {
   text-align: center;
-  height: 150px;
-  background: green;
+  height: 400px;
 }
+
+.bubble {
+  //box-shadow: 5px 5px 5px #c8a95b;
+}
+
+.bubble h4 {
+  margin: 0px;
+  padding: 1%;
+  font-family: 'Yellowtail', cursive;
+  font-size: 36px;
+  font-weight: 300;
+  background-color: rgba(255,255,255,.3);
+  text-shadow: #c8a95b 3px 1px 1px;
+}
+
+ .demo-card-square.mdl-card {
+   width: 280px;
+   height: 280px;
+ }
+ #alex.demo-card-square > .mdl-card__title {
+   color: #fff;
+   background: url('alex-headshot.jpg') bottom right 15% no-repeat #46B6AC;
+ }
+
+ .demo-card-square-reviews.mdl-card {
+   width: 500px;
+   height: 280px;
+ }
+
+ .demo-card-square-reviews h2 {
+   margin-bottom: 100px;
+ }
+
+ .demo-card-square-reviews p {
+   font-family: "Roboto","Helvetica","Arial",sans-serif;
+ }

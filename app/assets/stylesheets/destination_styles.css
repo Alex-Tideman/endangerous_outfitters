@@ -2,8 +2,6 @@ body {
     background: transparent url("texture.png");
 }
 
-
-
 #nav_bar {
     color: black;
     background-color: white;
@@ -13,11 +11,9 @@ body {
     color: black;
 }
 
-
 .mdl-layout-title {
     padding-left: 30%;
 }
-
 
 #destination-header {
     text-align: center;

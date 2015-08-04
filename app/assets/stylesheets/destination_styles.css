@@ -47,7 +47,7 @@ body {
 }
 
 .south-america-picture {
-    background: transparent url("chile.jpg") no-repeat center;
+    background: transparent url("Chile.jpg") no-repeat center;
     height: 220px;
     width: auto;
     background-size: cover
@@ -59,4 +59,3 @@ body {
     width: auto;
     background-size: cover
 }
-

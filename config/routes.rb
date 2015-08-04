@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
+  root "welcome#index"
 
-  get '/activities', to: "activities#index"
+  get "/trip", to: "trips#show"
+
+  get "/activities", to: "activities#index"
 
   get "/destinations", to: "destinations#index"
 

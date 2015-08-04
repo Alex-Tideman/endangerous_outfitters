@@ -1,6 +1,6 @@
 class ActivitiesController < ApplicationController
 
-def index
-end
+  def index
+  end
 
 end

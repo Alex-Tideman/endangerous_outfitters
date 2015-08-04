@@ -19,19 +19,49 @@ describe 'User features' do
     expect(page).to have_content("Register")
   end
 
-  it 'has a destinations link' do
+  it 'has a destinations link that works' do
     visit root_path
 
     expect(page).to have_content("Destinations")
+
+    click_link "The Destination"
+    expect(page).to have_content("South America")
+    expect(current_path).to eq(destinations_path)
   end
 
-  it 'has a activities link' do
+  it 'has a activities link that works' do
     visit root_path
 
     expect(page).to have_content("Activities")
+    click_link "The Activity"
+    expect(page).to have_content("Hiking")
+    expect(current_path).to eq(activities_path)
   end
 
-  it "can create a user" do
+  it 'has a cart link that works' do
+    visit root_path
+
+    expect(page).to have_content("Cart")
+    click_link "Cart"
+
+    expect(page).to have_content("Check Out")
+    expect(current_path).to eq(cart_path)
+  end
+
+  it 'user can get back to homepage from another page' do
+    visit root_path
+
+    expect(page).to have_content("Cart")
+    click_link "Cart"
+
+    expect(page).to have_content("Check Out")
+
+    click_link "Endangerous Outfitters"
+
+    expect(current_path).to eq(root_path)
+  end
+
+  xit "can create a user" do
     visit root_path
     click_link("Register")
     fill_in :username, with: "John"

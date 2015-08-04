@@ -18,12 +18,12 @@
           <a class="mdl-navigation__link" href="">Login</a>
           <a class="mdl-navigation__link" href="">Register</a>
         </nav>
-        <h1 class="mdl-layout-title">Endangerous Outfitters</h1>
+        <h1 class="mdl-layout-title"><%= link_to "Endangerous Outfitters", root_path %></h1>
         <!-- Add spacer, to align navigation to the right -->
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation -->
         <nav class="mdl-navigation">
-          <div id="cart-count" class="material-icons mdl-badge" data-badge="1"><a class="mdl-navigation__link" href="">Cart</a></div>
+          <div id="cart-count" class="material-icons mdl-badge" data-badge="1"><span class="mdl-navigation__link"><%= link_to "Cart", cart_path %></span></div>
         </nav>
       </div>
     </header>

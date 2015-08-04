@@ -3,11 +3,10 @@ Rails.application.routes.draw do
 
   get "/trip", to: "trips#show"
 
-  get "/activities", to: "activities#index"
+  resources :activities, only: [:index, :show]
 
-  get "/destinations", to: "destinations#index"
-
-  get "/destinations/show", to: "destinations#show"
+  resources :destinations, only: [:index, :show]
 
   get '/cart', to: 'cart#show'
+
 end

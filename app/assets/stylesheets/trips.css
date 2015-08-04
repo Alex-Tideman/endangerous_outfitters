@@ -14,18 +14,18 @@
 
 .trip-header-img img {
   width: 100%;
-  top: -140px;
+  top: -300px;
   position: absolute;
 }
 
-article {
-  margin: 0 100px 0 100px;
-  background-color: white;
-  padding-top: 64px;
+.description {
+  padding: 15px;
+  background: rgba(255, 255, 255, .5);
 }
 
-.description {
-  padding-right: 15px;
+.extras {
+  padding: 15px;
+  background: rgba(255, 255, 255, .5);
 }
 
 .call-to-action {

@@ -15,7 +15,6 @@
             <h3 class="mdl-card__title-text"><%= destination.continent %></h3>
           </div>
           <div class="<%= destination.continent.split.join("-").downcase %>-picture">
-            <img>
           </div>
           <div class="mdl-card__actions mdl-card--border">
             <%= link_to "Browse Trips", destination_path(destination.id), class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>

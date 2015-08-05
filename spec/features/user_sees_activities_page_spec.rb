@@ -8,6 +8,7 @@ describe 'User features' do
   end
 
   it 'has more information links' do
+    Activity.create(name: "Hiking", description: "Hiking")
     visit activities_path
 
     expect(page).to have_content("More Information")

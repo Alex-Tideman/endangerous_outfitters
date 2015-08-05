@@ -32,10 +32,12 @@ describe 'User features' do
   end
 
   it 'has a activities link that works' do
+    Activity.create(name: "Hiking", description: "Hiking")
     visit root_path
 
     expect(page).to have_content("Activities")
     click_link "The Activity"
+
     expect(page).to have_content("Hiking")
     expect(current_path).to eq(activities_path)
   end

@@ -1,2 +1,31 @@
-<h1 id="show-title"> Activities in Continent</h1>
-<img id="show-image" href="hiker.jpg"> 
+<article>
+  <h1 id="destination-header">Plan Trips for <%= @trips.first.activity.name %></h1>
+
+  <div class="demo-grid-1 mdl-grid">
+
+    <% @trips.each do |trip| %>
+
+        <div class="mdl-cell mdl-cell--4-col"><div class="mdl-card mdl-shadow--2dp demo-card-wide">
+          <div class="mdl-card__title">
+            <h3 class="mdl-card__title-text"><%= trip.destination.continent %></h3>
+          </div>
+          <div class = "<%= trip.destination.continent.split.join("-").downcase %>-picture">
+          </div>
+          <div class="mdl-card__supporting-text">
+          <%= trip.destination.description %>
+          </div>
+          <div class="<%= trip.activity.name.split.join("-").downcase %>-picture">
+            <img>
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <%= link_to "Browse Trips", trip_path(trip), class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>
+          </div>
+        </div></div>
+
+    <% end %>
+  </div>
+
+
+
+
+</article>

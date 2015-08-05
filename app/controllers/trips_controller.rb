@@ -1,5 +1,6 @@
 class TripsController < ApplicationController
   def show
+    @extras = Extra.all
     @trip = Trip.find(params[:id].to_i)
   end
 

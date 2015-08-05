@@ -29,3 +29,8 @@ Trip.create(destination_id: 1, activity_id: 2, total_cost: 10000.00, trip_cost: 
 Trip.create(destination_id: 6, activity_id: 5, total_cost: 30000.00, trip_cost: 25000.00, name: "Base Jumping the Fjords" )
 Trip.create(destination_id: 3, activity_id: 1, total_cost: 117000.00, trip_cost: 6000.00, name: "Hut to Hut in the Dolomites" )
 
+Extra.create(name: "Monkey Banana-Eating Contest", description: "description", cost: 2000.00)
+Extra.create(name: "Shark Slalom Surfing", description: "description", cost: 4000.00)
+Extra.create(name: "Barometer Free Skydiving", description: "description", cost: 3000.00)
+Extra.create(name: "Rhino Jousting", description: "description", cost: 8000.00)
+Extra.create(name: "Giraffe Racing", description: "description", cost: 6000.00)

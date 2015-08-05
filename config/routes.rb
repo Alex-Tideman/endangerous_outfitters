@@ -5,7 +5,9 @@ Rails.application.routes.draw do
     resources :users, :destinations, :activities, :trips, :extras
   end
 
-  resources :users, only: [:show, :new, :create]
+  get '/admin/dashboard', to: 'admin/dashboard#index'
+
+  resources :users, only: [:new, :create]
 
   get "/trip", to: "trips#show"
 
@@ -14,5 +16,9 @@ Rails.application.routes.draw do
   resources :destinations, only: [:index, :show]
 
   get '/cart', to: 'cart#show'
+  get '/login', to: "sessions#new"
+  post '/login', to: "sessions#create"
+  delete '/logout', to: "sessions#destroy", as: "logout"
+
 
 end

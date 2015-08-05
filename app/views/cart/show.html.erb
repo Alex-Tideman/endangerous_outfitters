@@ -20,11 +20,11 @@
         <% @trips.each do |trip| %>
             <tr>
               <td class="quantity">1</td>
-              <td class="name mdl-data-table__cell--non-numeric">trip.name</td>
-              <td class="mdl-data-table__cell--non-numeric">trip.destination.continent</td>
-              <td class="mdl-data-table__cell--non-numeric">trip.activity.name</td>
-              <td class="mdl-data-table__cell--non-numeric">trip.extras.map(&:name)</td>
-              <td>trip.total_cost</td>
+              <td class="name mdl-data-table__cell--non-numeric"><%= trip.name %></td>
+              <td class="mdl-data-table__cell--non-numeric"><%= trip.destination.continent %></td>
+              <td class="mdl-data-table__cell--non-numeric"><%= trip.activity.name %></td>
+              <td class="mdl-data-table__cell--non-numeric"><%= trip.extras.map(&:name) %></td>
+              <td><%= trip.total_cost %></td>
             </tr>
         <% end %>
         </tbody>

@@ -16,49 +16,36 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <td class="quantity">1</td>
-          <td class="name mdl-data-table__cell--non-numeric">Canadian Rockies</td>
-          <td class="mdl-data-table__cell--non-numeric">Africa</td>
-          <td class="mdl-data-table__cell--non-numeric">Rhino Jousting</td>
-          <td class="mdl-data-table__cell--non-numeric">None</td>
-          <td>$65,890</td>
-        </tr>
-        <tr>
-          <td class="quantity">1</td>
-          <td class="name mdl-data-table__cell--non-numeric">Great Barrier Reef</td>
-          <td class="mdl-data-table__cell--non-numeric">South America</td>
-          <td class="mdl-data-table__cell--non-numeric">Hiking</td>
-          <td class="mdl-data-table__cell--non-numeric">Waterproof Boombox</td>
-          <td>$14,750</td>
-        </tr>
-        <tr>
-          <td class="quantity">3</td>
-          <td class="name mdl-data-table__cell--non-numeric">Table Mountain</td>
-          <td class="mdl-data-table__cell--non-numeric">Asia</td>
-          <td class="mdl-data-table__cell--non-numeric">Jump the Great Wall</td>
-          <td class="mdl-data-table__cell--non-numeric">Sherpa</td>
-          <td>$25,500</td>
-        </tr>
+
+        <% @trips.each do |trip| %>
+            <tr>
+              <td class="quantity">1</td>
+              <td class="name mdl-data-table__cell--non-numeric">trip.name</td>
+              <td class="mdl-data-table__cell--non-numeric">trip.destination.continent</td>
+              <td class="mdl-data-table__cell--non-numeric">trip.activity.name</td>
+              <td class="mdl-data-table__cell--non-numeric">trip.extras.map(&:name)</td>
+              <td>trip.total_cost</td>
+            </tr>
+        <% end %>
         </tbody>
       </table>
     </div>
     <div class="mdl-cell mdl-cell--6-col">
-    <table id="cart-total" class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
-      <thead>
-      <tr>
-        <th>Total Price</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>$250,890</td>
-      </tr>
-      <tr>
-        <td id="checkout" class="mdl-data-table__cell--non-numeric">Check Out</td>
-      </tr>
-      </tbody>
-    </table>
+      <table id="cart-total" class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+        <thead>
+        <tr>
+          <th>Total Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>$250,890</td>
+        </tr>
+        <tr>
+          <td id="checkout" class="mdl-data-table__cell--non-numeric">Check Out</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-</div>
 </div>

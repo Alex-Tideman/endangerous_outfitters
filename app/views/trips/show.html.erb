@@ -38,8 +38,7 @@
 
     </div>
     <div class="mdl-cell mdl-cell--5-col">
-      <%#= link_to "Book Trip", '#', class: "call-to-action" %>
-      <%= button_to "Book Trip", cart_trips_path(trip_id: @trip.id), class: "call-to-action" %>
+      <%= link_to "Book Trip", cart_trips_path(trip_id: @trip.id), method: :post, class: "call-to-action" %>
     </div>
   </div>
 </article>

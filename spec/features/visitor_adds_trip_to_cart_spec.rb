@@ -13,8 +13,7 @@ feature "Visitor adds a trip to cart_trips" do
 
 
     visit trip_path(trip)
-    # save_and_open_page
-    click_button("Book Trip")
+    click_link("Book Trip")
     expect(current_path).to eq(cart_path)
 
     expect(page.body).to have_content("High Atlas")

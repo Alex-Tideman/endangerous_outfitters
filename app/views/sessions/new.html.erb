@@ -1,0 +1,11 @@
+<div id="user_login" class="demo-grid-2 mdl-grid">
+  <%= form_for(:session, url: login_path) do |f| %>
+      <div class="mdl-cell mdl-cell--4-col">
+        <%= f.label :username %>
+        <%= f.text_field :username %></div>
+      <div class="mdl-cell mdl-cell--4-col">
+        <%= f.label :password %>
+        <%= f.password_field :password %></div>
+      <%= f.submit "Login" %>
+  <% end %>
+</div>

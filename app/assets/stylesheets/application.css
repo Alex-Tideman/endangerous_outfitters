@@ -15,10 +15,15 @@
  *= require material
  */
 
+
 article {
   margin: 0 100px 0 100px;
 }
 
 a, a:visited, a:link {
     color: white;
+}
+
+#footer {
+    background:#000;
 }

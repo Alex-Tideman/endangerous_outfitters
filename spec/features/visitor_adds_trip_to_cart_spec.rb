@@ -13,6 +13,7 @@ feature "Visitor adds a trip to cart_trips" do
 
 
     visit trip_path(trip)
+    # save_and_open_page
     click_button("Book Trip")
     expect(current_path).to eq(cart_path)
 

@@ -19,7 +19,7 @@
 
         <% @cart_trips.each do |trip| %>
             <tr>
-              <td class="quantity">1</td>
+              <td class="quantity"><%= trip.quantity %></td>
               <td class="name mdl-data-table__cell--non-numeric"><%= trip.name %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.destination.continent %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.activity.name %></td>

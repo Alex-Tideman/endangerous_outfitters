@@ -9,7 +9,9 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create]
 
-  get "/trip", to: "trips#show"
+  resources :trips, only: [:show]
+
+  # get "/trip", to: "trips#show"
 
   resources :activities, only: [:index, :show]
 
@@ -17,9 +19,10 @@ Rails.application.routes.draw do
 
   # get '/cart_trips', to: 'cart_trips#index'
 
+  post '/cart_trips', to: 'cart_trips#create'
+
   get '/cart', to: 'cart_trips#index'
 
-  post '/cart_trips', to: 'cart_trips#create'
 
   get '/login', to: "sessions#new"
   post '/login', to: "sessions#create"

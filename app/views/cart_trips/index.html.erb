@@ -23,7 +23,7 @@
               <td class="name mdl-data-table__cell--non-numeric"><%= trip.name %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.destination.continent %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.activity.name %></td>
-              <td class="mdl-data-table__cell--non-numeric"><%= trip.extras.map(&:name) %></td>
+              <td class="mdl-data-table__cell--non-numeric"><%= trip.extras.map(&:name).join(' ') %></td>
               <td><%= trip.total_cost %></td>
             </tr>
         <% end %>
@@ -39,7 +39,12 @@
         </thead>
         <tbody>
         <tr>
-          <td>$250,890</td>
+          <td>
+            <% row_total_cost = @cart_trips.map do |trip| %>
+                <% trip.quantity * trip.total_cost %>
+            <% end %>
+            <%= row_total_cost.reduce(:+) %>
+          </td>
         </tr>
         <tr>
           <td id="checkout" class="mdl-data-table__cell--non-numeric">Check Out</td>

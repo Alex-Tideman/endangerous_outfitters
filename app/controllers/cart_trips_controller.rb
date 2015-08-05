@@ -8,7 +8,6 @@ class CartTripsController < ApplicationController
 
   def index
     @cart_trips = cart.trips
-    # binding.pry
   end
 
 

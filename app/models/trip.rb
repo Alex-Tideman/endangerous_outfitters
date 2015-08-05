@@ -1,5 +1,6 @@
 class Trip < ActiveRecord::Base
-  validates :trip_cost, :total_cost, :name, presence: true
+  validates :trip_cost, :total_cost, :name, :destination_id,
+            :activity_id, presence: true
   belongs_to :destination
   belongs_to :activity
   has_many :trip_extras

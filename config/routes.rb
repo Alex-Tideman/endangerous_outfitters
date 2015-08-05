@@ -9,16 +9,20 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create]
 
-  get "/trip", to: "trips#show"
+  resources :trips, only: [:show]
 
   resources :activities, only: [:index, :show]
 
   resources :destinations, only: [:index, :show]
 
-  get '/cart', to: 'cart#show'
-  get '/login', to: "sessions#new"
-  post '/login', to: "sessions#create"
-  delete '/logout', to: "sessions#destroy", as: "logout"
+  post '/cart_trips', to: 'cart_trips#create'
 
+  get '/cart', to: 'cart_trips#index'
+
+  get '/login', to: "sessions#new"
+
+  post '/login', to: "sessions#create"
+
+  delete '/logout', to: "sessions#destroy", as: "logout"
 
 end

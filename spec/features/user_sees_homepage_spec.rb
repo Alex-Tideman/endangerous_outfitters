@@ -20,6 +20,8 @@ describe 'User features' do
   end
 
   it 'has a destinations link that works' do
+
+    Destination.create(continent: "South America", description: "blah" )
     visit root_path
 
     expect(page).to have_content("Destinations")

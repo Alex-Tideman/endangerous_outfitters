@@ -1,3 +1,7 @@
 .admin_dashboard {
     padding-top: 150px;
 }
+
+.admin_dashboard h1 {
+    text-align: center;
+}

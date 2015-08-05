@@ -33,17 +33,16 @@
           <div id="cart-count" class="material-icons mdl-badge" data-badge="1"><span class="mdl-navigation__link"><%= link_to "Cart", cart_path, class: "nav-bar-link" %></span></div>
         </nav>
       </div>
+      <div class="flash">
+        <% flash.each do |type, msg| %>
+            <%= content_tag  :div, msg, class: "flash_#{type}"%>
+        <% end %>
+      </div>
     </header>
     <body>
 
     <%= yield %>
 
     </body>
-    <footer id="footer" class="mdl-mini-footer">
-      <div class="mdl-mini-footer__left-section">
-        <div class="footer-text">
-        </div>
-      </div>
-    </footer>
 </div>
 </html>

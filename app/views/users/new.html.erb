@@ -1,8 +1,26 @@
-<h1>Register to Join Endangerous Outfitters</h1>
-<%= form_for @user do |f| %>
-    <%= f.label :username %>
-    <%= f.text_field :username %>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-    <%= f.submit %>
-<% end %>
+<div class="register">
+
+  <%= form_for @user do |f| %>
+      <table class="mdl-data-table mdl-js-data-table">
+        <thead>
+        <tr>
+          <th id="table-title" class="mdl-data-table__cell--non-numeric"></th>
+          <th id="table-title" class="mdl-data-table__cell--non-numeric">Register</th>
+          <th id="table-title" class="mdl-data-table__cell--non-numeric"></th>
+        </tr>
+        <tr>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.label :username %></th>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.label :password %></th>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.label :submit %></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric"><%= f.text_field :username %></td>
+          <td class="mdl-data-table__cell--non-numeric"><%= f.password_field :password %></td>
+          <td class="mdl-data-table__cell--non-numeric"><%= f.submit %></td>
+        </tr>
+        </tbody>
+      </table>
+  <% end %>
+</div>

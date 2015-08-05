@@ -27,7 +27,6 @@
     color: white;
     font-size: 20px;
     padding: 25px;
-    margin-left: -40px ;
 }
 
 #cart-count.mdl-badge[data-badge]::after {

@@ -24,10 +24,13 @@ a, a:visited, a:link {
     color: white;
 }
 
+.flash {
+    text-align: center;
+}
+
 #container {
     font-family: 'Open Sans', sans-serif;
 }
-
 
 #footer {
     background:#000;

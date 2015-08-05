@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
       else
         flash[:notice] = "Successful login!"
         session[:user_id] = @user.id
-        redirect_to @user
+        redirect_to root_path
       end
     else
       flash[:error] = "Invalid login credentials"

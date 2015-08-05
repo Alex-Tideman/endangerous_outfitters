@@ -27,3 +27,10 @@ Activity.create(name: "Scuba Diving", description: "Scuba Steve: Damn you!.", im
 Trip.create(destination_id: 1, activity_id: 1, name:"Hiking in the Rockies", total_cost: 9000.00, trip_cost: 9000.00 )
 Trip.create(destination_id: 1, activity_id: 3, name: "Scuba Diving in Hawaii", total_cost: 21000.00, trip_cost: 21000.00 )
 Trip.create(destination_id: 1, activity_id: 2, name: "Rafting in California", total_cost: 50000.00, trip_cost: 50000.00 )
+
+
+Extra.create(name: "Monkey Banana-Eating Contest", description: "description", cost: 2000.00)
+Extra.create(name: "Shark Slalom Surfing", description: "description", cost: 4000.00)
+Extra.create(name: "Barometer Free Skydiving", description: "description", cost: 3000.00)
+Extra.create(name: "Rhino Jousting", description: "description", cost: 8000.00)
+Extra.create(name: "Giraffe Racing", description: "description", cost: 6000.00)

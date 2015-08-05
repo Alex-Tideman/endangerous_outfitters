@@ -45,7 +45,22 @@
 }
 
 .extras table{
-  max-height
-  width:90%;
+  width:80%;
   font-size: 1.25em;
+}
+
+
+.extras tbody {
+  display: block;
+  overflow-y: scroll;
+  height: 150px;
+  color: black;
+}
+
+.extras td a{
+  color: black;
+}
+
+#extras-heading{
+
 }

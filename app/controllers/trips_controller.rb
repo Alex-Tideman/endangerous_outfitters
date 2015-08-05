@@ -1,6 +1,6 @@
 class TripsController < ApplicationController
   def show
-
+    @extras = Extra.all
   end
 
     # WIP - update total cost of trip when there are extras

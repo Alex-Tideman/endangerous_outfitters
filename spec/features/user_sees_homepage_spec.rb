@@ -40,7 +40,7 @@ describe 'User features' do
     expect(current_path).to eq(activities_path)
   end
 
-  it 'has a cart link that works' do
+  it 'has a cart_trips link that works' do
     visit root_path
 
     expect(page).to have_content("Cart")

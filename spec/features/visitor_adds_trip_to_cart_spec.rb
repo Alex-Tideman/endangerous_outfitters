@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-feature "Visitor adds a trip to cart" do
+feature "Visitor adds a trip to cart_trips" do
 
-  # test cart link works: homepage >     click_link "Cart"
+  # test cart_trips link works: homepage >     click_link "Cart"
 
-  scenario "not logged in with an empty cart" do
+  scenario "not logged in with an empty cart_trips" do
     activity = Activity.create(name: "Hiking", description: "Move your legs")
     destination = Destination.create(continent: "Africa",
                                      description: "The second biggest continent" )

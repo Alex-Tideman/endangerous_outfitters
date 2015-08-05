@@ -23,42 +23,42 @@ body {
 }
 
 .africa-picture {
-    background: transparent url("Simian.jpg") no-repeat center;
+    background: transparent url("africa.jpg") no-repeat center;
     height: 220px;
     width: auto;
     background-size: cover
 }
 
 .asia-picture {
-    background: transparent url("Pakistan.jpg") no-repeat center;
+    background: transparent url("asia.jpg") no-repeat center;
     height: 220px;
     width: auto;
     background-size: cover;
 }
 
-.new-zealand-picture {
-    background: transparent url("NewMilford.jpg") no-repeat center;
+.oceania-picture {
+    background: transparent url("oceania.jpg") no-repeat center;
     height: 220px;
     width: auto;
     background-size: cover;
 }
 
 .north-america-picture {
-    background: transparent url("glacier.jpg") no-repeat center;
+    background: transparent url("north-america.jpg") no-repeat center;
     background-size: cover;
     width: auto;
     height: 220px;
 }
 
 .south-america-picture {
-    background: transparent url("Chile.jpg") no-repeat center;
+    background: transparent url("south-america.jpg") no-repeat center;
     height: 220px;
     width: auto;
     background-size: cover
 }
 
 .europe-picture {
-    background: transparent url("dolomites.jpg") no-repeat center;
+    background: transparent url("europe.jpg") no-repeat center;
     height: 220px;
     width: auto;
     background-size: cover

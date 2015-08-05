@@ -1,99 +1,27 @@
 
 
 <article>
-<h1 id="destination-header">Plan Trip by Continent</h1>
+  <h1 id="destination-header">Plan Trip by Continent</h1>
 
-<div class="demo-grid-1 mdl-grid">
 
-  <div class="mdl-cell mdl-cell--4-col"><div class="mdl-card mdl-shadow--2dp demo-card-wide">
-    <div class="mdl-card__title">
-      <h3 class="mdl-card__title-text">Africa</h3>
-    </div>
-    <div class="africa-picture">
-      <img>
-    </div>
-    <div class="mdl-card__actions mdl-card--border">
-      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-        Browse Trips
-      </a>
-    </div>
-  </div></div>
 
-  <div class="mdl-cell mdl-cell--4-col">
-    <div class="mdl-card mdl-shadow--2dp demo-card-wide">
-      <div class="mdl-card__title">
-        <h3 class="mdl-card__title-text">Asia</h3>
-      </div>
-      <div class="asia-picture">
-           <img>
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          Browse Trips
-        </a>
-      </div>
-    </div></div>
 
-  <div class="mdl-cell mdl-cell--4-col"><div class="mdl-card mdl-shadow--2dp demo-card-wide">
-    <div class="mdl-card__title">
-      <h3 class="mdl-card__title-text">Australia/New Zealand</h3>
-    </div>
-    <div class="new-zealand-picture">
-          <img >
-    </div>
-    <div class="mdl-card__actions mdl-card--border">
-      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-        Browse Trips
-      </a>
-    </div>
+  <div class="demo-grid-1 mdl-grid">
+
+    <% @destinations.sort_by(&:continent).each do |destination| %>
+
+        <div class="mdl-cell mdl-cell--4-col"><div class="mdl-card mdl-shadow--2dp demo-card-wide">
+          <div class="mdl-card__title">
+            <h3 class="mdl-card__title-text"><%= destination.continent %></h3>
+          </div>
+          <div class="<%= destination.continent.split.join("-").downcase %>-picture">
+            <img>
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <%= link_to "Browse Trips", destination_path(destination.id), class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>
+          </div>
+        </div></div>
+
+    <% end %>
   </div>
-  </div>
-</div>
-
-
-<div class="demo-grid-1 mdl-grid">
-  <div class="mdl-cell mdl-cell--4-col"><div class="mdl-card mdl-shadow--2dp demo-card-wide">
-    <div class="mdl-card__title">
-      <h3 class="mdl-card__title-text">Europe</h3>
-    </div>
-    <div class="europe-picture">
-      <img>
-    </div>
-    <div class="mdl-card__actions mdl-card--border">
-      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-        Browse Trips
-      </a>
-    </div>
-  </div></div>
-
-  <div class="mdl-cell mdl-cell--4-col">
-    <div class="mdl-card mdl-shadow--2dp demo-card-wide">
-      <div class="mdl-card__title">
-        <h3 class="mdl-card__title-text">North America</h3>
-      </div>
-      <div class="north-america-picture">
-        <img>
-      </div>
-      <div class="mdl-card__actions mdl-card--border">
-        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-          Browse Trips
-        </a>
-      </div>
-    </div></div>
-
-  <div class="mdl-cell mdl-cell--4-col"><div class="mdl-card mdl-shadow--2dp demo-card-wide">
-    <div class="mdl-card__title">
-      <h3 class="mdl-card__title-text">South America</h3>
-    </div>
-    <div class="south-america-picture">
-      <img>
-    </div>
-    <div class="mdl-card__actions mdl-card--border">
-      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-        Browse Trips
-      </a>
-    </div>
-  </div>
-  </div>
-</div>
 </article>

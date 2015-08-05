@@ -7,17 +7,17 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Destination.create(continent: "North America", description: "North American continent description.",
-                    lat: 41.8369, long: -87.6847, image_url: "glacier.jpg" )
+                    lat: 41.8369, long: -87.6847, image_url: "south-america.jpg" )
 Destination.create(continent: "South America", description: "South American continent description.",
-                    lat: -42.8369, long: -17.6847, image_url: "Chile.jpg" )
+                    lat: -42.8369, long: -17.6847, image_url: "south-america.jpg" )
 Destination.create(continent: "Europe", description: "European continent description.",
-                    lat: 21.8369, long: -47.6847, image_url: "dolomites.jpg" )
+                    lat: 21.8369, long: -47.6847, image_url: "europe.jpg" )
 Destination.create(continent: "Asia", description: "Asian continent description.",
-                    lat: 31.8369, long: -77.6847, image_url: "Pakistan.jpg" )
+                    lat: 31.8369, long: -77.6847, image_url: "asia.jpg" )
 Destination.create(continent: "Africa", description: "African continent description.",
-                    lat: 21.8369, long: -67.6847, image_url: "Simian.jpg" )
+                    lat: 21.8369, long: -67.6847, image_url: "africa.jpg" )
 Destination.create(continent: "Oceania", description: "Oceanian continent description.",
-                    lat: -45.8369, long: -57.6847, image_url: "NewMilford.jpg" )
+                    lat: -45.8369, long: -57.6847, image_url: "oceania.jpg" )
 
 Activity.create(name: "Hiking", description: "We loven to do ze hikes.", image_url: "hiker.jpg" )
 Activity.create(name: "Rafting", description: "Rafting Rulez!", image_url: "raft.jpg" )

@@ -8,5 +8,8 @@ Rails.application.routes.draw do
   resources :destinations, only: [:index, :show]
 
   get '/cart', to: 'cart#show'
+  # get '/cart', to: 'cart_items#index'
+
+  post '/cart_trips', to: 'cart_trips#create'
 
 end

@@ -13,7 +13,7 @@ RSpec.describe Activity, type: :model do
 
       expect(Activity.all.count).to eq(0)
     end
-    
+
     it "does not create an activity with description missing" do
       Activity.create(name: "name")
 
@@ -31,7 +31,7 @@ RSpec.describe Activity, type: :model do
   end
 
   def create_activity
-    num = (1..1000).to_a.sample
+    num = (1..10000).to_a.sample
     Activity.create(name: "activity#{num}", description: "description")
   end
 end

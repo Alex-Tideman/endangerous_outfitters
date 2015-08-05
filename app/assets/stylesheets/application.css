@@ -24,6 +24,11 @@ a, a:visited, a:link {
     color: white;
 }
 
+#container {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 #footer {
     background:#000;
 }

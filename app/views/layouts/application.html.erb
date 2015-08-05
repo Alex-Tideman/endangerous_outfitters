@@ -6,8 +6,7 @@
   <%= stylesheet_link_tag    'activities'%>
   <%= javascript_include_tag 'application' %>
   <link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Ultra|Abril+Fatface' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <div id="container">
@@ -19,7 +18,7 @@
               <span class="mdl-navigation__link"><%= link_to current_user.username, admin_dashboard_path, class: "nav-bar-link" %></span>
               <span class="mdl-navigation__link"><%= link_to "Logout", logout_path, class: "nav-bar-link" %></span>
           <% elsif current_user %>
-              <span class="mdl-navigation__link nav-bar-link"><%= current_user.username %></span>
+              <span id="username" class="mdl-navigation__link"><%= current_user.username %></span>
               <span class="mdl-navigation__link"><%= link_to "Logout", logout_path, method: :delete, class: "nav-bar-link" %></span>
           <% else %>
               <span class="mdl-navigation__link"><%= link_to "Login", login_path, class: "nav-bar-link" %></span>

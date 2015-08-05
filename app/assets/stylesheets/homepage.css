@@ -1,15 +1,12 @@
 
-.homepage {
+.homepage h1,h4 {
     font-family: 'Yellowtail', cursive;
-}
-
-p {
-    font-family: "Roboto","Helvetica","Arial",sans-serif;
 }
 
 #nav-bar {
     position:absolute;
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(0,0,0,.4);
+    padding: 10px;
 }
 
 #nav-bar h1 {
@@ -20,12 +17,15 @@ p {
 }
 
 .nav-bar-link {
-    font-family: 'Yellowtail', cursive;
     color: white;
-    font-size: 28px;
-    text-shadow: green 2px 1px 1px;
-    border-radius: 40px;
-    box-shadow: 10px 10px 50px 20px rgba(0,0,0,.8) inset;
+    font-size: 20px;
+    padding: 25px;
+    margin-left: -40px ;
+}
+
+#username {
+    color: white;
+    font-size: 20px;
     padding: 25px;
     margin-left: -40px ;
 }
@@ -34,8 +34,8 @@ p {
     font-family: 'Sans-Serif';
     background: green;
     box-shadow: white 1px 1px 1px;
-    top: 3px;
-    right: 20px;
+    top: 10px;
+    right: 30px;
 }
 
 #logo {

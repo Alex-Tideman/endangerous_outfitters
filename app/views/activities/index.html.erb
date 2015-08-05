@@ -1,6 +1,36 @@
 <article>
-  <h1 id="title">Plan Trip by Activities </h1>
+
+<h1 id="title">Plan Trip by Activities </h1>
+
   <div class="demo-grid-1 mdl-grid">
+
+    <% @activities.each do |activity| %>
+
+        <div class="mdl-cell mdl-cell--4-col"><div class="mdl-card mdl-shadow--2dp demo-card-wide">
+
+          <div class= "mdl-card__title">
+            <h3 class="mdl-card__title-text"><%= activity.name %></h3>
+          </div>
+          <div id = "<%= activity.name.split.join("-").downcase %>-card">
+          </div>
+          <div class="mdl-card__supporting-text">
+            <%= activity.description %>
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+
+            <%= link_to "More Information", activity_path(activity.id), class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>
+          </div>
+        </div></div>
+
+    <% end %>
+  </div>
+</article>
+
+
+
+
+
+  <!-- <div class="demo-grid-1 mdl-grid">
   <div class="mdl-cell mdl-cell--4-col">
     <div class="mdl-card mdl-shadow--2dp demo-card-wide">
     <div id = "hiking-card" class="mdl-card__title">
@@ -76,4 +106,4 @@
     </div>
   </div>
   </div>
-</article>
+</article> -->

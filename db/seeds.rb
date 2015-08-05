@@ -23,6 +23,7 @@ Activity.create(name: "Hiking", description: "We loven to do ze hikes.", image_u
 Activity.create(name: "Rafting", description: "Rafting Rulez!", image_url: "raft.jpg" )
 Activity.create(name: "Scuba Diving", description: "Scuba Steve: Damn you!.", image_url: "scuba.jpg" )
 
-Trip.create(destination_id: 1, activity_id: 1, total_cost: 9000.00, trip_cost: 9000.00 )
-Trip.create(destination_id: 6, activity_id: 3, total_cost: 21000.00, trip_cost: 21000.00 )
-Trip.create(destination_id: 5, activity_id: 2, total_cost: 50000.00, trip_cost: 50000.00 )
+
+Trip.create(destination_id: 1, activity_id: 1, name:"Hiking in the Rockies", total_cost: 9000.00, trip_cost: 9000.00 )
+Trip.create(destination_id: 1, activity_id: 3, name: "Scuba Diving in Hawaii", total_cost: 21000.00, trip_cost: 21000.00 )
+Trip.create(destination_id: 1, activity_id: 2, name: "Rafting in California", total_cost: 50000.00, trip_cost: 50000.00 )

@@ -43,3 +43,9 @@
   -webkit-box-shadow: 0px 3px 5px 0px #aaa;
   box-shadow:         0px 3px 5px 0px #aaa;
 }
+
+.extras table{
+  max-height
+  width:90%;
+  font-size: 1.25em;
+}

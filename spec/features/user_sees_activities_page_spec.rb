@@ -26,7 +26,7 @@ describe 'User features' do
     expect(page).to have_content("Register")
   end
 
-  it 'has a cart link that works' do
+  it 'has a cart_trips link that works' do
     visit activities_path
 
     expect(page).to have_content("Cart")

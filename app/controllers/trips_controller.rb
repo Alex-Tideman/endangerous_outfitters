@@ -1,6 +1,7 @@
 class TripsController < ApplicationController
   def show
     @extras = Extra.all
+    @trip = Trip.find(params[:id].to_i)
   end
 
     # WIP - update total cost of trip when there are extras

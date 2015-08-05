@@ -1,10 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Destination.create(continent: "North America", description: "North American continent description.",
                     lat: 41.8369, long: -87.6847, image_url: "south-america.jpg" )
@@ -22,12 +15,19 @@ Destination.create(continent: "Oceania", description: "Oceanian continent descri
 Activity.create(name: "Hiking", description: "We loven to do ze hikes.", image_url: "hiker.jpg" )
 Activity.create(name: "Rafting", description: "Rafting Rulez!", image_url: "raft.jpg" )
 Activity.create(name: "Scuba Diving", description: "Scuba Steve: Damn you!.", image_url: "scuba.jpg" )
+Activity.create(name: "Climbing", description: "bloody hands.", image_url: "scuba.jpg" )
+Activity.create(name: "Base Jumping", description: "WHOOO.", image_url: "scuba.jpg" )
+Activity.create(name: "Hunting", description: "BANG.", image_url: "scuba.jpg" )
 
-
-Trip.create(destination_id: 1, activity_id: 1, name:"Hiking in the Rockies", total_cost: 9000.00, trip_cost: 9000.00 )
-Trip.create(destination_id: 1, activity_id: 3, name: "Scuba Diving in Hawaii", total_cost: 21000.00, trip_cost: 21000.00 )
-Trip.create(destination_id: 1, activity_id: 2, name: "Rafting in California", total_cost: 50000.00, trip_cost: 50000.00 )
-
+Trip.create(destination_id: 1, activity_id: 1, total_cost: 20000.00, trip_cost: 10000.00, name: "Canadian Rockies" )
+Trip.create(destination_id: 6, activity_id: 3, total_cost: 21000.00, trip_cost: 21000.00, name: "Great Barrier Reef" )
+Trip.create(destination_id: 5, activity_id: 6, total_cost: 100000.00, trip_cost: 200000.00, name: "African Safari" )
+Trip.create(destination_id: 3, activity_id: 5, total_cost: 20000.00, trip_cost: 15000.00, name: "Swiss Base Jumpers" )
+Trip.create(destination_id: 4, activity_id: 4, total_cost: 10000.00, trip_cost: 8000.00, name: "Himalayan Mountain Climbing"  )
+Trip.create(destination_id: 2, activity_id: 1, total_cost: 400000.00, trip_cost: 15000.00, name: "Patagonia" )
+Trip.create(destination_id: 1, activity_id: 2, total_cost: 10000.00, trip_cost: 8000.00, name: "Riding the Colorado Rapids" )
+Trip.create(destination_id: 6, activity_id: 5, total_cost: 30000.00, trip_cost: 25000.00, name: "Base Jumping the Fjords" )
+Trip.create(destination_id: 3, activity_id: 1, total_cost: 117000.00, trip_cost: 6000.00, name: "Hut to Hut in the Dolomites" )
 
 Extra.create(name: "Monkey Banana-Eating Contest", description: "description", cost: 2000.00)
 Extra.create(name: "Shark Slalom Surfing", description: "description", cost: 4000.00)

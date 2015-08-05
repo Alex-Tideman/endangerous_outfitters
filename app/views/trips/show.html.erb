@@ -1,5 +1,5 @@
 <article>
-  <h1 class="trips-header">Hiking in South Africa</h1>
+  <h1 class="trips-header"><%= @trip.name %></h1>
 
   <div class="trip-header-img">
     <img src="http://localhost:3000/assets/trips/hiking_south_africa.jpg" />
@@ -23,7 +23,7 @@
 
   <div class="mdl-grid">
     <div class="mdl-cell mdl-cell--5-col">
-      <%= link_to "Book Trip", '#', class: "call-to-action" %>
+      <%= link_to "Book Trip", cart_trips_path(trip_id: @trip.id), method: :post, class: "call-to-action" %>
     </div>
   </div>
 </article>

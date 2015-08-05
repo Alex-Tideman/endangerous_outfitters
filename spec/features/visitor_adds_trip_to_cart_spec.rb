@@ -12,8 +12,6 @@ feature "Visitor adds a trip to cart" do
     total_cost: 20000.00, trip_cost: 20000.00, name: "High Atlas")
 
 
-
-
     visit trip_path(trip)
     click_button("Book Trip")
     expect(current_path).to eq(cart_path)

@@ -1,7 +1,7 @@
 class CartController < ApplicationController
 
   def show
-    @trips = []
+    @trips =
   end
 
 end

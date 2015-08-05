@@ -25,7 +25,9 @@ RSpec.describe Destination, type: :model do
     expect(destination.activities).to eq([])
   end
 
-
-
+  it 'has a longitude and latitude' do
+    expect(destination.long).to eq(6.6)
+    expect(destination.lat).to eq(5.5)
+  end
 
 end

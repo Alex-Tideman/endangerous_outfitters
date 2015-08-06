@@ -15,9 +15,9 @@ Destination.create(continent: "Oceania", description: "Oceanian continent descri
 Activity.create(name: "Hiking", description: "We loven to do ze hikes.", image_url: "hiker.jpg" )
 Activity.create(name: "Rafting", description: "Rafting Rulez!", image_url: "raft.jpg" )
 Activity.create(name: "Scuba Diving", description: "Scuba Steve: Damn you!.", image_url: "scuba.jpg" )
-Activity.create(name: "Climbing", description: "bloody hands.", image_url: "scuba.jpg" )
-Activity.create(name: "Base Jumping", description: "WHOOO.", image_url: "scuba.jpg" )
-Activity.create(name: "Hunting", description: "BANG.", image_url: "scuba.jpg" )
+Activity.create(name: "Climbing", description: "bloody hands.", image_url: "climbing.jpg" )
+Activity.create(name: "Base Jumping", description: "WHOOO.", image_url: "basebase.jpg" )
+Activity.create(name: "Hunting", description: "BANG.", image_url: "hunting.jpg" )
 
 Trip.create(destination_id: 1, activity_id: 1, total_cost: 20000.00, trip_cost: 10000.00, name: "Canadian Rockies" )
 Trip.create(destination_id: 6, activity_id: 3, total_cost: 21000.00, trip_cost: 21000.00, name: "Great Barrier Reef" )

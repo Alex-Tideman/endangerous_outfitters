@@ -2,14 +2,14 @@
   <h1 class="trips-header"><%= @trip.name %></h1>
 
   <div class="trip-header-img">
-    <img src="http://localhost:3000/assets/trips/hiking_south_africa.jpg" />
+    <img src="<%= @trip.image_url %>" />
   </div>
 
   <div class="mdl-grid">
     <div class="description mdl-cell mdl-cell--7-col">
 
       <p>
-        Lorem ipsum dolor sit amet, sea id velit accusata. Qui in option erroribus, mea everti iriure deleniti an. Ex his sale lucilius. Mei ut nonumy alienum voluptua, accusamus dissentias ut duo. Quo ne consetetur honestatis. Petentium adolescens sit ei, vidit debet scripta mei te. Ius minim audire instructior ex, ut audire aperiam cum.
+        <%= @trip.description %>
       </p>
 
       <h3 class="trip-subheader">Price: $9,000</h3>

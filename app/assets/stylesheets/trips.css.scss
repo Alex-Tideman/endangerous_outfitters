@@ -7,9 +7,81 @@
 }
 
 .trip-header-img {
-  height: 300px;
+  height: 600px;
   overflow: hidden;
   position: relative;
+}
+
+.canadian-rockies-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('canadian-rockies.jpg');
+  background-size: cover;
+}
+
+.great-barrier-reef-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('barrier.jpg');
+  background-size: cover;
+}
+
+.african-safari-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('safari.jpg');
+  background-size: cover;
+}
+
+.swiss-base-jumpers-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('base.jpg');
+  background-size: cover;
+}
+
+.climbing-in-pakistan-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('climbo.jpg');
+  background-size: cover;
+}
+
+.patagonia-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('argentina.jpg');
+  background-size: cover;
+}
+
+.riding-the-colorado-rapids-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('river.jpg');
+  background-size: cover;
+}
+
+.base-jumping-the-fjords-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('basez.jpg');
+  background-size: cover;
+}
+
+.hut-to-hut-in-the-dolomites-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('dolomites.jpg');
+  background-size: cover;
 }
 
 .trip-header-img img {

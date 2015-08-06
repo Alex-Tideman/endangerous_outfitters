@@ -45,7 +45,7 @@ Trip.create(destination_id: 6, activity_id: 5, total_cost: 30000.00, trip_cost: 
             description: "Performing the most daring of stunts in the most isolated of places.")
 Trip.create(destination_id: 3, activity_id: 1, total_cost: 117000.00, trip_cost: 6000.00,
             name: "Hut to Hut in the Dolomites", image_url: "dolomites.jpg",
-            description: "Expericne the old world culture of Northern Italy.")
+            description: "Experience the old world culture of Northern Italy.")
 
 Extra.create(name: "Monkey Banana-Eating Contest", description: "description", cost: 2000.00)
 Extra.create(name: "Shark Slalom Surfing", description: "description", cost: 4000.00)

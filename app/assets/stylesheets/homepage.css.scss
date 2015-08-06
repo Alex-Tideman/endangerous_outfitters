@@ -16,7 +16,7 @@
     font-weight: 200;
 }
 
-.nav-bar-link {
+.nav-bar-nk {
     color: white;
     font-size: 20px;
 }
@@ -57,20 +57,90 @@
 .activity-col {
     padding: 15%;
     margin-left: 20%;
+    margin-top: 3.5%;
 }
 
-#destination-button {
-    background: transparent image-url("globe_button.jpg") center;
-    background-size: contain;
+.destination-col a{
+  text-decoration: none;
 
 }
 
-#activity-button {
-    background: transparent image-url("paddles.jpg") center;
-    background-size: contain;
-    padding: 20px;
+.activity-col a{
+  text-decoration: none;
+
 }
 
+.icon-globe{
+  color: whitesmoke;
+  font-size: 12em;
+  text-shadow:
+    0.05em  .05em .05em black,
+    .01em -.01em .01em black,
+    -.01em  .01em .01em black,
+    -.01em -.01em .01em black;
+}
+
+#globe-text{
+  font-size: 2.7em;
+  display: none;
+  position: absolute;
+  left: 5.5em;
+  bottom: -1em;
+  text-shadow:
+  0.05em  .05em .05em black,
+  .01em -.01em .01em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+
+}
+
+.icon-parachute{
+  color: whitesmoke;
+  font-size: 10.5em;
+  text-shadow:
+    0.05em  .05em .05em black,
+    .01em -.01em .01em black,
+    -.01em  .01em .01em black,
+    -.01em -.01em .01em black;
+
+
+}
+
+#para-text{
+  font-size: 2.7em;
+  display: none;
+  position: absolute;
+  left: 24.5em;
+  bottom: -1.25em;
+  text-shadow:
+  0.05em  .05em .05em black,
+  .01em -.01em .01em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+a:hover .icon-globe{
+  color: #166CEC;
+}
+
+a:hover #globe-text{
+  display: inline;
+
+}
+
+a:hover #para-text{
+  display: inline;
+
+}
+
+a:hover .icon-parachute{
+  color: #D94530;
+}
+
+.icons {
+list-style-type: none;
+}
+  
 .button-text {
     font-size: 36px;
 }
@@ -85,12 +155,12 @@
 }
 
 .home-mission {
-    text-align: center;
+    text-agn: center;
     height: 400px;
 }
 
 .home-mission p {
-    text-align: center;
+    text-agn: center;
     font-size: 24px;
     font-weight: 200;
     padding: 75px;
@@ -99,13 +169,13 @@
 }
 
 .home-about-us {
-    text-align: center;
+    text-agn: center;
     height: 400px;
 
 }
 
 .home-trip-reviews {
-    text-align: center;
+    text-agn: center;
     height: 400px;
 }
 

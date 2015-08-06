@@ -38,13 +38,13 @@ Trip.create(destination_id: 2, activity_id: 1, total_cost: 400000.00, trip_cost:
             name: "Patagonia", image_url: "argentina.jpg",
             description: "Travel to the end of the Earth and experience the strange beauty of Patagonia.")
 Trip.create(destination_id: 1, activity_id: 2, total_cost: 10000.00, trip_cost: 8000.00,
-            name: "Riding the Colorado Rapids", image_url: "river.jpg",
+            name: "The Colorado Rapids", image_url: "river.jpg",
             description: "Check an item off your bucket list with this once in a lifetime trip down the Colorado River.")
 Trip.create(destination_id: 6, activity_id: 5, total_cost: 30000.00, trip_cost: 25000.00,
             name: "Base Jumping the Fjords", image_url: "basez.jpg",
             description: "Performing the most daring of stunts in the most isolated of places.")
 Trip.create(destination_id: 3, activity_id: 1, total_cost: 117000.00, trip_cost: 6000.00,
-            name: "Hut to Hut in the Dolomites", image_url: "dolomites.jpg",
+            name: "Huts in the Dolomites", image_url: "dolomites.jpg",
             description: "Experience the old world culture of Northern Italy.")
 Trip.create(destination_id: 1, activity_id: 4, total_cost: 23000.00, trip_cost: 21000,
             name: "Yosemite Granite", image_url: "yosemite.jpg",

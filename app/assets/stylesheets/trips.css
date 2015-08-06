@@ -51,8 +51,8 @@
 
 
 .extras tbody {
-  display: block;
-  overflow-y: scroll;
+  /*display: block;
+  overflow-y: scroll;*/
   height: 150px;
   color: black;
 }

@@ -11,7 +11,7 @@ describe 'User features' do
     Activity.create(name: "Hiking", description: "Hiking")
     visit activities_path
 
-    expect(page).to have_content("More Information")
+    expect(page).to have_content("Browse Destinations")
   end
 
   it 'has a login link' do

@@ -3,7 +3,8 @@
   font-weight: bold;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 5px 5px 5px 5px;
-  margin: 25px 400px 10px 0px;
+  border: solid 7px #363636;
+  margin: 25px 400px 10px 15px;
 }
 
 .trip-subheader {
@@ -23,94 +24,103 @@
 }
 
 .canadian-rockies-trip-img {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   border: solid 4px #CCCCCC;
   position: relative;
-  background: image-url('canadian-rockies.jpg');
+  background: image-url('canadian-rockies.jpg'), no-repeat;
   background-size: cover;
   border: solid 7px #363636;
   border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px;
 }
 
 .great-barrier-reef-trip-img {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('barrier.jpg');
+  background: image-url('barrier.jpg'), no-repeat;
   background-size: cover;
   border: solid 7px #363636;
   border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px;
 }
 
 .african-safari-trip-img {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('safari.jpg');
+  background: image-url('safari.jpg'), no-repeat;
   background-size: cover;
   border: solid 7px #363636;
   border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px;
 }
 
 .swiss-base-jumpers-trip-img {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('base.jpg');
+  background: image-url('base.jpg'), no-repeat;
   background-size: cover;
   border: solid 7px #363636;
   border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px;
 }
 
 .climbing-in-pakistan-trip-img {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('climbo.jpg');
+  background: image-url('climbo.jpg'), no-repeat;
   background-size: cover;
   border: solid 7px #363636;
   border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px;
 }
 
 .patagonia-trip-img {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('argentina.jpg');
+  background: image-url('argentina.jpg'), no-repeat;
   background-size: cover;
   border: solid 7px #363636;
   border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px;
 }
 
 .riding-the-colorado-rapids-trip-img {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('river.jpg');
+  background: image-url('river.jpg'), no-repeat;
   background-size: cover;
   border: solid 7px #363636;
   border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px;
 }
 
 .base-jumping-the-fjords-trip-img {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('basez.jpg');
+  background: image-url('basez.jpg'), no-repeat;
   background-size: cover;
   border: solid 7px #363636;
   border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px;
 }
 
 .hut-to-hut-in-the-dolomites-trip-img {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('dolomites.jpg');
+  background: image-url('dolomites.jpg'), no-repeat;
   background-size: cover;
   border: solid 7px #363636;
   border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
 }
 
 .trip-header-img img {
@@ -170,7 +180,8 @@
 
 #extras-heading{
 text-align: left;
-
+  font-family: "Open Sans";
+  font-size: 16px
 }
 
 

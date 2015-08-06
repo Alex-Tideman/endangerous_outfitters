@@ -1,5 +1,5 @@
 <article>
-  <h1 class="trips-header">Hiking in South Africa</h1>
+  <h1 class="trips-header"><%= @trip.name %></h1>
 
   <div class="trip-header-img">
     <img src="http://localhost:3000/assets/trips/hiking_south_africa.jpg" />
@@ -15,34 +15,30 @@
       <h3 class="trip-subheader">Price: $9,000</h3>
     </div>
 
+    <div class="extras mdl-cell mdl-cell--5-col">
 
+      <h3 class="trip-subheader">Extras</h3>
 
-  <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp extras">
-  <thead>
-    <tr>
-      <th id = "extras-heading" class="mdl-data-table__cell--non-numeric"></th>
-
-    </tr>
-  </thead>
-  <tbody>
-    <% @extras.each do |extra| %>
-    <tr>
-      <td class="mdl-data-table__cell--non-numeric"><%= link_to extra.name%></td>
-      <td>$<%= extra.cost %></td>
-      <% end %>
-    </tr>
-  </tbody>
-</table>
-
-
-
-
-
-<div class="mdl-cell mdl-cell--5-col">
+      <ul>
+        <li>
+          Monkey Banana-Eating Contest: $1,000
+        </li>
+        <li>
+          Shark Slalom Surfing: $1,500
+        </li>
+        <li>Barometer-Free Sky Diving: $2,000<br/>
+          (Accident Waiver & Release of Liability Form <em>Required</em>)
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--7-col"></div>
     <div class="mdl-cell mdl-cell--5-col">
-      <%= link_to "Book Trip", '#', class: "call-to-action" %>
+      <%= link_to "Book Trip", cart_trips_path(trip_id: @trip.id), method: :post, class: "call-to-action" %>
     </div>
   </div>
 </article>
+
+

@@ -49,6 +49,39 @@ article {
           -.01em -.01em .01em black;
         }
 
+#hunting-card{
+    height: 176px;
+    background: url('hunting.jpg') center / cover;
+    color: white;
+    text-shadow:
+    0.1em  .1em .1em black,
+    .05em -.05em .05em black,
+    -.01em  .01em .01em black,
+    -.01em -.01em .01em black;
+}
+
+#base-jumping-card{
+    height: 176px;
+    background: url('basebase.jpg') center / cover;
+    color: white;
+    text-shadow:
+    0.1em  .1em .1em black,
+    .05em -.05em .05em black,
+    -.01em  .01em .01em black,
+    -.01em -.01em .01em black;
+}
+
+
+#climbing-card{
+    height: 176px;
+    background: url('climbing.jpg') center / cover;
+    color: white;
+    text-shadow:
+    0.1em  .1em .1em black,
+    .05em -.05em .05em black,
+    -.01em  .01em .01em black,
+    -.01em -.01em .01em black;
+}
 
 
 

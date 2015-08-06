@@ -15,15 +15,30 @@
       <h3 class="trip-subheader">Price: $9,000</h3>
     </div>
 
+    <div class="extras mdl-cell mdl-cell--5-col">
 
+      <h3 class="trip-subheader">Extras</h3>
 
-
-
-<div class="mdl-cell mdl-cell--5-col">
+      <ul>
+        <li>
+          Monkey Banana-Eating Contest: $1,000
+        </li>
+        <li>
+          Shark Slalom Surfing: $1,500
+        </li>
+        <li>Barometer-Free Sky Diving: $2,000<br/>
+          (Accident Waiver & Release of Liability Form <em>Required</em>)
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--7-col"></div>
     <div class="mdl-cell mdl-cell--5-col">
       <%= link_to "Book Trip", cart_trips_path(trip_id: @trip.id), method: :post, class: "call-to-action" %>
     </div>
   </div>
 </article>
+
+

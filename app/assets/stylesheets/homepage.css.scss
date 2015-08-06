@@ -41,7 +41,7 @@
 
 .home-picture {
     height: 550px;
-    background: transparent url("homepage.png") no-repeat center -50px;
+    background: transparent image-url("homepage.png") no-repeat center -50px;
     background-size: cover;
 }
 
@@ -85,7 +85,7 @@
   display: none;
   position: absolute;
   left: 5.5em;
-  bottom: -1em;
+  bottom: -3em;
   text-shadow:
   0.05em  .05em .05em black,
   .01em -.01em .01em black,
@@ -110,8 +110,8 @@
   font-size: 2.7em;
   display: none;
   position: absolute;
-  left: 24.5em;
-  bottom: -1.25em;
+  left: 21.5em;
+  bottom: -3em;
   text-shadow:
   0.05em  .05em .05em black,
   .01em -.01em .01em black,
@@ -150,17 +150,14 @@ list-style-type: none;
     font-weight: 700;
 }
 
-.us-and-reviews {
-    background: transparent url('texture.png') center;
-}
 
 .home-mission {
-    text-agn: center;
+    text-align: center;
     height: 400px;
 }
 
 .home-mission p {
-    text-agn: center;
+    text-align: center;
     font-size: 24px;
     font-weight: 200;
     padding: 75px;
@@ -169,13 +166,13 @@ list-style-type: none;
 }
 
 .home-about-us {
-    text-agn: center;
+    text-align: center;
     height: 400px;
 
 }
 
 .home-trip-reviews {
-    text-agn: center;
+    text-align: center;
     height: 400px;
 }
 
@@ -196,25 +193,25 @@ list-style-type: none;
 
 #alex.demo-card-square > .mdl-card__title {
     color: #fff;
-    background: url('alex-headshot.jpg') bottom right 15% no-repeat #000000;
+    background: image-url('alex-headshot.jpg') bottom right 15% no-repeat #000000;
     background-size: 200px 200px;
 }
 
 #max.demo-card-square > .mdl-card__title {
     color: #fff;
-    background: url('max-headshot.jpg') top right 15% no-repeat #000000;
+    background: image-url('max-headshot.jpg') top right 15% no-repeat #000000;
     background-size: 200px 200px;
 }
 
 #david.demo-card-square > .mdl-card__title {
     color: #fff;
-    background: url('david-headshot.jpg') bottom right 15% no-repeat #000000;
+    background: image-url('david-headshot.jpg') bottom right 15% no-repeat #000000;
     background-size: 200px 200px;
 }
 
 #adam.demo-card-square > .mdl-card__title {
     color: #fff;
-    background: url('adam-headshot.jpg') bottom right 15% no-repeat #000000;
+    background: image-url('adam-headshot.jpg') bottom right 15% no-repeat #000000;
     background-size: 200px 200px;
 }
 

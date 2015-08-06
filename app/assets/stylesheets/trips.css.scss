@@ -123,6 +123,39 @@
   margin: 15px 15px 15px 15px
 }
 
+.yosemite-granite-trip-img {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('yosemite.jpg'), no-repeat;
+  background-size: cover;
+  border: solid 7px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
+}
+
+.climbing-the-high-atlas-trip-img {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('atlas.jpg'), no-repeat;
+  background-size: cover;
+  border: solid 7px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
+}
+
+.hunting-in-montana-trip-img {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('montana.JPG'), no-repeat;
+  background-size: cover;
+  border: solid 7px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
+}
+
 .trip-header-img img {
   width: 100%;
   top: -300px;
@@ -285,4 +318,42 @@ text-align: left;
   .05em -.05em .05em black,
   -.01em  .01em .01em black,
   -.01em -.01em .01em black;
+}
+
+#yosemite-granite-card{
+  height: 176px;
+  background: image-url('yosemite.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#climbing-the-high-atlas-card{
+  height: 176px;
+  background: image-url('atlas.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#hunting-in-montana-card{
+  height: 176px;
+  background: image-url('montana.JPG') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#whole-card{
+  border: solid 1px #363636;
+  border-radius: 5px 5px 5px 5px;
 }

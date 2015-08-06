@@ -46,6 +46,16 @@ Trip.create(destination_id: 6, activity_id: 5, total_cost: 30000.00, trip_cost: 
 Trip.create(destination_id: 3, activity_id: 1, total_cost: 117000.00, trip_cost: 6000.00,
             name: "Hut to Hut in the Dolomites", image_url: "dolomites.jpg",
             description: "Experience the old world culture of Northern Italy.")
+Trip.create(destination_id: 1, activity_id: 4, total_cost: 23000.00, trip_cost: 21000,
+            name: "Yosemite Granite", image_url: "yosemite.jpg",
+            description: "Experience the world's natural playground and climb the classic Yosemite granite domes.")
+Trip.create(destination_id: 5, activity_id: 4, total_cost: 90500, trip_cost: 55000,
+            name: "Climbing the High Atlas", image_url: "atlas.jpg",
+            description: "Spend your time in the thin air of the High Atlas Mountains in Northern Morocco. ")
+Trip.create(destination_id: 1, activity_id: 6, total_cost: 83000, trip_cost: 60000,
+            name: "Hunting in Montana", image_url: "",
+            description: "Experience one of the most vibrant displays of wildlife in the continental United States.")
+
 
 Extra.create(name: "Monkey Banana-Eating Contest", description: "description", cost: 2000.00)
 Extra.create(name: "Shark Slalom Surfing", description: "description", cost: 4000.00)

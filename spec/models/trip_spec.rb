@@ -56,10 +56,19 @@ RSpec.describe Trip, type: :model do
       expect(Trip.all.count).to eq(0)
     end
 
+    it "does not create a trip with too long of a name" do
+      destination = Destination.create(continent: "South America", description: "South American description",
+                                       lat: -10.23, long: 32.393)
+      activity = Activity.create(name: "Hiking", description: "Move your legs")
+      trip = Trip.create(destination_id: destination.id, activity_id: activity.id,
+                         name: "Machu PicchuUUUUELIELIaseraweraweraewLILIELILIIE", trip_cost: 5000.00 )
+
+      expect(Trip.all.count).to eq(0)
+    end
+
     xit "it can add one extra" do
       trip = create_trip
       trip.extras.create(name: "Sherpa", description: "Carries your things", cost: 2500.00)
-      byebug
       expect(trip.extras.count).to eq(1)
       expect(trip.extras.first.name).to eq("Sherpa")
       expect(trip.total_cost).to eq(7500.00)

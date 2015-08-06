@@ -7,9 +7,81 @@
 }
 
 .trip-header-img {
-  height: 300px;
+  height: 600px;
   overflow: hidden;
   position: relative;
+}
+
+.canadian-rockies-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('canadian-rockies.jpg');
+  background-size: cover;
+}
+
+.great-barrier-reef-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('barrier.jpg');
+  background-size: cover;
+}
+
+.african-safari-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('safari.jpg');
+  background-size: cover;
+}
+
+.swiss-base-jumpers-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('base.jpg');
+  background-size: cover;
+}
+
+.climbing-in-pakistan-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('climbo.jpg');
+  background-size: cover;
+}
+
+.patagonia-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('argentina.jpg');
+  background-size: cover;
+}
+
+.riding-the-colorado-rapids-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('river.jpg');
+  background-size: cover;
+}
+
+.base-jumping-the-fjords-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('basez.jpg');
+  background-size: cover;
+}
+
+.hut-to-hut-in-the-dolomites-trip-img {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('dolomites.jpg');
+  background-size: cover;
 }
 
 .trip-header-img img {
@@ -62,4 +134,107 @@
 
 #extras-heading{
 text-align: left;
+}
+
+
+#canadian-rockies-card{
+  height: 176px;
+  background: image-url('canadian-rockies.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+
+
+#great-barrier-reef-card{
+  height: 176px;
+  background: image-url('barrier.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#african-safari-card{
+  height: 176px;
+  background: image-url('safari.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#swiss-base-jumpers-card{
+  height: 176px;
+  background: image-url('base.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#climbing-in-pakistan-card{
+  height: 176px;
+  background: image-url('climbo.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+
+#riding-the-colorado-rapids-card{
+  height: 176px;
+  background: image-url('river.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#base-jumping-the-fjords-card{
+  height: 176px;
+  background: image-url('basez.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#hut-to-hut-in-the-dolomites-card{
+  height: 176px;
+  background: image-url('dolomites.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#patagonia-card{
+  height: 176px;
+  background: image-url('argentina.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
 }

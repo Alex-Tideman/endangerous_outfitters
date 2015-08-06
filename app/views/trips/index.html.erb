@@ -1,0 +1,27 @@
+<article>
+
+  <h1 id="title">All Trips</h1>
+
+  <div class="demo-grid-1 mdl-grid">
+
+    <% @trips.each do |trip| %>
+
+        <div class="mdl-cell mdl-cell--4-col"><div class="mdl-card mdl-shadow--2dp demo-card-wide">
+
+          <div class= "mdl-card__title">
+            <h3 class="mdl-card__title-text"><%= trip.name %></h3>
+          </div>
+          <div id = "<%= trip.name.split.join("-").downcase %>-card">
+          </div>
+          <div class="mdl-card__supporting-text">
+            <%#= trip.description %>
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+
+            <%= link_to "View Trip", trip_path(trip.id), class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>
+          </div>
+        </div></div>
+
+    <% end %>
+  </div>
+</article>

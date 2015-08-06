@@ -41,7 +41,7 @@
 
 .home-picture {
     height: 550px;
-    background: transparent url("homepage.png") no-repeat center -50px;
+    background: transparent image-url("homepage.png") no-repeat center -50px;
     background-size: cover;
 }
 
@@ -60,13 +60,13 @@
 }
 
 #destination-button {
-    background: transparent url("globe_button.jpg") center;
+    background: transparent image-url("globe_button.jpg") center;
     background-size: contain;
 
 }
 
 #activity-button {
-    background: transparent url("paddles.jpg") center;
+    background: transparent image-url("paddles.jpg") center;
     background-size: contain;
     padding: 20px;
 }
@@ -81,7 +81,7 @@
 }
 
 .us-and-reviews {
-    background: transparent url('texture.png') center;
+    background: transparent image-url('texture.png') center;
 }
 
 .home-mission {
@@ -126,25 +126,25 @@
 
 #alex.demo-card-square > .mdl-card__title {
     color: #fff;
-    background: url('alex-headshot.jpg') bottom right 15% no-repeat #000000;
+    background: image-url('alex-headshot.jpg') bottom right 15% no-repeat #000000;
     background-size: 200px 200px;
 }
 
 #max.demo-card-square > .mdl-card__title {
     color: #fff;
-    background: url('max-headshot.jpg') top right 15% no-repeat #000000;
+    background: image-url('max-headshot.jpg') top right 15% no-repeat #000000;
     background-size: 200px 200px;
 }
 
 #david.demo-card-square > .mdl-card__title {
     color: #fff;
-    background: url('david-headshot.jpg') bottom right 15% no-repeat #000000;
+    background: image-url('david-headshot.jpg') bottom right 15% no-repeat #000000;
     background-size: 200px 200px;
 }
 
 #adam.demo-card-square > .mdl-card__title {
     color: #fff;
-    background: url('adam-headshot.jpg') bottom right 15% no-repeat #000000;
+    background: image-url('adam-headshot.jpg') bottom right 15% no-repeat #000000;
     background-size: 200px 200px;
 }
 

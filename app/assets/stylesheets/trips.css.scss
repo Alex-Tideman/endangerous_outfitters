@@ -3,7 +3,7 @@
   font-weight: bold;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 5px 5px 5px 5px;
-  border: solid 7px #363636;
+  border: solid 3px #363636;
   margin: 25px 400px 10px 15px;
 }
 
@@ -30,7 +30,7 @@
   position: relative;
   background: image-url('canadian-rockies.jpg'), no-repeat;
   background-size: cover;
-  border: solid 7px #363636;
+  border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
   margin: 15px 15px 15px 15px;
 }
@@ -41,7 +41,7 @@
   position: relative;
   background: image-url('barrier.jpg'), no-repeat;
   background-size: cover;
-  border: solid 7px #363636;
+  border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
   margin: 15px 15px 15px 15px;
 }
@@ -52,7 +52,7 @@
   position: relative;
   background: image-url('safari.jpg'), no-repeat;
   background-size: cover;
-  border: solid 7px #363636;
+  border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
   margin: 15px 15px 15px 15px;
 }
@@ -63,7 +63,7 @@
   position: relative;
   background: image-url('base.jpg'), no-repeat;
   background-size: cover;
-  border: solid 7px #363636;
+  border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
   margin: 15px 15px 15px 15px;
 }
@@ -74,7 +74,7 @@
   position: relative;
   background: image-url('climbo.jpg'), no-repeat;
   background-size: cover;
-  border: solid 7px #363636;
+  border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
   margin: 15px 15px 15px 15px;
 }
@@ -85,7 +85,7 @@
   position: relative;
   background: image-url('argentina.jpg'), no-repeat;
   background-size: cover;
-  border: solid 7px #363636;
+  border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
   margin: 15px 15px 15px 15px;
 }
@@ -96,7 +96,7 @@
   position: relative;
   background: image-url('river.jpg'), no-repeat;
   background-size: cover;
-  border: solid 7px #363636;
+  border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
   margin: 15px 15px 15px 15px;
 }
@@ -107,7 +107,7 @@
   position: relative;
   background: image-url('basez.jpg'), no-repeat;
   background-size: cover;
-  border: solid 7px #363636;
+  border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
   margin: 15px 15px 15px 15px;
 }
@@ -118,7 +118,7 @@
   position: relative;
   background: image-url('dolomites.jpg'), no-repeat;
   background-size: cover;
-  border: solid 7px #363636;
+  border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
   margin: 15px 15px 15px 15px
 }
@@ -129,7 +129,7 @@
   position: relative;
   background: image-url('yosemite.jpg'), no-repeat;
   background-size: cover;
-  border: solid 7px #363636;
+  border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
   margin: 15px 15px 15px 15px
 }
@@ -140,7 +140,7 @@
   position: relative;
   background: image-url('atlas.jpg'), no-repeat;
   background-size: cover;
-  border: solid 7px #363636;
+  border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
   margin: 15px 15px 15px 15px
 }
@@ -151,7 +151,7 @@
   position: relative;
   background: image-url('montana.JPG'), no-repeat;
   background-size: cover;
-  border: solid 7px #363636;
+  border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
   margin: 15px 15px 15px 15px
 }
@@ -165,7 +165,7 @@
 .description {
   padding: 15px;
   background: rgba(255, 255, 255, .5);
-  border: solid 7px #363636;
+  border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
 }
 
@@ -173,7 +173,7 @@
   padding: 15px;
   background: rgba(255, 255, 255, .5);
   border-radius: 5px 5px 5px 5px;
-  border: solid 7px #363636;
+  border: solid 3px #363636;
 }
 
 .call-to-action {
@@ -199,7 +199,6 @@
   border-radius: 5px 5px 5px 5px;
 }
 
-
 .extras tbody {
   /*display: block;
   overflow-y: scroll;*/
@@ -212,9 +211,11 @@
 }
 
 #extras-heading{
-text-align: left;
+  text-align: left;
   font-family: "Open Sans";
-  font-size: 16px
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
 }
 
 #canadian-rockies-card{

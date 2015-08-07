@@ -49,16 +49,16 @@
     padding: 50px;
 }
 
-.destination-col {
-    padding: 15%;
-    margin-left: 20%;
-}
+// .destination-col {
+//     padding: 15%;
+//     margin-left: 20%;
+// }
 
-.activity-col {
-    padding: 15%;
-    margin-left: 20%;
-    margin-top: 3.5%;
-}
+// .activity-col {
+//     padding: 15%;
+//     margin-left: 20%;
+//     margin-top: 3.5%;
+// }
 
 .destination-col a{
   text-decoration: none;
@@ -73,6 +73,8 @@
 .icon-globe{
   color: whitesmoke;
   font-size: 12em;
+  margin-right: 28%;
+  margin-left: 10%;
   text-shadow:
     0.05em  .05em .05em black,
     .01em -.01em .01em black,
@@ -81,11 +83,15 @@
 }
 
 #globe-text{
-  font-size: 2.7em;
-  display: none;
-  position: absolute;
-  left: 5.5em;
-  bottom: -3em;
+  font-size: 0.5em;
+  margin-left: -37%;
+
+  // position: absolute;
+  // top: 30%;
+  // display: none;
+  // position: absolute;
+  // left: 5.5em;
+  // bottom: -3em;
   text-shadow:
   0.05em  .05em .05em black,
   .01em -.01em .01em black,
@@ -94,9 +100,36 @@
 
 }
 
+.icon-airplane{
+  color: whitesmoke;
+  font-size: 12em;
+  text-shadow:
+    0.05em  .05em .05em black,
+    .01em -.01em .01em black,
+    -.01em  .01em .01em black,
+    -.01em -.01em .01em black;
+  margin-left: 20%;
+}
+
+// #airplane-text{
+//   font-size: 2.7em;
+//   display: none;
+//   position: absolute;
+//   left: 5.5em;
+//   bottom: -3em;
+//   text-shadow:
+//   0.05em  .05em .05em black,
+//   .01em -.01em .01em black,
+//   -.01em  .01em .01em black,
+//   -.01em -.01em .01em black;
+//
+// }
+
 .icon-parachute{
   color: whitesmoke;
   font-size: 10.5em;
+  margin-left: 20%;
+  margin-right: 20%;
   text-shadow:
     0.05em  .05em .05em black,
     .01em -.01em .01em black,
@@ -107,11 +140,12 @@
 }
 
 #para-text{
-  font-size: 2.7em;
-  display: none;
-  position: absolute;
-  left: 21.5em;
-  bottom: -3em;
+  // font-size: 2.7em;
+  // display: none;
+  // position: absolute;
+  // left: 21.5em;
+  // bottom: -3em;
+  margin-left: -37%;
   text-shadow:
   0.05em  .05em .05em black,
   .01em -.01em .01em black,
@@ -137,10 +171,11 @@ a:hover .icon-parachute{
   color: #D94530;
 }
 
-.icons {
+.icons li{
+  display: inline;
 list-style-type: none;
 }
-  
+
 .button-text {
     font-size: 36px;
 }

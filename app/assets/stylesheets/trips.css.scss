@@ -5,6 +5,7 @@
   border-radius: 5px 5px 5px 5px;
   border: solid 3px #363636;
   margin: 25px 400px 10px 15px;
+  padding-left: 10px;
 }
 
 .trip-subheader {
@@ -51,6 +52,7 @@
   overflow: hidden;
   position: relative;
   background: image-url('safari.jpg'), no-repeat;
+  background-position: 0 -25px;
   background-size: cover;
   border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;

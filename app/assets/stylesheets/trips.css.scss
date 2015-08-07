@@ -161,14 +161,15 @@
   height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('navua.jpg'), no-repeat;
+  background: image-url('navua.jpg');
+  background-position: 0 -200px;
   background-size: cover;
   border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
   margin: 15px 15px 15px 15px
 }
 
-.outback--big-game-trip-img {
+.outback-big-game-trip-img {
   height: 550px;
   overflow: hidden;
   position: relative;
@@ -183,7 +184,8 @@
   height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('positano.jpg'), no-repeat;
+  background: image-url('positano.jpg');
+  background-position: 0 -220px;
   background-size: cover;
   border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;

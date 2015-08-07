@@ -149,7 +149,8 @@
   height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('montana.JPG'), no-repeat;
+  background: image-url('montana.jpg');
+  background-position: 0 -275px;
   background-size: cover;
   border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
@@ -343,7 +344,7 @@
 
 #hunting-in-montana-card{
   height: 176px;
-  background: image-url('montana.JPG') center / cover;
+  background: image-url('montana.jpg') center / cover;
   color: white;
   text-shadow:
   0.1em  .1em .1em black,

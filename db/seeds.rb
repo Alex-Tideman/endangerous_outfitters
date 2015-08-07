@@ -53,9 +53,17 @@ Trip.create(destination_id: 5, activity_id: 4, total_cost: 90500, trip_cost: 550
             name: "Climbing the High Atlas", image_url: "atlas.jpg",
             description: "Spend your time in the thin air of the High Atlas Mountains in Northern Morocco. ")
 Trip.create(destination_id: 1, activity_id: 6, total_cost: 83000, trip_cost: 60000,
-            name: "Hunting in Montana", image_url: "",
+            name: "Hunting in Montana", image_url: "montana.jpg",
             description: "Experience one of the most vibrant displays of wildlife in the continental United States.")
-
+Trip.create(destination_id: 6, activity_id: 2, total_cost: 45000, trip_cost: 10000,
+            name: "The Navua River", image_url: "navua.jpg",
+            description: "What's that? You didn't know that the tiny island of Fiji had such awesome river rafting? Well it does! Ride these rapids 65 kilometers to the south coast.")
+Trip.create(destination_id: 3, activity_id: 3, total_cost: 100000, trip_cost: 20000,
+            name: "Riviera Diving", image_url: "positano.jpg",
+            description: "See the fishes below the water, eat the fishes above the water in this Italian getaway.")
+Trip.create(destination_id: 6, activity_id: 6, total_cost: 300000, trip_cost: 250000,
+            name: "Outback Big Game", image_url: "buffalo.jpg",
+            description: "Go down under and take on some big game in the rugged Australian Outback.")
 
 Extra.create(name: "Monkey Banana-Eating Contest", description: "description", cost: 2000.00)
 Extra.create(name: "Shark Slalom Surfing", description: "description", cost: 4000.00)

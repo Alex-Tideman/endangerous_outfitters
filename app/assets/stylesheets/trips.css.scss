@@ -157,6 +157,39 @@
   margin: 15px 15px 15px 15px
 }
 
+.the-navua-river-trip-img {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('navua.jpg'), no-repeat;
+  background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
+}
+
+.outback--big-game-trip-img {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('buffalo.jpg'), no-repeat;
+  background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
+}
+
+.riviera-diving-trip-img {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('positano.jpg'), no-repeat;
+  background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
+}
+
 .trip-header-img img {
   width: 100%;
   top: -300px;
@@ -345,6 +378,39 @@
 #hunting-in-montana-card{
   height: 176px;
   background: image-url('montana.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#outback-big-game-card{
+  height: 176px;
+  background: image-url('buffalo.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#riviera-diving-card{
+  height: 176px;
+  background: image-url('positano.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#the-navua-river-card{
+  height: 176px;
+  background: image-url('navua.jpg') center / cover;
   color: white;
   text-shadow:
   0.1em  .1em .1em black,

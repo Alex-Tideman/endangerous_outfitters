@@ -64,6 +64,16 @@ Trip.create(destination_id: 3, activity_id: 3, total_cost: 100000, trip_cost: 20
 Trip.create(destination_id: 6, activity_id: 6, total_cost: 300000, trip_cost: 250000,
             name: "Outback Big Game", image_url: "buffalo.jpg",
             description: "Go down under and take on some big game in the rugged Australian Outback.")
+Trip.create(destination_id: 5, activity_id: 2, total_cost: 7000, trip_cost: 7000,
+            name: "The Zambezi River", image_url: "zambezi.jpg",
+            description: "Rafting down Zambia's Zambezi River is a world class adventure. From the big warm water rapids, to the stunning white sandy beaches, this trip rates among some of the most exciting in the world.")
+Trip.create(destination_id: 1, activity_id: 3, total_cost: 12500, trip_cost: 11500,
+            name: "Mexican Scuba Diving", image_url: "cancun.jpg",
+            description: "Experience some of the bluest waters.")
+Trip.create(destination_id: 4, activity_id: 5, total_cost: 65000, trip_cost: 50000,
+            name: "Tianmen Mountains", image_url: "tianmen.jpg",
+            description: "The only thing more exhilarating than the climb to the top is the fall to the bottom in this remote Chinese valley.")
+
 
 Extra.create(name: "Monkey Banana-Eating Contest", description: "description", cost: 2000.00)
 Extra.create(name: "Shark Slalom Surfing", description: "description", cost: 4000.00)

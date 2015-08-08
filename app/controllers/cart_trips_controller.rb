@@ -10,13 +10,6 @@ class CartTripsController < ApplicationController
     @cart_trips = cart.trips
   end
 
-  def destroy
-    @trip = Trip.find(params[:id])
-    cart.remove_trip(@trip)
-    session[:cart] = cart.data
-    redirect_to cart_path
-  end
-
   def increment
     trip = Trip.find(params[:id])
     cart.add_trip(trip)
@@ -31,6 +24,11 @@ class CartTripsController < ApplicationController
     redirect_to cart_path
   end
 
-
+  def destroy
+    @trip = Trip.find(params[:id])
+    cart.remove_trip(@trip)
+    session[:cart] = cart.data
+    redirect_to cart_path
+  end
 
 end

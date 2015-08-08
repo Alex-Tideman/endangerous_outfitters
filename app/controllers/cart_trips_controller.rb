@@ -10,5 +10,9 @@ class CartTripsController < ApplicationController
     @cart_trips = cart.trips
   end
 
+  def destroy
+    session[:cart] = nil
+    render :cart_path
+  end
 
 end

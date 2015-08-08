@@ -9,8 +9,9 @@
 
         <% @cart_trips.each do |trip| %>
             <tr>
-              <td class="quantity"><%= trip.quantity %></td>
-              <td id="trip-link" class="name mdl-data-table__cell--non-numeric"><%= button_to "+", increment_cart_trip_path(trip) %></button><%= link_to "#{trip.name}", trip_path(trip) %></td>
+              <td class="quantity"><%= trip.quantity %><%= button_to "-", decrement_cart_trip_path(trip) %></button>
+                <%= button_to "+", increment_cart_trip_path(trip) %></td>
+              <td id="trip-link" class="name mdl-data-table__cell--non-numeric"></button><%= link_to "#{trip.name}", trip_path(trip) %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.destination.continent %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.activity.name %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.extras.map(&:name).join(' ') %></td>

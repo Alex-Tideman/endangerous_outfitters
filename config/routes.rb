@@ -13,6 +13,7 @@ Rails.application.routes.draw do
       post :increment, :decrement
     end
   end
+  resources :reviews
   get '/cart', to: 'cart_trips#index'
   get '/login', to: "sessions#new"
   post '/login', to: "sessions#create"

@@ -74,4 +74,21 @@ Extra.create(name: "Giraffe Racing", description: "description", cost: 6000.00)
 User.create(username: "admin", password: "admin", role: 1)
 User.create(username: "Alex", password: "123")
 User.create(username: "Adam", password: "123")
+User.create(username: "Max", password: "Max")
+User.create(username: "David", password: "David")
 
+Review.create(name: "Arnold Schwarzenegger",
+              content: "Ahftah trahvelig with Endangerous Ouhtfittahs, I hahve one thing to sahy...I'll be bahck.",
+              occupation: "Movie Star, Action Hero, Governator, Terminator, Mr. Universe", image_url: "arnold.jpg")
+
+Review.create(name: "Bruce Willis",
+              content: "Yippee Ki Yay motherf****r, I would recommend Endangerous Outfitters to any action hero worth his salt.",
+              occupation: "Movie Star, Action Hero", image_url: "bruce.jpg")
+
+Review.create(name: "Hulk Hogan",
+              content: "Endangerous outfitters is running WILD brother! Hulkmania for life!",
+              occupation: "Professional Wrestler, Reality Star", image_url: "hulk.jpg")
+
+Review.create(name: "Sylvester Stallone",
+              content: "Yo Adrian! This was the best trip we have every been on!",
+              occupation: "Philadelphia Icon, Italian Stallion, Movie Star", image_url: "rambo.jpg")

@@ -12,7 +12,7 @@ class CartTripsController < ApplicationController
 
   def destroy
     session[:cart] = nil
-    render :cart_path
+    redirect_to cart_path
   end
 
 end

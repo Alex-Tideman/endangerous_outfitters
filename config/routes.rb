@@ -15,7 +15,11 @@ Rails.application.routes.draw do
 
   resources :destinations, only: [:index, :show]
 
-  post '/cart_trips', to: 'cart_trips#create'
+  resources :cart_trips, only: [:create, :destroy] do
+    member do
+      post :increment, :decrement
+    end
+  end
 
   delete '/cart', to: 'cart_trips#destroy'
 

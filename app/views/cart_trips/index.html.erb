@@ -10,12 +10,12 @@
         <% @cart_trips.each do |trip| %>
             <tr>
               <td class="quantity"><%= trip.quantity %></td>
-              <td class="name mdl-data-table__cell--non-numeric"><%= trip.name %></td>
+              <td id="trip-link" class="name mdl-data-table__cell--non-numeric"><%= button_to "+", increment_cart_trip_path(trip) %></button><%= link_to "#{trip.name}", trip_path(trip) %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.destination.continent %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.activity.name %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.extras.map(&:name).join(' ') %></td>
               <td><%= trip.total_cost %></td>
-              <td id="delete-link"><%= link_to "Remove", cart_path, method: :delete%></td>
+              <td id="delete-link"><%= link_to "Remove", cart_path(trip), method: :delete%></td>
             </tr>
         <% end %>
         </tbody>

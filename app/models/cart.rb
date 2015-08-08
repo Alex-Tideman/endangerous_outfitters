@@ -17,4 +17,16 @@ class Cart
     data[trip.id.to_s] += 1
   end
 
+  def remove_trip(trip)
+    data.except!(trip.id.to_s)
+  end
+  
+  def decrease_trip(trip)
+    if data[trip.id.to_s] && data[trip.id.to_s] > 1
+      data[trip.id.to_s] -= 1
+    else
+      data.except!(trip.id.to_s)
+    end
+  end
+  
 end

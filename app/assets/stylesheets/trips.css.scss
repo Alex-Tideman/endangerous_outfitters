@@ -1,5 +1,11 @@
 .trips-header {
-  padding-left: 20px;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px 5px 5px 5px;
+  border: solid 3px #363636;
+  margin: 25px 400px 10px 15px;
+  padding-left: 10px;
 }
 
 .trip-subheader {
@@ -12,76 +18,180 @@
   position: relative;
 }
 
+#trip-description {
+  font-family: "Open Sans";
+  font-size: 20px;
+
+}
+
 .canadian-rockies-trip-img {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
+  border: solid 4px #CCCCCC;
   position: relative;
-  background: image-url('canadian-rockies.jpg');
+  background: image-url('canadian-rockies.jpg'), no-repeat;
   background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px;
 }
 
 .great-barrier-reef-trip-img {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('barrier.jpg');
+  background: image-url('barrier.jpg'), no-repeat;
   background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px;
 }
 
 .african-safari-trip-img {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('safari.jpg');
+  background: image-url('safari.jpg'), no-repeat;
+  background-position: 0 -25px;
   background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px;
 }
 
 .swiss-base-jumpers-trip-img {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('base.jpg');
+  background: image-url('base.jpg'), no-repeat;
   background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px;
 }
 
 .climbing-in-pakistan-trip-img {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('climbo.jpg');
+  background: image-url('climbo.jpg'), no-repeat;
   background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px;
 }
 
 .patagonia-trip-img {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('argentina.jpg');
+  background: image-url('argentina.jpg'), no-repeat;
   background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px;
 }
 
-.riding-the-colorado-rapids-trip-img {
-  height: 400px;
+.the-colorado-rapids-trip-img {
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('river.jpg');
+  background: image-url('river.jpg'), no-repeat;
   background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px;
 }
 
 .base-jumping-the-fjords-trip-img {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('basez.jpg');
+  background: image-url('basez.jpg'), no-repeat;
   background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px;
 }
 
-.hut-to-hut-in-the-dolomites-trip-img {
-  height: 400px;
+.huts-in-the-dolomites-trip-img {
+  height: 550px;
   overflow: hidden;
   position: relative;
-  background: image-url('dolomites.jpg');
+  background: image-url('dolomites.jpg'), no-repeat;
   background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
+}
+
+.yosemite-granite-trip-img {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('yosemite.jpg'), no-repeat;
+  background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
+}
+
+.climbing-the-high-atlas-trip-img {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('atlas.jpg'), no-repeat;
+  background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
+}
+
+.hunting-in-montana-trip-img {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('montana.jpg');
+  background-position: 0 -275px;
+  background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
+}
+
+.the-navua-river-trip-img {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('navua.jpg');
+  background-position: 0 -200px;
+  background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
+}
+
+.outback-big-game-trip-img {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('buffalo.jpg'), no-repeat;
+  background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
+}
+
+.riviera-diving-trip-img {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('positano.jpg');
+  background-position: 0 -220px;
+  background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
 }
 
 .trip-header-img img {
@@ -93,20 +203,26 @@
 .description {
   padding: 15px;
   background: rgba(255, 255, 255, .5);
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .extras {
   padding: 15px;
   background: rgba(255, 255, 255, .5);
+  border-radius: 5px 5px 5px 5px;
+  border: solid 3px #363636;
 }
 
 .call-to-action {
   display: block;
   font-size: 1.2em;
   color: white;
-  background-color: #9675EF;
-  padding: 20px 0 20px 20px;
+  background-color: #544e9c;
+  padding: 30px 0 30px 30px;
   text-decoration: none;
+  border: solid 1px #363636;
+  border-radius: 5px 5px 5px 5px
 }
 
 .call-to-action:hover {
@@ -117,9 +233,9 @@
 }
 
 #extra-table {
-    background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px 5px 5px 5px;
 }
-
 
 .extras tbody {
   /*display: block;
@@ -133,9 +249,12 @@
 }
 
 #extras-heading{
-text-align: left;
+  text-align: left;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
 }
-
 
 #canadian-rockies-card{
   height: 176px;
@@ -147,7 +266,6 @@ text-align: left;
   -.01em  .01em .01em black,
   -.01em -.01em .01em black;
 }
-
 
 
 #great-barrier-reef-card{
@@ -195,7 +313,7 @@ text-align: left;
 }
 
 
-#riding-the-colorado-rapids-card{
+#the-colorado-rapids-card{
   height: 176px;
   background: image-url('river.jpg') center / cover;
   color: white;
@@ -217,7 +335,7 @@ text-align: left;
   -.01em -.01em .01em black;
 }
 
-#hut-to-hut-in-the-dolomites-card{
+#huts-in-the-dolomites-card{
   height: 176px;
   background: image-url('dolomites.jpg') center / cover;
   color: white;
@@ -237,4 +355,75 @@ text-align: left;
   .05em -.05em .05em black,
   -.01em  .01em .01em black,
   -.01em -.01em .01em black;
+}
+
+#yosemite-granite-card{
+  height: 176px;
+  background: image-url('yosemite.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#climbing-the-high-atlas-card{
+  height: 176px;
+  background: image-url('atlas.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#hunting-in-montana-card{
+  height: 176px;
+  background: image-url('montana.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#outback-big-game-card{
+  height: 176px;
+  background: image-url('buffalo.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#riviera-diving-card{
+  height: 176px;
+  background: image-url('positano.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#the-navua-river-card{
+  height: 176px;
+  background: image-url('navua.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#whole-card{
+  border: solid 1px #363636;
+  border-radius: 5px 5px 5px 5px;
 }

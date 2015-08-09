@@ -5,13 +5,14 @@ article {
 
 #title{
   text-align: center;
-  color: white;
-  font-family: YellowTail, cursive;
-  text-shadow:
-  0.1em  .1em .1em black,
-  .05em -.05em .05em black,
-  -.01em  .01em .01em black,
-  -.01em -.01em .01em black;
+  font-family: 'Open Sans', cursive;
+  font-weight: bold;
+  color: rgba(14, 9, 8, 0.75);
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  background-color: rgba(243, 243, 243, 0.87);
+  padding: 5px;
+  margin: 25px 100px 10px 50px;
 }
 
 #hiking-card{
@@ -24,8 +25,6 @@ article {
         -.01em  .01em .01em black,
         -.01em -.01em .01em black;
       }
-
-
 
 #rafting-card{
       height: 176px;
@@ -71,7 +70,6 @@ article {
     -.01em -.01em .01em black;
 }
 
-
 #climbing-card{
     height: 176px;
     background: image-url('climbing.jpg') center / cover;
@@ -83,9 +81,6 @@ article {
     -.01em -.01em .01em black;
 }
 
-
-
-
   .demo-card-wide > .mdl-card_.mdl-card__title-text {
     color: white;
     text-shadow:
@@ -94,3 +89,8 @@ article {
     -.01em  .01em .01em black,
     -.01em -.01em .01em black;
   }
+
+ #whole-card {
+   border: solid 1px #363636;
+   border-radius: 5px 5px 5px 5px;
+ }

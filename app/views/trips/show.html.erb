@@ -8,7 +8,7 @@
   <div class="mdl-grid">
     <div class="description mdl-cell mdl-cell--7-col">
 
-      <p>
+      <p id="trip-description">
         <%= @trip.description %>
       </p>
 
@@ -19,10 +19,11 @@
       <table id="extra-table" class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
       <thead>
         <tr>
-          <th id = "extras-heading" class="mdl-data-table__cell--non-numeric"></th>
+          <th id = "extras-heading" class="mdl-data-table__cell--non-numeric"> Extras </th>
 
         </tr>
       </thead>
+
 
       <tbody>
         <% @extras.each do |extra| %>

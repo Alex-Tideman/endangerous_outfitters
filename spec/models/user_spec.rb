@@ -12,7 +12,7 @@ RSpec.describe User, type: :model do
     end
   end
 
-    def create_user
-        User.create(username: "Bob", password:"123")
-    end
+  def create_user
+    User.create(username: "Bob", password:"123")
+  end
 end

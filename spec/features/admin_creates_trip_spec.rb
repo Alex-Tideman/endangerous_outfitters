@@ -16,7 +16,7 @@ feature "Admin features" do
         click_link "Create a New Trip"
 
         expect(current_path).to eq(new_admin_trip_path)
-        within('h2') { expect(page).to have_content('Create a New Trip') }
+        within("h2") { expect(page).to have_content("Create a New Trip") }
       end
     end
   end

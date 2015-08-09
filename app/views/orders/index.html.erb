@@ -1,0 +1,7 @@
+<h1>Orders</h1>
+<%@orders.each do|order| %>
+<% order.order_trips.each do |order_trip| %>
+<%= order_trip.trip.name %>
+<%= order_trip.trip.total_cost %>
+<% end %>
+<% end %>

@@ -38,4 +38,3 @@ Extra.create(name: "Giraffe Racing", description: "description", cost: 6000.00)
 User.create(username: "admin", password: "admin", role: 1)
 User.create(username: "Alex", password: "123")
 User.create(username: "Adam", password: "123")
-

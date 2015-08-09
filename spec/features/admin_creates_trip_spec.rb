@@ -1,11 +1,10 @@
-require 'rails_helper'
+require "rails_helper"
 
 feature "Admin features" do
-
   describe "admin creates a trip" do
     context "admin dashboard" do
       it "has a link to create a trip" do
-        User.create(username: "Alex", password:"password", role: 1)
+        User.create(username: "Alex", password: "password", role: 1)
         visit root_url
 
         click_link "Login"
@@ -17,7 +16,7 @@ feature "Admin features" do
         click_link "Create a New Trip"
 
         expect(current_path).to eq(new_admin_trip_path)
-        expect(page).to have_content "Create a New Trip"
+        within('h2') { expect(page).to have_content('Create a New Trip') }
       end
     end
   end
@@ -30,4 +29,3 @@ feature "Admin features" do
 
 
 end
-

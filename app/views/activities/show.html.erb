@@ -5,7 +5,7 @@
 
     <% @trips.each do |trip| %>
 
-        <div class="mdl-cell mdl-cell--4-col"><div class="mdl-card mdl-shadow--2dp demo-card-wide">
+        <div class="mdl-cell mdl-cell--4-col"><div id="whole-card" class="mdl-card mdl-shadow--2dp demo-card-wide">
           <div class="mdl-card__title">
             <h3 class="mdl-card__title-text"><%= trip.destination.continent %></h3>
           </div>
@@ -24,8 +24,4 @@
 
     <% end %>
   </div>
-
-
-
-
 </article>

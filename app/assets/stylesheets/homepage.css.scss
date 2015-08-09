@@ -91,7 +91,7 @@
   // display: none;
   position: absolute;
   left: 2.0em;
-  bottom: 0em;
+  bottom: -1.25em;
   text-shadow:
   0.05em  .05em .05em black,
   .01em -.01em .01em black,
@@ -108,9 +108,9 @@
     .01em -.01em .01em black,
     -.01em  .01em .01em black,
     -.01em -.01em .01em black;
-    position: absolute;
-    top: 75%;
-  // margin-left: 20%;
+    // position: absolute;
+    // top: 75%;
+  // padding-top: -90%;
 }
 
 #airplane-text{
@@ -129,7 +129,7 @@
 
 .icon-parachute{
   color: whitesmoke;
-  font-size: 10.5em;
+  font-size: 10.3em;
   // margin-left: 20%;
   // margin-right: 20%;
   text-shadow:
@@ -146,7 +146,7 @@
   // display: none;
   position: absolute;
   left: 17.5em;
-  bottom: .5em;
+  bottom: -0.5em;
   margin-bottom: -1%;
   // margin-left: -37%;
   text-shadow:
@@ -182,7 +182,7 @@ a:hover .icon-parachute{
 .icons li{
   display: inline;
 list-style-type: none;
-margin-right: 20.5%;
+margin-right: 18.5%;
 margin-left: 5%;
 // margin-top: 20%;
 }

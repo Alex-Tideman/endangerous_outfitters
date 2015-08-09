@@ -1,7 +1,31 @@
-<h1>Orders</h1>
+<!-- <h1>Orders</h1>
 <%@orders.each do|order| %>
 <% order.order_trips.each do |order_trip| %>
 <%= order_trip.trip.name %>
 <%= order_trip.trip.total_cost %>
 <% end %>
-<% end %>
+<% end %> -->
+<table class="mdl-data-table mdl-js-data-table order-table">Orders
+  <thead>
+    <tr>
+      <th>Order Number</th>
+      <th class="mdl-data-table__cell--non-numeric">Trip</th>
+      <th>Total Cost</th>
+      <th class="mdl-data-table__cell--non-numeric">Date Ordered</th>
+      <!-- <th class="mdl-data-table__cell--non-numeric">Description</th> -->
+    </tr>
+  </thead>
+  <tbody>
+    <%@orders.each do|order| %>
+    <% order.order_trips.each do |order_trip| %>
+    <tr>
+      <td><%= order.id %></td>
+      <td class="mdl-data-table__cell--non-numeric"><%= order_trip.trip.name %></td>
+      <td><%= order_trip.trip.total_cost %></td>
+      <td class="mdl-data-table__cell--non-numeric"><%= order_trip.trip.created_at %></td>
+      <!-- <td class="mdl-data-table__cell--non-numeric"><%= order_trip.trip.description %></td> -->
+    </tr>
+    <% end %>
+    <% end %>
+  </tbody>
+</table>

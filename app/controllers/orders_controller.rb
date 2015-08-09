@@ -7,6 +7,7 @@ class OrdersController < ApplicationController
         OrderTrip.create(trip_id: trip_id, order_id: order.id)
       end
       session[:cart] = {}
+      flash[:notice] = "Order was successfully placed!"
       redirect_to orders_path
     else
       flash[:notice] = "You must be logged in to checkout!"

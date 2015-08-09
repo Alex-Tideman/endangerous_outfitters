@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root "welcome#index"
 
-  resources :trips, only: [:index, :show, :create]
+  resources :trips, only: [:index, :show]
 
   namespace :admin do
     resources :users, :destinations, :activities, :trips, :extras

@@ -7,7 +7,6 @@
       <%= f.text_area :description %>
       <%= f.label :trip_cost, "Price:" %>
       <%= f.number_field :trip_cost %>
-      <%= f.hidden_field :total_cost, value: :trip_cost %>
       <%= f.label :destination_id, "Destination:" %>
       <%= select_tag(:destination_id, options_for_select( Destination.all.map{ |d| ["#{d.continent}", d.id] } )) %>
       <%= f.label :destination_id, "Activity:" %>

@@ -12,7 +12,6 @@ class SessionsController < ApplicationController
         redirect_to admin_dashboard_path
       else
         flash[:notice] = "Successful login!"
-        session[:user_id] = @user.id
         redirect_to root_path
       end
     else

@@ -2,14 +2,28 @@
   <div class="cart-picture">
     <img>
   </div>
+  <h3>Cart</h3>
+  <div class="cart-container">
   <div class="demo-grid-2 mdl-grid">
     <div class="mdl-cell mdl-cell--6-col">
       <table id="cart-table" class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+        <thead>
+        <tr>
+          <th id="quantity-col">Quantity</th>
+          <th id="quantity-col">+/-</th>
+          <th id="name-col">Name</th>
+          <th id="continent-col" class="mdl-data-table__cell--non-numeric">Location</th>
+          <th id="activity-col">Activity</th>
+          <th id="extras-col" class="mdl-data-table__cell--non-numeric">Extras</th>
+          <th id="price-col">Price</th>
+          <th id="action-col">Action</th>
+        </tr>
+        </thead>
         <tbody>
-
         <% @cart_trips.each do |trip| %>
             <tr>
-              <td class="quantity"><%= trip.quantity %><%= button_to "-", decrement_cart_trip_path(trip) %></button>
+              <td class="quantity"><%= trip.quantity %></td>
+              <td><%= button_to "-", decrement_cart_trip_path(trip) %></button>
                 <%= button_to "+", increment_cart_trip_path(trip) %></td>
               <td id="trip-link" class="name mdl-data-table__cell--non-numeric"></button><%= link_to "#{trip.name}", trip_path(trip) %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.destination.continent %></td>
@@ -20,17 +34,6 @@
             </tr>
         <% end %>
         </tbody>
-        <thead>
-        <tr>
-          <th>Quantity</th>
-          <th>Name</th>
-          <th class="mdl-data-table__cell--non-numeric">Location</th>
-          <th>Activity</th>
-          <th class="mdl-data-table__cell--non-numeric">Extras</th>
-          <th>Price</th>
-          <th></th>
-        </tr>
-        </thead>
       </table>
     </div>
     <div class="mdl-cell mdl-cell--6-col">
@@ -56,4 +59,6 @@
       </table>
     </div>
   </div>
+  </div>
 </div>
+

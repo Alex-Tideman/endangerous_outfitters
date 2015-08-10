@@ -1,0 +1,53 @@
+<article>
+  <h1 class="trips-header"><%= @trip.name %></h1>
+
+  <div class = "<%= @trip.name.split.join("-").downcase %>-trip-img">
+    <img>
+  </div>
+
+  <div class="mdl-grid">
+    <div class="description mdl-cell mdl-cell--7-col">
+
+      <p id="trip-description">
+        <%= @trip.description %>
+      </p>
+
+      <h3 class="trip-subheader"><%= @trip.trip_cost %></h3>
+    </div>
+
+    <div class="extras mdl-cell mdl-cell--5-col">
+      <% if @trip.extras.size > 0 %>
+    <table id="extra-table" class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+      <thead>
+        <tr>
+          <th id = "extras-heading" class="mdl-data-table__cell--non-numeric"> Extras </th>
+
+        </tr>
+      </thead>
+
+
+      <tbody>
+        <% @trip.extras.each do |extra| %>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric"><%= link_to extra.name%></td>
+          <td>$<%= extra.cost %></td>
+          <% end %>
+        </tr>
+
+          </tbody>
+    </table>
+      <% else %>
+          No extras
+      <% end %>
+    </div>
+  </div>
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--7-col"></div>
+    <div class="mdl-cell mdl-cell--5-col">
+      <%= link_to "Edit Trip", edit_admin_trip_path(trip_id: @trip.id), class: "call-to-action" %>
+    </div>
+    <div class="mdl-cell mdl-cell--5-col">
+      <%= link_to "Delete Trip", admin_trip_path(trip_id: @trip.id), method: :delete, class: "call-to-action" %>
+    </div>
+  </div>
+</article>

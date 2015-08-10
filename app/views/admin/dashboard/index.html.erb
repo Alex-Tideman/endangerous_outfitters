@@ -1,5 +1,4 @@
 <div class="admin_dashboard">
-<<<<<<< HEAD
   <article>
 
     <h1 id="title">Admin Dashboard</h1>
@@ -12,8 +11,7 @@
               <h3 class="mdl-card__title-text">Create</h3>
             </div>
             <div class="mdl-card__actions mdl-card--border">
-              <%= link_to "Create Trip", new_admin_trip_path, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>
-              <%= link_to "Create Activity", new_admin_activity_path, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>
+              <%= link_to "Create a Trip", new_admin_trip_path, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>
             </div>
           </div></div>
     </div>
@@ -23,20 +21,13 @@
       <div class="mdl-cell mdl-cell--4-col"><div id="whole-card" class="mdl-card mdl-shadow--2dp demo-card-wide">
 
         <div class= "mdl-card__title">
-          <h3 class="mdl-card__title-text">View</h3>
+          <h3 class="mdl-card__title-text">Edit</h3>
         </div>
         <div class="mdl-card__actions mdl-card--border">
-          <%= link_to "All Users", admin_users_path, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>
-          <%= link_to "All Destinations", admin_destinations_path, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>
-          <%= link_to "All Activities", admin_activities_path, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>
-          <%= link_to "All Trips", admin_trips_path, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>
+          <%= link_to "Edit a Trip", admin_trips_path, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>
         </div>
       </div></div>
     </div>
   </article>
 
-=======
-<h1>Admin Dashboard</h1>
-<%= link_to "Create a New Trip", new_admin_trip_path %>
->>>>>>> e83ea51dae289ad3ab5d507f6141c5d15f859c89
 </div>

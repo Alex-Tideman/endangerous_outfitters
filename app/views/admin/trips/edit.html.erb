@@ -1,0 +1,14 @@
+<article>
+  <h2>Update a Trip</h2>
+  <%= form_for(@trip, html: {multipart: true}) do |f| %>
+      <%= f.label :name, "Trip Name:" %>
+      <%= f.text_field :name %>
+      <%= f.label :description, "Description:" %>
+      <%= f.text_area :description %>
+      <%= f.label :trip_cost, "Price:" %>
+      <%= f.number_field :trip_cost %>
+      <%= f.label :image, "Pick a New Image" %>
+      <%= f.file_field :image %>
+      <%= f.submit "Create Trip" %>
+  <% end %>
+</article>

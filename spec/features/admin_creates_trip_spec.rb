@@ -15,7 +15,7 @@ feature "Admin features" do
     context "admin dashboard" do
       it "has a link to create a trip" do
         visit admin_dashboard_path
-        click_link "Create a New Trip"
+        click_link "Create a Trip"
 
         expect(current_path).to eq(new_admin_trip_path)
         within("h2") { expect(page).to have_content("Create a New Trip") }
@@ -29,7 +29,7 @@ feature "Admin features" do
         Activity.create(name: "Hiking", description: "We loven to do ze hikes.", image_url: "hiker.jpg" )
 
         visit admin_dashboard_path
-        click_link "Create a New Trip"
+        click_link "Create a Trip"
         fill_in "Trip Name:", with: "Awesome Trip of Awesome"
         fill_in "Description:", with: "The best trip ever. Here's a description."
         fill_in "Price:", with: 20000.00

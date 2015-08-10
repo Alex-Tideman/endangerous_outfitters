@@ -33,15 +33,15 @@ feature "Admin features" do
         fill_in "Trip Name:", with: "Awesome Trip of Awesome"
         fill_in "Description:", with: "The best trip ever. Here's a description."
         fill_in "Price:", with: 20000.00
-        select("Asia", from: "destination_id")
-        select("Hiking", from: "activity_id")
+        select("Asia", from: "Destination")
+        # select("Hiking", from: "Activity")
         # page.attach_file("image_url", "hiker.jpg")
         click_button "Create Trip"
         expect(current_path).to eq(trips_path)
       end
 
       it "doesn't create a trip with invalid params" do
-        # A trip must have a title, description and trip cost / total cost.
+        # A trip must have a title, description and trip cost.
         # A trip must have a destination.
         # A trip must have an activity.
         # The title and description cannot be empty.

@@ -110,9 +110,23 @@
   -.01em -.01em .01em black;
 }
 
+#admin-whole-card{
+  height: 120px;
+  width:200px;
+}
+
+#admin-whole-card h3{
+  font-size: 12px;
+}
+
 .trip-index-card {
   height: 200px;
-  width:400px;
+  width: 400px;
+}
+
+.admin-trip-index-card {
+  height: 100px;
+  width:200px;
 }
 
 #whole-card{

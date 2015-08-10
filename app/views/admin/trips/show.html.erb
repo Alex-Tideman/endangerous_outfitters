@@ -1,8 +1,8 @@
 <article>
   <h1 class="trips-header"><%= @trip.name %></h1>
 
-  <div class = "<%= @trip.name.split.join("-").downcase %>-trip-img">
-    <img>
+  <div class = "trip-img">
+    <%= image_tag @trip.image, class: "trip-show-card" %>
   </div>
 
   <div class="mdl-grid">
@@ -42,11 +42,8 @@
     </div>
   </div>
   <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--6-col">
+    <div class="mdl-cell mdl-cell--3-col">
       <%= link_to "Edit Trip", edit_admin_trip_path(trip_id: @trip.id), class: "call-to-action" %>
-    </div>
-    <div class="mdl-cell mdl-cell--6-col">
-      <%= link_to "Delete Trip", admin_trip_path(trip_id: @trip.id), method: :delete, class: "call-to-action" %>
     </div>
   </div>
 </article>

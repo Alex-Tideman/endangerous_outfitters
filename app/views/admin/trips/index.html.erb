@@ -11,7 +11,8 @@
           <div class= "mdl-card__title">
             <h3 class="mdl-card__title-text"><%= trip.name %></h3>
           </div>
-          <div id = "<%= trip.name.split.join("-").downcase %>-card">
+          <div class="trips-card">
+            <%= image_tag trip.image, class: "trip-index-card" %>
           </div>
           <div class="mdl-card__actions mdl-card--border">
             <%= link_to "View Trip", admin_trip_path(trip.id), class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>

@@ -2,7 +2,7 @@
 <%@orders.each do|order| %>
 <% order.order_trips.each do |order_trip| %>
 <%= order_trip.trip.name %>
-<%= order_trip.trip.total_cost %>
+<%= number_to_currency(order_trip.trip.total_cost) %>
 <% end %>
 <% end %> -->
 <table class="mdl-data-table mdl-js-data-table order-table">Orders

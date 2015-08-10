@@ -1,5 +1,5 @@
 class Trip < ActiveRecord::Base
-  validates :trip_cost, :total_cost, :name, :destination_id,
+  validates :trip_cost, :name, :destination_id,
             :activity_id, presence: true
   validates :name, uniqueness: true
   validates :name, length: { maximum: 25 }
@@ -32,14 +32,6 @@ class Trip < ActiveRecord::Base
                       # :bucket => 'oregon-sale'
     validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png"]
 
-  end
-
-  def set_extras_cost
-    self.extras.cost.reduce(:+)
-  end
-
-  def self.total_cost
-    self.trip_cost + self.set_extras_cost
   end
 
 

@@ -10,7 +10,6 @@ class Admin::TripsController < Admin::BaseController
 
   def create
     @trip = Trip.new(trip_params)
-    @trip.set_total_cost_to_trip_cost
     if @trip.save
       flash[:notice] = "Trip created!"
       redirect_to trips_path

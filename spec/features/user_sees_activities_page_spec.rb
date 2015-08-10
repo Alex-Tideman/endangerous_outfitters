@@ -32,7 +32,7 @@ describe 'User features' do
     expect(page).to have_content("Cart")
     click_link "Cart"
 
-    expect(page).to have_content("Check Out")
+    expect(page).to have_content("Checkout")
     expect(current_path).to eq(cart_path)
   end
 
@@ -42,7 +42,7 @@ describe 'User features' do
     expect(page).to have_content("Cart")
     click_link "Cart"
 
-    expect(page).to have_content("Check Out")
+    expect(page).to have_content("Checkout")
 
     click_link "Endangerous Outfitters"
 

@@ -49,16 +49,16 @@
     padding: 50px;
 }
 
-.destination-col {
-    padding: 15%;
-    margin-left: 20%;
-}
+// .destination-col {
+//     padding: 15%;
+//     margin-left: 20%;
+// }
 
-.activity-col {
-    padding: 15%;
-    margin-left: 20%;
-    margin-top: 3.5%;
-}
+// .activity-col {
+//     padding: 15%;
+//     margin-left: 20%;
+//     margin-top: 3.5%;
+// }
 
 .destination-col a{
   text-decoration: none;
@@ -73,6 +73,8 @@
 .icon-globe{
   color: whitesmoke;
   font-size: 12em;
+  // margin-right: 28%;
+  // margin-left: 10%;
   text-shadow:
     0.05em  .05em .05em black,
     .01em -.01em .01em black,
@@ -81,10 +83,42 @@
 }
 
 #globe-text{
-  font-size: 2.7em;
+  font-size: 2.5em;
+  // margin-left: -37%;
+
+  // position: absolute;
+  // top: 30%;
+  // display: none;
   position: absolute;
-  left: 5.5em;
-  bottom: -3em;
+  left: 2.0em;
+  bottom: -1.25em;
+  text-shadow:
+  0.05em  .05em .05em black,
+  .01em -.01em .01em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+
+}
+
+.icon-airplane{
+  color: whitesmoke;
+  font-size: 14em;
+  text-shadow:
+    0.05em  .05em .05em black,
+    .01em -.01em .01em black,
+    -.01em  .01em .01em black,
+    -.01em -.01em .01em black;
+    // position: absolute;
+    // top: 75%;
+  // padding-top: -90%;
+}
+
+#airplane-text{
+  font-size: 2.5em;
+  // display: none;
+  position: absolute;
+  left: 33em;
+  bottom: 0em;
   text-shadow:
   0.05em  .05em .05em black,
   .01em -.01em .01em black,
@@ -95,7 +129,9 @@
 
 .icon-parachute{
   color: whitesmoke;
-  font-size: 10.5em;
+  font-size: 10.3em;
+  // margin-left: 20%;
+  // margin-right: 20%;
   text-shadow:
     0.05em  .05em .05em black,
     .01em -.01em .01em black,
@@ -106,10 +142,13 @@
 }
 
 #para-text{
-  font-size: 2.7em;
+  font-size: 2.5em;
+  // display: none;
   position: absolute;
-  left: 21.5em;
-  bottom: -3em;
+  left: 17.5em;
+  bottom: -0.5em;
+  margin-bottom: -1%;
+  // margin-left: -37%;
   text-shadow:
   0.05em  .05em .05em black,
   .01em -.01em .01em black,
@@ -121,24 +160,33 @@ a:hover .icon-globe{
   color: #166CEC;
 }
 
-a:hover #globe-text{
-  display: inline;
+a:hover #globe-text{// display: inline;
 
 }
 
 a:hover #para-text{
-  display: inline;
+  // display: inline;
 
 }
+
+a:hover .icon-airplane{
+  color: #019D5A;
+}
+
+
 
 a:hover .icon-parachute{
   color: #D94530;
 }
 
-.icons {
+.icons li{
+  display: inline;
 list-style-type: none;
+margin-right: 18.5%;
+margin-left: 5%;
+// margin-top: 20%;
 }
-  
+
 .button-text {
     font-size: 36px;
 }
@@ -152,6 +200,7 @@ list-style-type: none;
 .home-mission {
     text-align: center;
     height: 400px;
+    margin-top: 8%;
 }
 
 .home-mission p {

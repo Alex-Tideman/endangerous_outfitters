@@ -34,8 +34,12 @@ class Trip < ActiveRecord::Base
 
   end
 
-  def set_total_cost_to_trip_cost
-    self.total_cost = self.trip_cost
+  def set_extras_cost
+    self.extras.cost.reduce(:+)
+  end
+
+  def self.total_cost
+    self.trip_cost + self.set_extras_cost
   end
 
 

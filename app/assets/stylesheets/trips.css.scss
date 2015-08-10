@@ -164,7 +164,7 @@
   overflow: hidden;
   position: relative;
   background: image-url('navua.jpg');
-  background-position: 0 -200px;
+  background-position: 0 -150px;
   background-size: cover;
   border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
@@ -188,6 +188,40 @@
   position: relative;
   background: image-url('positano.jpg');
   background-position: 0 -220px;
+  background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
+}
+
+.the-zambezi-river-trip-img {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('zambezi.jpg'), no-repeat;
+  background-position: 0 -150px;
+  background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
+}
+
+.mexican-scuba-diving-trip-img {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('cancun.jpg'), no-repeat;
+  background-size: cover;
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin: 15px 15px 15px 15px
+}
+
+.tianmen-mountains-trip-img {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  background: image-url('tianmen.jpg'), no-repeat;
   background-size: cover;
   border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
@@ -415,6 +449,39 @@
 #the-navua-river-card{
   height: 176px;
   background: image-url('navua.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#tianmen-mountains-card{
+  height: 176px;
+  background: image-url('tianmen.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#the-zambezi-river-card{
+  height: 176px;
+  background: image-url('zambezi.jpg') center / cover;
+  color: white;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#mexican-scuba-diving-card{
+  height: 176px;
+  background: image-url('cancun.jpg') center / cover;
   color: white;
   text-shadow:
   0.1em  .1em .1em black,

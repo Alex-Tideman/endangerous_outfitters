@@ -64,6 +64,16 @@ Trip.create(destination_id: 3, activity_id: 3, total_cost: 100000, trip_cost: 20
 Trip.create(destination_id: 6, activity_id: 6, total_cost: 300000, trip_cost: 250000,
             name: "Outback Big Game", image_url: "buffalo.jpg",
             description: "Go down under and take on some big game in the rugged Australian Outback.")
+Trip.create(destination_id: 5, activity_id: 2, total_cost: 7000, trip_cost: 7000,
+            name: "The Zambezi River", image_url: "zambezi.jpg",
+            description: "Rafting down Zambia's Zambezi River is a world class adventure. From the big warm water rapids, to the stunning white sandy beaches, this trip rates among some of the most exciting in the world.")
+Trip.create(destination_id: 1, activity_id: 3, total_cost: 12500, trip_cost: 11500,
+            name: "Mexican Scuba Diving", image_url: "cancun.jpg",
+            description: "Experience some of the bluest waters.")
+Trip.create(destination_id: 4, activity_id: 5, total_cost: 65000, trip_cost: 50000,
+            name: "Tianmen Mountains", image_url: "tianmen.jpg",
+            description: "The only thing more exhilarating than the climb to the top is the fall to the bottom in this remote Chinese valley.")
+
 
 Extra.create(name: "Monkey Banana-Eating Contest", description: "description", cost: 2000.00)
 Extra.create(name: "Shark Slalom Surfing", description: "description", cost: 4000.00)
@@ -74,3 +84,25 @@ Extra.create(name: "Giraffe Racing", description: "description", cost: 6000.00)
 User.create(username: "admin", password: "admin", role: 1)
 User.create(username: "Alex", password: "123")
 User.create(username: "Adam", password: "123")
+User.create(username: "Max", password: "Max")
+User.create(username: "David", password: "David")
+
+Review.create(name: "Arnold Schwarzenegger",
+              content: "Ahftah trahvelig with Endangerous Ouhtfittahs, I hahve one thing to sahy...I'll be bahck.",
+              occupation: "Movie Star, Action Hero, Governator, Terminator, Mr. Universe", image_url: "arnold.jpg")
+Review.create(name: "Bruce Willis",
+              content: "Yippee Ki Yay motherf****r, I would recommend Endangerous Outfitters to any action hero worth his salt.",
+              occupation: "Movie Star, Action Hero", image_url: "bruce.jpg")
+Review.create(name: "Hulk Hogan",
+              content: "Endangerous Outfitters is running WILD brother! Hulkmania for life!",
+              occupation: "Professional Wrestler, Reality Star", image_url: "hulk.jpg")
+Review.create(name: "Sylvester Stallone",
+              content: "Yo Adrian! This was the best trip we have every been on!",
+              occupation: "Philadelphia Icon, Italian Stallion", image_url: "rambo.jpg")
+Review.create(name: "Bruce Lee",
+              content: "Endangerous Outfitters is so great that I came back from the dead just to go on one more trip.",
+              occupation: "Ninja Master, Chinese Secret Agent", image_url: "lee.jpg")
+Review.create(name: "The Rock",
+              content: "Endangerous Outfitters smells what the Rock is cookin!",
+              occupation: "Movie Star, Professional Wrestler", image_url: "rock.jpg")
+

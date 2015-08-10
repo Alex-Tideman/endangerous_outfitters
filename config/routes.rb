@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   resources :trips, only: [:index, :show]
 
+  get '/profile', to: 'users#show'
+
   resources :activities, only: [:index, :show]
 
   resources :destinations, only: [:index, :show]

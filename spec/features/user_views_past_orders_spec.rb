@@ -9,8 +9,10 @@ describe "User can view past orders" do
     fill_in "Password", with: user.password
     click_button "Login"
 
-    expect(current_path).to eq('/adam')
-    expect(page).to have_content("Orders for adam")
+    click_link user.username
+
+    expect(current_path).to eq('/profile')
+    expect(page).to have_content("View Orders for adam")
   end
 
   xit "displays orders belonging to this user" do

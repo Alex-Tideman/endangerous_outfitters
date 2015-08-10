@@ -4,7 +4,7 @@ class OrdersController < ApplicationController
     if current_user
       order = current_user.orders.create
       session[:cart].each do |trip_id, quantity|
-        OrderTrip.create(trip_id: trip_id, order_id: order.id)
+        OrderTrip.create(trip_id: trip_id, order_id: order.id, quantity: quantity)
       end
       session[:cart] = {}
       flash[:notice] = "Order was successfully placed!"

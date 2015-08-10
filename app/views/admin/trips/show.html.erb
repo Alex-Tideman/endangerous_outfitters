@@ -42,11 +42,10 @@
     </div>
   </div>
   <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--7-col"></div>
-    <div class="mdl-cell mdl-cell--5-col">
+    <div class="mdl-cell mdl-cell--6-col">
       <%= link_to "Edit Trip", edit_admin_trip_path(trip_id: @trip.id), class: "call-to-action" %>
     </div>
-    <div class="mdl-cell mdl-cell--5-col">
+    <div class="mdl-cell mdl-cell--6-col">
       <%= link_to "Delete Trip", admin_trip_path(trip_id: @trip.id), method: :delete, class: "call-to-action" %>
     </div>
   </div>

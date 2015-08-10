@@ -132,7 +132,7 @@ trip16.image = image16
 trip16.save
 
 image17 = File.open('app/assets/images/cancun.jpg')
-trip17 = Trip.new(destination_id: 6,activity_id: 6,name: "Mexican Scuba Diving",
+trip17 = Trip.new(destination_id: 1,activity_id: 6,name: "Mexican Scuba Diving",
                   description: "Experience some of the bluest waters.",
                   trip_cost: 22700.00)
 trip17.image = image17

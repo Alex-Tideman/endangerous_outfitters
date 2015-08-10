@@ -47,9 +47,22 @@ ActiveRecord::Schema.define(version: 20150808142458) do
     t.text     "content"
     t.string   "occupation"
     t.string   "image_url"
+
+  create_table "order_trips", force: :cascade do |t|
+    t.integer "order_id"
+    t.integer "trip_id"
+  end
+
+  add_index "order_trips", ["order_id"], name: "index_order_trips_on_order_id", using: :btree
+  add_index "order_trips", ["trip_id"], name: "index_order_trips_on_trip_id", using: :btree
+
+  create_table "orders", force: :cascade do |t|
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_index "orders", ["user_id"], name: "index_orders_on_user_id", using: :btree
 
   create_table "trip_extras", force: :cascade do |t|
     t.integer "trip_id"
@@ -82,6 +95,9 @@ ActiveRecord::Schema.define(version: 20150808142458) do
     t.datetime "updated_at",                  null: false
   end
 
+  add_foreign_key "order_trips", "orders"
+  add_foreign_key "order_trips", "trips"
+  add_foreign_key "orders", "users"
   add_foreign_key "trip_extras", "extras"
   add_foreign_key "trip_extras", "trips"
   add_foreign_key "trips", "activities"

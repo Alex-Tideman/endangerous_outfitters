@@ -16,11 +16,11 @@
  */
  @font-face {
 	font-family: 'icomoon';
-	src:font-url('icomoon.eot?-adig3h');
-	src:font-url('icomoon.eot?#iefix-adig3h') format('embedded-opentype'),
-		font-url('icomoon.ttf?-adig3h') format('truetype'),
-		font-url('icomoon.woff?-adig3h') format('woff'),
-		font-url('icomoon.svg?-adig3h#icomoon') format('svg');
+	src:font-url('icomoon.eot?vlkd6h');
+	src:font-url('icomoon.eot?#iefixvlkd6h') format('embedded-opentype'),
+		font-url('icomoon.ttf?vlkd6h') format('truetype'),
+		font-url('icomoon.woff?vlkd6h') format('woff'),
+		font-url('icomoon.svg?vlkd6h#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -34,13 +34,31 @@
 	text-transform: none;
 	line-height: 1;
 
+	/* Enable Ligatures ================ */
+	letter-spacing: 0;
+	-webkit-font-feature-settings: "liga";
+	-moz-font-feature-settings: "liga=1";
+	-moz-font-feature-settings: "liga";
+	-ms-font-feature-settings: "liga" 1;
+	-o-font-feature-settings: "liga";
+	font-feature-settings: "liga";
+
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-airplane:before {
+	content: "\e603";
+}
 .icon-parachute:before {
 	content: "\e602";
+}
+.icon-flight:before {
+	content: "\e1d1";
+}
+.icon-shopping-cart:before {
+	content: "\e604";
 }
 .icon-paw:before {
 	content: "\f1b0";

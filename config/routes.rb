@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   end
   get '/admin/dashboard', to: 'admin/dashboard#index'
   resources :users, only: [:new, :create]
+  get '/profile', to: 'users#show'
   resources :activities, only: [:index, :show]
   resources :destinations, only: [:index, :show]
   resources :cart_trips, only: [:create, :destroy] do

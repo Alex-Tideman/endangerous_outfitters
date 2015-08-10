@@ -26,7 +26,7 @@ describe 'User features' do
 
     expect(page).to have_content("Destinations")
 
-    click_link "The Destination"
+    first(:link, "Destinations").click
     expect(page).to have_content("South America")
     expect(current_path).to eq(destinations_path)
   end
@@ -36,7 +36,7 @@ describe 'User features' do
     visit root_path
 
     expect(page).to have_content("Activities")
-    click_link "The Activity"
+    first(:link, "Activities").click
 
     expect(page).to have_content("Hiking")
     expect(current_path).to eq(activities_path)

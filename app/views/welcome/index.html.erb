@@ -36,39 +36,27 @@
       <div class="bubble">
         <h4>Trip Reviews</h4>
         <div class="bubble-text">
-          <div class="demo-grid-2 mdl-grid">
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="mdl-card mdl-shadow--2dp demo-card-square-reviews">
-                <div class="mdl-card__title mdl-card--expand">
-                  <h2 class="mdl-card__title-text">Hulk Hogan</h2>
-                  <p>Text about Hulk's trip</p>
-                </div>
-                <div class="mdl-card__supporting-text">
-                  Professional Wrestler, Reality Star
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                    More Reviews
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="mdl-cell mdl-cell--6-col">
-              <div class="mdl-card mdl-shadow--2dp demo-card-square-reviews">
-                <div class="mdl-card__title mdl-card--expand">
-                  <h2 class="mdl-card__title-text">Bruce Willis</h2>
-                  <p>Text about Bruce's trip</p>
-                </div>
-                <div class="mdl-card__supporting-text">
-                  Hollywood Actor
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                    More Reviews
-                  </a>
-                </div>
-              </div>
-            </div>
+          <div class="demo-grid-1 mdl-grid">
+
+            <% @reviews.each do |review| %>
+
+                <div class="mdl-cell mdl-cell--4-col"><div id="whole-card" class="mdl-card mdl-shadow--2dp demo-card-wide" class="review-card">
+
+                  <div class= "mdl-card__title">
+                    <h3 class="mdl-card__title-text"><%= review.name %></h3>
+                  </div>
+                  <div id = "<%= review.name.split.join("-").downcase %>-card">
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <%= review.content %>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+
+                    <%= review.occupation %>
+                  </div>
+                </div></div>
+
+            <% end %>
           </div>
         </div>
       </div>

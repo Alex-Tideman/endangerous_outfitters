@@ -10,7 +10,8 @@ class TripsController < ApplicationController
 
   def create
     @trip = Trip.new(trip_params)
-    @trip.set_total_cost_to_trip_cost.set_trip_image_path
+    @trip.set_total_cost_to_trip_cost
+    @trip.set_trip_image_path
     if @trip.save
       flash[:notice] = "Trip created!"
       redirect_to trips_path

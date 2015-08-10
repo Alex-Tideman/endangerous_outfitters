@@ -8,11 +8,11 @@
       <%= f.label :trip_cost, "Price:" %>
       <%= f.number_field :trip_cost %>
       <%= f.label :destination_id, "Destination:" %>
-      <%= f.number_field :destination_id %>
-      <%#= select_tag(:destination_id, options_for_select( Destination.all.map{ |d| ["#{d.continent}", d.id] } )) %>
+      <%#= f.number_field :destination_id %>
+      <%= f.select(:destination_id, Destination.all.map{ |d| ["#{d.continent}", d.id ] } ) %>
       <%= f.label :destination_id, "Activity:" %>
-      <%= f.number_field :activity_id %>
-      <%#= select_tag(:activity_id, options_for_select( Activity.all.map{ |a| ["#{a.name}", a.id] } )) %>
+      <%#= f.number_field :activity_id %>
+      <%= f.select(:activity_id, Activity.all.map{ |a| ["#{a.name}", a.id] } ) %>
       <%= f.label :image, "Attach an Image" %>
       <%= f.file_field :image %>
       <%= f.submit "Create Trip" %>

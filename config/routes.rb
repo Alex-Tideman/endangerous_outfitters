@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   post '/cart_trips', to: 'cart_trips#create'
 
+  delete '/cart_trips', to: 'cart_trips#destroy'
+
   get '/cart', to: 'cart_trips#index'
 
   get '/login', to: "sessions#new"

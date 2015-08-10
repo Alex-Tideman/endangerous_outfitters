@@ -1,0 +1,21 @@
+<article>
+  <h2>Create a New Trip</h2>
+    <%= form_for([:admin,@trip], html: {multipart: true}) do |f| %>
+      <%= f.label :name, "Trip Name:" %>
+      <%= f.text_field :name %>
+      <%= f.label :description, "Description:" %>
+      <%= f.text_area :description %>
+      <%= f.label :trip_cost, "Price:" %>
+      <%= f.number_field :trip_cost %>
+      <%= f.label :destination_id, "Destination:" %>
+      <%#= f.number_field :destination_id %>
+      <%= f.select(:destination_id, Destination.all.map{ |d| ["#{d.continent}", d.id ] } ) %>
+      <%= f.label :destination_id, "Activity:" %>
+      <%#= f.number_field :activity_id %>
+      <%= f.select(:activity_id, Activity.all.map{ |a| ["#{a.name}", a.id] } )
+      %>
+      <%= f.label :image, "Attach an Image" %>
+      <%= f.file_field :image %>
+      <%= f.submit "Create Trip" %>
+  <% end %>
+</article>

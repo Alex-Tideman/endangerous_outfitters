@@ -19,60 +19,131 @@ Activity.create(name: "Climbing", description: "bloody hands.", image_url: "clim
 Activity.create(name: "Base Jumping", description: "WHOOO.", image_url: "basebase.jpg" )
 Activity.create(name: "Hunting", description: "BANG.", image_url: "hunting.jpg" )
 
-Trip.create(destination_id: 1, activity_id: 1, total_cost: 20000.00, trip_cost: 10000.00,
-            name: "Canadian Rockies", image_url: "canadian-rockies.jpg",
-            description: "Navigate the trails in Alberta and British Columbia.")
-Trip.create(destination_id: 6, activity_id: 3, total_cost: 21000.00, trip_cost: 21000.00,
-            name: "Great Barrier Reef", image_url: "barrier.jpg",
-            description: "Dive deep and experience on of the most colorful places on the planet.")
-Trip.create(destination_id: 5, activity_id: 6, total_cost: 100000.00, trip_cost: 200000.00,
-            name: "African Safari", image_url: "safari.jpg",
-            description: "Fulfill your dreams and capture the biggest game.")
-Trip.create(destination_id: 3, activity_id: 5, total_cost: 20000.00, trip_cost: 15000.00,
-            name: "Swiss Base Jumpers", image_url: "base.jpg",
-            description: "Take a gamble and dive off the cliffs of Lauterbrunnen.")
-Trip.create(destination_id: 4, activity_id: 4, total_cost: 10000.00, trip_cost: 8000.00,
-            name: "Climbing in Pakistan", image_url: "climbo.jpg",
-            description: "Summit some of the most beautiful and untouched mountains on Earth.")
-Trip.create(destination_id: 2, activity_id: 1, total_cost: 400000.00, trip_cost: 15000.00,
-            name: "Patagonia", image_url: "argentina.jpg",
-            description: "Travel to the end of the Earth and experience the strange beauty of Patagonia.")
-Trip.create(destination_id: 1, activity_id: 2, total_cost: 10000.00, trip_cost: 8000.00,
-            name: "The Colorado Rapids", image_url: "river.jpg",
-            description: "Check an item off your bucket list with this once in a lifetime trip down the Colorado River.")
-Trip.create(destination_id: 6, activity_id: 5, total_cost: 30000.00, trip_cost: 25000.00,
-            name: "Base Jumping the Fjords", image_url: "basez.jpg",
-            description: "Performing the most daring of stunts in the most isolated of places.")
-Trip.create(destination_id: 3, activity_id: 1, total_cost: 117000.00, trip_cost: 6000.00,
-            name: "Huts in the Dolomites", image_url: "dolomites.jpg",
-            description: "Experience the old world culture of Northern Italy.")
-Trip.create(destination_id: 1, activity_id: 4, total_cost: 23000.00, trip_cost: 21000,
-            name: "Yosemite Granite", image_url: "yosemite.jpg",
-            description: "Experience the world's natural playground and climb the classic Yosemite granite domes.")
-Trip.create(destination_id: 5, activity_id: 4, total_cost: 90500, trip_cost: 55000,
-            name: "Climbing the High Atlas", image_url: "atlas.jpg",
-            description: "Spend your time in the thin air of the High Atlas Mountains in Northern Morocco. ")
-Trip.create(destination_id: 1, activity_id: 6, total_cost: 83000, trip_cost: 60000,
-            name: "Hunting in Montana", image_url: "montana.jpg",
-            description: "Experience one of the most vibrant displays of wildlife in the continental United States.")
-Trip.create(destination_id: 6, activity_id: 2, total_cost: 45000, trip_cost: 10000,
-            name: "The Navua River", image_url: "navua.jpg",
-            description: "What's that? You didn't know that the tiny island of Fiji had such awesome river rafting? Well it does! Ride these rapids 65 kilometers to the south coast.")
-Trip.create(destination_id: 3, activity_id: 3, total_cost: 100000, trip_cost: 20000,
-            name: "Riviera Diving", image_url: "positano.jpg",
-            description: "See the fishes below the water, eat the fishes above the water in this Italian getaway.")
-Trip.create(destination_id: 6, activity_id: 6, total_cost: 300000, trip_cost: 250000,
-            name: "Outback Big Game", image_url: "buffalo.jpg",
-            description: "Go down under and take on some big game in the rugged Australian Outback.")
-Trip.create(destination_id: 5, activity_id: 2, total_cost: 7000, trip_cost: 7000,
-            name: "The Zambezi River", image_url: "zambezi.jpg",
-            description: "Rafting down Zambia's Zambezi River is a world class adventure. From the big warm water rapids, to the stunning white sandy beaches, this trip rates among some of the most exciting in the world.")
-Trip.create(destination_id: 1, activity_id: 3, total_cost: 12500, trip_cost: 11500,
-            name: "Mexican Scuba Diving", image_url: "cancun.jpg",
-            description: "Experience some of the bluest waters.")
-Trip.create(destination_id: 4, activity_id: 5, total_cost: 65000, trip_cost: 50000,
-            name: "Tianmen Mountains", image_url: "tianmen.jpg",
-            description: "The only thing more exhilarating than the climb to the top is the fall to the bottom in this remote Chinese valley.")
+image1 = File.open('app/assets/images/canadian-rockies.jpg')
+trip1 = Trip.new(destination_id: 1,activity_id: 1,name: "Canadian Rockies",
+                 description: "Navigate the trails in Alberta and British Columbia.",
+                 trip_cost: 10000.00)
+trip1.image = image1
+trip1.save
+
+image2 = File.open('app/assets/images/barrier.jpg')
+trip2 = Trip.new(destination_id: 6,activity_id: 3,name: "Great Barrier Reef",
+                 description: "Dive deep and experience on of the most colorful places on the planet.",
+                 trip_cost: 21000.00)
+trip2.image = image2
+trip2.save
+
+image3 = File.open('app/assets/images/safari.jpg')
+trip3 = Trip.new(destination_id: 5,activity_id: 6,name: "African Safari",
+                 description: "Fulfill your dreams and capture the biggest game.",
+                 trip_cost: 15800.00)
+trip3.image = image3
+trip3.save
+
+image4 = File.open('app/assets/images/base.jpg')
+trip4 = Trip.new(destination_id: 3,activity_id: 5,name: "Swiss Base Jumpers",
+                 description: "Take a gamble and dive off the cliffs of Lauterbrunnen.",
+                 trip_cost: 22550.00)
+trip4.image = image4
+trip4.save
+
+image5 = File.open('app/assets/images/climbo.jpg')
+trip5 = Trip.new(destination_id: 4,activity_id: 4,name: "Climbing in Pakistan",
+                 description: "Summit some of the most beautiful and untouched mountains on Earth.",
+                 trip_cost: 7850.00)
+trip5.image = image5
+trip5.save
+
+image6 = File.open('app/assets/images/argentina.jpg')
+trip6 = Trip.new(destination_id: 2,activity_id: 1,name: "Patagonia",
+                 description: "Travel to the end of the Earth and experience the strange beauty of Patagonia.",
+                 trip_cost: 36250.00)
+trip6.image = image6
+trip6.save
+
+image7 = File.open('app/assets/images/river.jpg')
+trip7 = Trip.new(destination_id: 1,activity_id: 2,name: "The Colorado Rapids",
+                 description: "Check an item off your bucket list with this once in a lifetime trip down the Colorado River.",
+                 trip_cost: 9550.00)
+trip7.image = image7
+trip7.save
+
+image8 = File.open('app/assets/images/basez.jpg')
+trip8 = Trip.new(destination_id: 6,activity_id: 5,name: "Base Jumping the Fjords",
+                 description: "Performing the most daring of stunts in the most isolated of places.",
+                 trip_cost: 38900.00)
+trip8.image = image8
+trip8.save
+
+image9 = File.open('app/assets/images/dolomites.jpg')
+trip9 = Trip.new(destination_id: 3,activity_id: 1,name: "Huts in the Dolomites",
+                 description: "Experience the old world culture of Northern Italy.",
+                 trip_cost: 9400.00)
+trip9.image = image9
+trip9.save
+
+image10 = File.open('app/assets/images/yosemite.jpg')
+trip10 = Trip.new(destination_id: 1,activity_id: 4,name: "Yosemite Granite",
+                 description: "Experience the world's natural playground and climb the classic Yosemite granite domes.",
+                 trip_cost: 21500.00)
+trip10.image = image10
+trip10.save
+
+image11 = File.open('app/assets/images/atlas.jpg')
+trip11 = Trip.new(destination_id: 5,activity_id: 4,name: "Climbing the High Atlas",
+                  description: "Spend your time in the thin air of the High Atlas Mountains in Northern Morocco.",
+                  trip_cost: 17900.00)
+trip11.image = image11
+trip11.save
+
+image12 = File.open('app/assets/images/montana.jpg')
+trip12 = Trip.new(destination_id: 1,activity_id: 6,name: "Hunting in Montana",
+                  description: "Experience one of the most vibrant displays of wildlife in the continental United States.",
+                  trip_cost: 33050.00)
+trip12.image = image12
+trip12.save
+
+image13 = File.open('app/assets/images/navua.jpg')
+trip13 = Trip.new(destination_id: 6,activity_id: 2,name: "The Navua River",
+                  description: "What's that? You didn't know that the tiny island of Fiji had such awesome river rafting? Well it does! Ride these rapids 65 kilometers to the south coast.",
+                  trip_cost: 25850.00)
+trip13.image = image13
+trip13.save
+
+image14 = File.open('app/assets/images/positano.jpg')
+trip14 = Trip.new(destination_id: 3,activity_id: 3,name: "Riviera Diving",
+                  description: "See the fishes below the water, eat the fishes above the water in this Italian getaway.",
+                  trip_cost: 21000.00)
+trip14.image = image14
+trip14.save
+
+image15 = File.open('app/assets/images/buffalo.jpg')
+trip15 = Trip.new(destination_id: 6,activity_id: 6,name: "Outback Big Game",
+                  description: "Go down under and take on some big game in the rugged Australian Outback.",
+                  trip_cost: 49500.00)
+trip15.image = image15
+trip15.save
+
+image16 = File.open('app/assets/images/zambezi.jpg')
+trip16 = Trip.new(destination_id: 5,activity_id: 2,name: "The Zambezi River",
+                  description: "Rafting down Zambia's Zambezi River is a world class adventure. From the big warm water rapids, to the stunning white sandy beaches, this trip rates among some of the most exciting in the world.",
+                  trip_cost: 37600.00)
+trip16.image = image16
+trip16.save
+
+image17 = File.open('app/assets/images/cancun.jpg')
+trip17 = Trip.new(destination_id: 6,activity_id: 6,name: "Mexican Scuba Diving",
+                  description: "Experience some of the bluest waters.",
+                  trip_cost: 22700.00)
+trip17.image = image17
+trip17.save
+
+image18 = File.open('app/assets/images/tianmen.jpg')
+trip18 = Trip.new(destination_id: 1,activity_id: 3,name: "Tianmen Mountains",
+                  description: "The only thing more exhilarating than the climb to the top is the fall to the bottom in this remote Chinese valley.",
+                  trip_cost: 28550.00)
+trip18.image = image18
+trip18.save
 
 
 Extra.create(name: "Monkey Banana-Eating Contest", description: "description", cost: 2000.00)

@@ -1,8 +1,8 @@
 <article>
   <h1 class="trips-header"><%= @trip.name %></h1>
 
-  <div class = "<%= @trip.name.split.join("-").downcase %>-trip-img">
-    <img>
+  <div class = "trip-img">
+    <%= image_tag @trip.image, class: "trip-show-card" %>
   </div>
 
   <div class="mdl-grid">
@@ -12,7 +12,7 @@
         <%= @trip.description %>
       </p>
 
-      <h3 class="trip-subheader"><%= @trip.trip_cost %></h3>
+      <h3 class="trip-subheader"><%= number_to_currency(@trip.trip_cost) %></h3>
     </div>
 
     <div class="extras mdl-cell mdl-cell--5-col">

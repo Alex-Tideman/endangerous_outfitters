@@ -1,0 +1,17 @@
+<article>
+  <h2>Update a Trip</h2>
+  <%= form_for([:admin,@trip], html: {multipart: true}) do |f| %>
+      <%= f.label :name, "Trip Name:" %>
+      <%= f.text_field :name %>
+      <%= f.label :description, "Description:" %>
+      <%= f.text_area :description %>
+      <%= f.label :trip_cost, "Price:" %>
+      <%= f.number_field :trip_cost %>
+      <% if @trip.image.exists? %>
+          <%= image_tag @trip.image.url %><br/>
+      <% end %>
+      <%= f.label :image, "Pick a New Image" %>
+      <%= f.file_field :image %>
+      <%= f.submit "Update Trip" %>
+  <% end %>
+</article>

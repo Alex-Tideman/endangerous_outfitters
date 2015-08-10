@@ -1,4 +1,5 @@
 class CartTripsController < ApplicationController
+
   def create
     trip = Trip.find(params[:trip_id])
     cart.add_trip(trip)
@@ -31,5 +32,4 @@ class CartTripsController < ApplicationController
     flash[:remove] = "Successfully removed #{@trip.name} from cart."
     redirect_to cart_path
   end
-
 end

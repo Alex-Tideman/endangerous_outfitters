@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resources :users, :destinations, :activities, :trips, :extras
   end
   get '/admin/dashboard', to: 'admin/dashboard#index'
-  resources :users, only: [:new, :create, :show]
+  resources :users, only: [:new, :create]
   get '/profile', to: 'users#show'
   resources :activities, only: [:index, :show]
   resources :destinations, only: [:index, :show]

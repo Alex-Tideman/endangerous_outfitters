@@ -18,7 +18,7 @@
               <span class="mdl-navigation__link"><%= link_to current_user.username, admin_dashboard_path, class: "nav-bar-link" %></span>
               <span class="mdl-navigation__link"><%= link_to "Logout", logout_path, method: :delete, class: "nav-bar-link" %></span>
           <% elsif current_user %>
-              <span id="username" class="mdl-navigation__link"><%= link_to current_user.username, user_path %></span>
+              <span id="username" class="mdl-navigation__link"><%= link_to current_user.username, profile_path %></span>
               <span class="mdl-navigation__link"><%= link_to "Logout", logout_path, method: :delete, class: "nav-bar-link" %></span>
           <% else %>
               <span class="mdl-navigation__link"><%= link_to "Login", login_path, class: "nav-bar-link" %></span>

@@ -28,7 +28,7 @@
               <td class="mdl-data-table__cell--non-numeric"><%= trip.activity.name %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.extras.map(&:name).join(' ') %></td>
               <td><%= trip.total_cost %></td>
-              <td class="mdl-data-table__cell--non-numeric"><%= link_to "Edit", trip_path(trip) %> <%= link_to "Delete", cart_trips_path, method: :delete %></td>
+              <td class="mdl-data-table__cell--non-numeric"> Edit Delete </td>
             </tr>
         <% end %>
         </tbody>

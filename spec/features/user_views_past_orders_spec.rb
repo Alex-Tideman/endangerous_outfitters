@@ -1,25 +1,19 @@
 require 'rails_helper'
 
-feature "User can view past orders" do
-  scenario "User logged in" do
-    it "displays orders belonging to this user" do
-      user = User.create(username: "adam", password: "adam")
-      visit '/login'
-      fill_in "Username", with: "adam"
-      fill_in "Password", with: "adam"
-      click_button "Login"
+describe "User can view past orders" do
+  let(:user) { User.create(username: "adam", password: "adam") }
 
-      visit '/profile'
+  it "user sees a profile page" do
+    visit '/login'
+    fill_in "Username", with: user.username
+    fill_in "Password", with: user.password
+    click_button "Login"
 
-      expect(page).to have_content("Orders for adam")
+    expect(current_path).to eq('/adam')
+    expect(page).to have_content("Orders for adam")
+  end
 
-      # As an Authenticated User
-      # When I visit "/profile"
-      # Then I should see all orders belonging to me
-    end
-
-    it "displays orders belonging to this user" do
-      user.orders.create
-    end
+  xit "displays orders belonging to this user" do
+    user.orders.create
   end
 end

@@ -30,6 +30,9 @@
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation -->
         <nav class="mdl-navigation">
+          <span class="mdl-navigation__link"><%= link_to "Destinations", destinations_path, class: "nav-bar-link" %></span>
+          <span class="mdl-navigation__link"><%= link_to "Activities", activities_path, class: "nav-bar-link" %></span>
+          <span class="mdl-navigation__link"><%= link_to "Trips", trips_path, class: "nav-bar-link" %></span>
           <div id="cart-count" class="material-icons mdl-badge" data-badge="<%= cart.data.values.reduce(:+) %>"><span class="mdl-navigation__link"><%= link_to "Cart", cart_path, class: "nav-bar-link" %></span></div>
         </nav>
       </div>

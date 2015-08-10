@@ -36,7 +36,7 @@
 
 #logo {
     text-decoration: none;
-    margin-left: -40px ;
+    margin-left: -70px ;
 }
 
 .home-picture {
@@ -51,25 +51,47 @@
     padding: 50px;
 }
 
-// .destination-col {
-//     padding: 15%;
-//     margin-left: 20%;
-// }
 
-// .activity-col {
-//     padding: 15%;
-//     margin-left: 20%;
-//     margin-top: 3.5%;
-// }
-
-.destination-col a{
+#homepage-icons a {
   text-decoration: none;
-
 }
 
-.activity-col a{
-  text-decoration: none;
+.icons {
+  margin-left:100px;
+}
 
+.destination-text {
+  font-size: 2.5em;
+  margin-left:70px;
+  margin-top:-10px;
+  color: white;
+  text-shadow:
+  0.05em  .05em .05em black,
+  .01em -.01em .01em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+.activity-text {
+  font-size: 2.5em;
+  margin-top:15px;
+  margin-left:90px;
+  color: white;
+  text-shadow:
+  0.05em  .05em .05em black,
+  .01em -.01em .01em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+.trip-text {
+  font-size: 2.5em;
+  margin-top:-40px;
+  margin-left:130px;
+  color: white;
+  text-shadow:
+  0.05em  .05em .05em black,
+  .01em -.01em .01em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
 }
 
 .icon-globe{
@@ -84,23 +106,6 @@
     -.01em -.01em .01em black;
 }
 
-#globe-text{
-  font-size: 2.5em;
-  // margin-left: -37%;
-
-  // position: absolute;
-  // top: 30%;
-  // display: none;
-  position: absolute;
-  left: 2.0em;
-  bottom: -1.25em;
-  text-shadow:
-  0.05em  .05em .05em black,
-  .01em -.01em .01em black,
-  -.01em  .01em .01em black,
-  -.01em -.01em .01em black;
-
-}
 
 .icon-airplane{
   color: whitesmoke;
@@ -110,30 +115,12 @@
     .01em -.01em .01em black,
     -.01em  .01em .01em black,
     -.01em -.01em .01em black;
-    // position: absolute;
-    // top: 75%;
-  // padding-top: -90%;
 }
 
-#airplane-text{
-  font-size: 2.5em;
-  // display: none;
-  position: absolute;
-  left: 33em;
-  bottom: 0em;
-  text-shadow:
-  0.05em  .05em .05em black,
-  .01em -.01em .01em black,
-  -.01em  .01em .01em black,
-  -.01em -.01em .01em black;
-
-}
 
 .icon-parachute{
   color: whitesmoke;
   font-size: 10.3em;
-  // margin-left: 20%;
-  // margin-right: 20%;
   text-shadow:
     0.05em  .05em .05em black,
     .01em -.01em .01em black,
@@ -141,21 +128,6 @@
     -.01em -.01em .01em black;
 
 
-}
-
-#para-text{
-  font-size: 2.5em;
-  // display: none;
-  position: absolute;
-  left: 17.5em;
-  bottom: -0.5em;
-  margin-bottom: -1%;
-  // margin-left: -37%;
-  text-shadow:
-  0.05em  .05em .05em black,
-  .01em -.01em .01em black,
-  -.01em  .01em .01em black,
-  -.01em -.01em .01em black;
 }
 
 a:hover .icon-globe{

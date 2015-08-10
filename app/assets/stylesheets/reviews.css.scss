@@ -1,0 +1,110 @@
+article {
+  padding-top: 64px;
+  margin: 0px 100px 0px 100px;
+}
+
+#title{
+  text-align: center;
+  font-family: 'Open Sans', cursive;
+  font-weight: bold;
+  color: rgba(14, 9, 8, 0.75);
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  background-color: rgba(243, 243, 243, 0.87);
+  padding: 5px;
+  margin: 25px 100px 10px 50px;
+}
+
+#hulk-hogan-card{
+  height: 250px;
+  background: image-url('hulk.jpg') center / cover;
+  background-position: 0px -20px;
+  color: #f3f3f3;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#arnold-schwarzenegger-card{
+  height: 250px;
+  background: image-url('arnold.jpg') center / cover;
+  background-position: -1px 0px;
+  color: #f3f3f3;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#sylvester-stallone-card{
+  height: 250px;
+  background: image-url('rambo.jpg') center / cover;
+  color: #f3f3f3;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#bruce-willis-card{
+  height: 250px;
+  background: image-url('bruce.jpg') center / 100%;
+  background-position: top;
+  color: #f3f3f3;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#bruce-lee-card{
+  height: 250px;
+  background: image-url('lee.jpg') center / 100%;
+  background-position: top;
+  color: #f3f3f3;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+#the-rock-card{
+  height: 250px;
+  background: image-url('rock.jpg') center / 100%;
+  background-position: top;
+  color: #f3f3f3;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+}
+
+
+
+.demo-card-wide > .mdl-card_.mdl-card__title-text {
+  color: #f3f3f3;
+  text-shadow:
+  0.1em  .1em .1em black,
+  .05em -.05em .05em black,
+  -.01em  .01em .01em black,
+  -.01em -.01em .01em black;
+  background-color: rgba(243, 243, 243, 0.87);
+
+}
+
+.review-card {
+  width: 512px;
+  height: 400px;
+}
+
+#whole-card {
+  border: solid 1px #363636;
+  border-radius: 5px 5px 5px 5px;
+}

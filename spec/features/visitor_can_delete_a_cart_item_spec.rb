@@ -18,7 +18,7 @@ feature "Visitor deletes a trip" do
     expect(page.body).to have_content("1")
 
     click_link("Remove")
-    expect(page.body).not_to have_content("High Atlas")
+    expect(page.body).not_to have_link("High Atlas")
   end
 
 end

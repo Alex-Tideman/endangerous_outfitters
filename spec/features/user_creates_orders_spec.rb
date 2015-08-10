@@ -45,7 +45,7 @@ describe 'user can create order' do
 
         visit '/cart'
         click_link_or_button("Checkout")
-    
+
         expect(current_path).to eq "/orders"
         expect(page).to have_content("Orders")
         expect(page).to have_content("Canadian Rockies")

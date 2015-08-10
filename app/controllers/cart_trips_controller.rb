@@ -29,6 +29,7 @@ class CartTripsController < ApplicationController
     @trip = Trip.find(params[:id])
     cart.remove_trip(@trip)
     session[:cart] = cart.data
+    flash[:remove] = "Successfully removed #{@trip.name} from cart."
     redirect_to cart_path
   end
 end

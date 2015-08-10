@@ -16,9 +16,14 @@
     font-weight: 200;
 }
 
-.nav-bar-nk {
+.nav-bar-link {
     color: white;
-    font-size: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.nav-bar-link:hover {
+  text-decoration: underline;
 }
 
 #username {

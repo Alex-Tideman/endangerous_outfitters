@@ -10,6 +10,7 @@
         <thead>
         <tr>
           <th id="quantity-col">Quantity</th>
+          <th id="quantity-col">+/-</th>
           <th id="name-col">Name</th>
           <th id="continent-col" class="mdl-data-table__cell--non-numeric">Location</th>
           <th id="activity-col">Activity</th>
@@ -19,16 +20,17 @@
         </tr>
         </thead>
         <tbody>
-
         <% @cart_trips.each do |trip| %>
             <tr>
-              <td><%= trip.quantity %></td>
-              <td class="name mdl-data-table__cell--non-numeric"><%= trip.name %></td>
+              <td class="quantity"><%= trip.quantity %></td>
+              <td><%= button_to "-", decrement_cart_trip_path(trip) %></button>
+                <%= button_to "+", increment_cart_trip_path(trip) %></td>
+              <td id="trip-link" class="name mdl-data-table__cell--non-numeric"></button><%= link_to "#{trip.name}", trip_path(trip) %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.destination.continent %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.activity.name %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.extras.map(&:name).join(' ') %></td>
               <td><%= trip.total_cost %></td>
-              <td class="mdl-data-table__cell--non-numeric"> Edit Delete </td>
+              <td id="delete-link"><%= link_to "Remove", cart_trip_path(trip), method: :delete%></td>
             </tr>
         <% end %>
         </tbody>

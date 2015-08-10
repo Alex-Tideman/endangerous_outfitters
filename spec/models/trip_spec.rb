@@ -47,15 +47,6 @@ RSpec.describe Trip, type: :model do
       expect(Trip.all.count).to eq(0)
     end
 
-    it "does not create an trip with total cost missing" do
-      destination = Destination.create(continent: "South America", description: "South American description",
-                                       lat: -10.23, long: 32.393)
-      activity = Activity.create(name: "Hiking", description: "Move your legs")
-      trip = Trip.create(destination_id: destination.id, activity_id: activity.id, name: "Machu Picchu", trip_cost: 5000.00 )
-
-      expect(Trip.all.count).to eq(0)
-    end
-
     it "does not create a trip with too long of a name" do
       destination = Destination.create(continent: "South America", description: "South American description",
                                        lat: -10.23, long: 32.393)

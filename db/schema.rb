@@ -102,4 +102,6 @@ ActiveRecord::Schema.define(version: 20150808142458) do
   add_foreign_key "trip_extras", "trips"
   add_foreign_key "trips", "activities"
   add_foreign_key "trips", "destinations"
+  end
 end
+

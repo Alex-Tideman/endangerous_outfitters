@@ -19,4 +19,6 @@ Rails.application.routes.draw do
   post '/login', to: "sessions#create"
   delete '/logout', to: "sessions#destroy", as: "logout"
   delete '/cart', to: 'cart_trips#destroy'
+
+  resources :orders, only: [:new, :create, :index, :show]
 end

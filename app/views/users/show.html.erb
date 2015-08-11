@@ -1,4 +1,5 @@
 <article>
   <h2><%= @user.username %>'s Profile Page</h2>
   <%= link_to "View Past Orders", orders_path %>
+  <%= link_to "Edit Profile", edit_user_path(@user) %>
 </article>

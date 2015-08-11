@@ -1,4 +1,4 @@
-<table class="mdl-data-table mdl-js-data-table order-table">Orders
+<table class="mdl-data-table mdl-js-data-table order-table"> '
   <thead>
     <tr>
       <th>Order Number</th>
@@ -13,7 +13,7 @@
     <% order.order_trips.each do |order_trip| %>
     <tr>
       <td><%= order.id %></td>
-      <td class="mdl-data-table__cell--non-numeric"><%= order_trip.trip.name %></td>
+      <td class="mdl-data-table__cell--non-numeric"><%= link_to order_trip.trip.name, order_path(order) %></td>
       <td class="mdl-data-table__cell--non-numeric"><%= order_trip.quantity %></td>
       <td><%= number_to_currency(order_trip.trip.total_cost * order_trip.quantity) %></td>
       <td class="mdl-data-table__cell--non-numeric"><%= (order_trip.trip.created_at).to_formatted_s(:long) %></td>

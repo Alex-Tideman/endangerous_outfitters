@@ -4,9 +4,10 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :users, :destinations, :activities, :trips, :extras
   end
+
   get '/admin/dashboard', to: 'admin/dashboard#index'
 
-  resources :users, only: [:new, :create]
+  resources :users, only: [:new, :create, :edit, :update]
 
   resources :trips, only: [:index, :show]
 

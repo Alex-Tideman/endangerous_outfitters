@@ -2,6 +2,8 @@
   <thead>
   <tr>
     <th>Order Number</th>
+    <th class="mdl-data-table__cell--non-numeric">Name</th>
+    <th class="mdl-data-table__cell--non-numeric">Address</th>
     <th class="mdl-data-table__cell--non-numeric">Trip</th>
     <th>Quantity</th>
     <th>Total Cost</th>
@@ -14,6 +16,8 @@
       <% @order.order_trips.each do |order_trip| %>
       <tr>
         <td><%= @order.id %></td>
+        <td class="mdl-data-table__cell--non-numeric"><%= @order.user.full_name %></td>
+        <td class="mdl-data-table__cell--non-numeric"><%= @order.user.address %></td>
         <td class="mdl-data-table__cell--non-numeric"><%= link_to order_trip.trip.name, trip_path(order_trip.trip) %></td>
         <td class="mdl-data-table__cell--non-numeric"><%= order_trip.quantity %></td>
         <td><%= number_to_currency(order_trip.trip.total_cost * order_trip.quantity) %></td>

@@ -14,7 +14,7 @@
       <% @order.order_trips.each do |order_trip| %>
       <tr>
         <td><%= @order.id %></td>
-        <td class="mdl-data-table__cell--non-numeric"><%= order_trip.trip.name %></td>
+        <td class="mdl-data-table__cell--non-numeric"><%= link_to order_trip.trip.name, trip_path(order_trip.trip) %></td>
         <td class="mdl-data-table__cell--non-numeric"><%= order_trip.quantity %></td>
         <td><%= number_to_currency(order_trip.trip.total_cost * order_trip.quantity) %></td>
         <td class="mdl-data-table__cell--non-numeric"><%= (order_trip.trip.created_at).to_formatted_s(:long) %></td>

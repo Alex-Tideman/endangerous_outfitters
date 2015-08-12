@@ -16,8 +16,9 @@
       handler = Gmaps.build('Google');
       handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
           markers = handler.addMarkers([
+                  <%= @hash.each {|x| } %>
               {
-                  "lat": 53,
+                  "lat": 50,
                   "lng": -119,
                   "picture": new google.maps.Marker(),
               }

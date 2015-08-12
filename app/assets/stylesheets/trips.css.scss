@@ -1,8 +1,16 @@
 #map{
+  border-radius: 5px 5px 5px 5px;
+  border: solid 2px #363636;
+}
+
+.homepage-map {
   width: 70%;
   height: 400px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
+}
+
+.trip-page-map {
+  height: 400px;
   border-radius: 5px 5px 5px 5px;
   border: solid 2px #363636;
 }
@@ -91,8 +99,6 @@
 }
 
 .extras tbody {
-  /*display: block;
-  overflow-y: scroll;*/
   height: 150px;
   color: black;
 }

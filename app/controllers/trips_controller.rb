@@ -2,6 +2,10 @@ class TripsController < ApplicationController
   def show
     @extras = Extra.all
     @trip = Trip.find(params[:id].to_i)
+    @hash = Gmaps4rails.build_markers(@trip) do |trip, marker|
+      marker.lat trip.lat
+      marker.lng trip.long
+    end
   end
 
   def index

@@ -15,7 +15,7 @@
         <!-- Title -->
         <nav class="mdl-navigation">
           <% if current_admin? %>
-              <span class="mdl-navigation__link"><%= link_to current_user.username, admin_dashboard_path, class: "username-link" %></span>
+              <span id="username-link" class="mdl-navigation__link"><%= link_to current_user.username, admin_dashboard_path, class: "username-link" %></span>
               <span class="mdl-navigation__link"><%= link_to "Logout", logout_path, method: :delete, class: "nav-bar-link" %></span>
           <% elsif current_user %>
               <span class="mdl-navigation__link"><%= link_to current_user.username, profile_path, class: "username-link" %></span>

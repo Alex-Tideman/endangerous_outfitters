@@ -7,9 +7,9 @@ class TripsController < ApplicationController
   def index
     @trips = Trip.all
     @hash = Gmaps4rails.build_markers(@trips) do |trip, marker|
-      # binding.pry
       marker.lat trip.lat
       marker.lng trip.long
+      marker.json({:id => trip.id})
     end
   end
 

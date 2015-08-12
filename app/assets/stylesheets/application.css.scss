@@ -90,7 +90,15 @@ a, a:visited, a:link {
 }
 
 .flash {
-    text-align: center;
+  text-align: center;
+}
+
+.flash_notice {
+  font-size: 1.25em;
+  padding: 12px 0px 10px 0px ;
+  -moz-box-shadow:    inset 0px 5px 20px 0px rgba(0,0,0,0.4);
+ 	-webkit-box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.4);
+ 	box-shadow:         inset 0px 5px 20px 0px rgba(0,0,0,0.4);
 }
 
 .flash_remove {

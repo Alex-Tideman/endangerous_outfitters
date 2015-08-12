@@ -12,7 +12,7 @@ describe "User can view past orders" do
     click_link user.username
 
     expect(current_path).to eq profile_path
-    expect(page).to have_content("View Past Orders")
+    expect(page).to have_content("View All Orders")
   end
 
   it "has an orders page for user" do
@@ -22,7 +22,7 @@ describe "User can view past orders" do
     click_button "Login"
 
     visit '/profile'
-    click_link "View Past Orders"
+    click_link "View All Orders"
 
     expect(current_path).to eq orders_path
   end

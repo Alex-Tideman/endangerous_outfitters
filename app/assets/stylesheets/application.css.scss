@@ -81,10 +81,21 @@
 	content: "\e601";
 }
 
-
-
 article {
-  margin: 0 100px 0 100px;
+    padding-top: 64px;
+    margin: 0 100px 0 100px;
+}
+
+#title {
+  text-align: center;
+  font-family: 'Open Sans', cursive;
+  font-weight: bold;
+  color: rgba(14, 9, 8, 0.75);
+  border: solid 3px #363636;
+  border-radius: 5px 5px 5px 5px;
+  background-color: rgba(243, 243, 243, 0.87);
+  padding: 5px;
+  margin: 25px 0 10px 0;
 }
 
 a, a:visited, a:link {
@@ -100,7 +111,7 @@ a:hover {
   text-align: center;
 }
 
-.flash_notice {
+.flash_notice, .flash_error {
   font-size: 1.25em;
   padding: 12px 0px 10px 0px ;
   -moz-box-shadow:    inset 0px 5px 20px 0px rgba(0,0,0,0.4);
@@ -124,4 +135,68 @@ a:hover {
 
 #username-link a, a:link, a:visited {
   color: white;
+input[type="text"], input[type="password"], input[type="number"] {
+	padding: .6em .25em;
+}
+
+input[type="submit"] {
+	border : solid 0px #ffffff;
+	border-radius : 3px;
+	moz-border-radius : 3px;
+	-webkit-box-shadow : 0px 0px 5px rgba(0,0,0,0.4);
+	-moz-box-shadow : 0px 0px 5px rgba(0,0,0,0.4);
+	box-shadow : 0px 0px 5px rgba(0,0,0,0.4);
+	font-size : 1em;
+	color : #ffffff;
+	padding : .5em 2em;
+	background : #6c64db;
+	background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6c64db), color-stop(0%,#5b54b8), color-stop(0%,#544e9c), color-stop(0%,#47428a), color-stop(100%,#544e9c));
+	background : -moz-linear-gradient(top, #6c64db 0%, #5b54b8 0%, #544e9c 0%, #47428a 0%, #544e9c 100%);
+	background : -webkit-linear-gradient(top, #6c64db 0%, #5b54b8 0%, #544e9c 0%, #47428a 0%, #544e9c 100%);
+	background : -o-linear-gradient(top, #6c64db 0%, #5b54b8 0%, #544e9c 0%, #47428a 0%, #544e9c 100%);
+	background : -ms-linear-gradient(top, #6c64db 0%, #5b54b8 0%, #544e9c 0%, #47428a 0%, #544e9c 100%);
+	background : linear-gradient(top, #6c64db 0%, #5b54b8 0%, #544e9c 0%, #47428a 0%, #544e9c 100%);
+	filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c64db', endColorstr='#544e9c',GradientType=0 );
+	margin-bottom: 12px;
+}
+
+select {
+	width: 160px;
+	-webkit-appearance: none;
+	padding: 5px 6px;
+	height: 2.7em;
+	overflow: hidden;
+	background: url('dropdown.png') no-repeat right #FEFEFE;
+	border: #ccc 1px solid;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+	box-shadow: inset 0px 0px 10px 1px #FEFEFE;
+}
+
+#new_trip {
+	margin-top: 50px;
+}
+
+#new_trip table {
+	margin: 0 auto;
+}
+
+#new_trip td {
+	padding-top: 8px;
+	padding-bottom: 15px;
+}
+
+#new_trip th {
+	padding-top: 25px;
+	padding-bottom: 8px;
+}
+
+#new_trip .new-trip-submit {
+	padding-top: 20px;
+	padding-left: 18px;
+}
+
+#container .mdl-grid {
+	padding: 8px 0;
 }

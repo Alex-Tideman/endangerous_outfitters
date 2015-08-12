@@ -20,7 +20,7 @@
 #nav-bar h1 {
     font-family: 'Yellowtail', cursive;
     font-size: 48px;
-    padding-left: 15%;
+    padding-left: 19%;
     font-weight: 200;
 }
 
@@ -47,7 +47,7 @@
   text-decoration: none;
 }
 
-.username-link {
+.username-link, .username-link:visited, .username-link:link {
     color: white;
     font-size: 1.45em;
     text-decoration: none;

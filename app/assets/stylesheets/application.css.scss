@@ -86,7 +86,12 @@ article {
 }
 
 a, a:visited, a:link {
-    color: white;
+  color: navy;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 .flash {

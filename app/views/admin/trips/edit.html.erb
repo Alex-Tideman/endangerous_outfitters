@@ -7,6 +7,10 @@
       <%= f.text_area :description %>
       <%= f.label :trip_cost, "Price:" %>
       <%= f.number_field :trip_cost %>
+      <%= f.label :lat, "Trip Latitude:" %>
+      <%= f.text_field :lat %>
+      <%= f.label :long, "Trip Longitude:" %>
+      <%= f.text_field :long %>
       <% if @trip.image.exists? %>
           <%= image_tag @trip.image.url %><br/>
       <% end %>

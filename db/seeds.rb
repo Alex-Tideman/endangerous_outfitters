@@ -22,21 +22,21 @@ Activity.create(name: "Hunting", description: "BANG.", image_url: "hunting.jpg" 
 image1 = File.open('app/assets/images/canadian-rockies.jpg')
 trip1 = Trip.new(destination_id: 1,activity_id: 1,name: "Canadian Rockies",
                  description: "Navigate the trails in Alberta and British Columbia.",
-                 trip_cost: 10000.00, lat: 53.1106, long: -119.1558)
+                 trip_cost: 10000.00, lat: 50.5210, long: -115.3903)
 trip1.image = image1
 trip1.save
 
 image2 = File.open('app/assets/images/barrier.jpg')
 trip2 = Trip.new(destination_id: 6,activity_id: 3,name: "Great Barrier Reef",
                  description: "Dive deep and experience on of the most colorful places on the planet.",
-                 trip_cost: 21000.00, lat: 18.2861, long: 147.7000)
+                 trip_cost: 21000.00, lat: -18.2861, long: 147.7000)
 trip2.image = image2
 trip2.save
 
 image3 = File.open('app/assets/images/safari.jpg')
 trip3 = Trip.new(destination_id: 5,activity_id: 6,name: "African Safari",
-                 description: "Fulfill your dreams and capture the biggest game.",
-                 trip_cost: 15800.00, lat: -17.8333, long: 31.0500)
+                 description: "Fulfill your dreams and capture the world's biggest game.",
+                 trip_cost: 15800.00, lat: -18.4433, long: 26.5718)
 trip3.image = image3
 trip3.save
 
@@ -50,14 +50,14 @@ trip4.save
 image5 = File.open('app/assets/images/climbo.jpg')
 trip5 = Trip.new(destination_id: 4,activity_id: 4,name: "Climbing in Pakistan",
                  description: "Summit some of the most beautiful and untouched mountains on Earth.",
-                 trip_cost: 7850.00, lat: 33.6667, long: 73.1667 )
+                 trip_cost: 7850.00, lat: 35.6667, long: 76.1667 )
 trip5.image = image5
 trip5.save
 
 image6 = File.open('app/assets/images/argentina.jpg')
 trip6 = Trip.new(destination_id: 2,activity_id: 1,name: "Patagonia",
                  description: "Travel to the end of the Earth and experience the strange beauty of Patagonia.",
-                 trip_cost: 36250.00, lat: -41.8102, long: -68.9063 )
+                 trip_cost: 36250.00, lat: -51.0000, long: -73.0000 )
 trip6.image = image6
 trip6.save
 
@@ -71,7 +71,7 @@ trip7.save
 image8 = File.open('app/assets/images/basez.jpg')
 trip8 = Trip.new(destination_id: 6,activity_id: 5,name: "Base Jumping the Fjords",
                  description: "Performing the most daring of stunts in the most isolated of places.",
-                 trip_cost: 38900.00, lat: -42.0000, long: 174.0000 )
+                 trip_cost: 38900.00, lat: -44.0000, long: 167.0000 )
 trip8.image = image8
 trip8.save
 
@@ -99,21 +99,21 @@ trip11.save
 image12 = File.open('app/assets/images/montana.jpg')
 trip12 = Trip.new(destination_id: 1,activity_id: 6,name: "Hunting in Montana",
                   description: "Experience one of the most vibrant displays of wildlife in the continental United States.",
-                  trip_cost: 33050.00, lat: 47.0000, long: -110.0000)
+                  trip_cost: 33050.00, lat: 48.4100, long: -113.0000)
 trip12.image = image12
 trip12.save
 
 image13 = File.open('app/assets/images/navua.jpg')
 trip13 = Trip.new(destination_id: 6,activity_id: 2,name: "The Navua River",
                   description: "What's that? You didn't know that the tiny island of Fiji had such awesome river rafting? Well it does! Ride these rapids 65 kilometers to the south coast.",
-                  trip_cost: 25850.00, lat: -18.2500, long: 178.1500)
+                  trip_cost: 25850.00, lat: -18.1500, long: 178.1500)
 trip13.image = image13
 trip13.save
 
 image14 = File.open('app/assets/images/positano.jpg')
 trip14 = Trip.new(destination_id: 3,activity_id: 3,name: "Riviera Diving",
                   description: "See the fishes below the water, eat the fishes above the water in this Italian getaway.",
-                  trip_cost: 21000.00, lat: 44.171389, long: 8.34444)
+                  trip_cost: 21000.00, lat: 48.38, long: 14.29)
 trip14.image = image14
 trip14.save
 
@@ -139,18 +139,32 @@ trip17.image = image17
 trip17.save
 
 image18 = File.open('app/assets/images/tianmen.jpg')
-trip18 = Trip.new(destination_id: 1,activity_id: 3,name: "Tianmen Mountains",
+trip18 = Trip.new(destination_id: 4, activity_id: 5, name: "Tianmen Mountains",
                   description: "The only thing more exhilarating than the climb to the top is the fall to the bottom in this remote Chinese valley.",
                   trip_cost: 28550.00, lat: 29.0527, long: 110.4830)
 trip18.image = image18
 trip18.save
 
+image19 = File.open('app/assets/images/peru.jpg')
+trip19 = Trip.new(destination_id: 2, activity_id: 4, name: "The Cordillera Blanca",
+                  description: "Climb what some consider to be the most beautiful mountain range in the world.",
+                  trip_cost: 11000.00, lat: -9.0717, long: -77.3632)
+trip19.image = image19
+trip19.save
 
-Extra.create(name: "Monkey Banana-Eating Contest", description: "description", cost: 2000.00)
-Extra.create(name: "Shark Slalom Surfing", description: "description", cost: 4000.00)
-Extra.create(name: "Barometer Free Skydiving", description: "description", cost: 3000.00)
-Extra.create(name: "Rhino Jousting", description: "description", cost: 8000.00)
-Extra.create(name: "Giraffe Racing", description: "description", cost: 6000.00)
+image20 = File.open('app/assets/images/siberia.jpg')
+trip20 = Trip.new(destination_id: 4, activity_id: 6, name: "The Siberian Wild",
+                  description: "Pack your furs and bring your husky as you track the earth's largest Moose, Bear, and Deer.",
+                  trip_cost: 135000.00, lat: 60.0000, long: 105.0000)
+trip20.image = image20
+trip20.save
+
+image21 = File.open('app/assets/images/futalafu.jpg')
+trip21 = Trip.new(destination_id: 2, activity_id: 2, name: "The Futalafu River",
+                  description: "Travel to Patagonia and battle the toughest white-water rapids known to man.",
+                  trip_cost: 9500.00, lat: -43.1000 , long: -71.5200 )
+trip21.image = image21
+trip21.save
 
 User.create(username: "admin", password: "admin", full_name: "Mr. Admin", address: "Admin Street", role: 1)
 User.create(username: "Alex", password: "123", full_name: "Alex Tideman", address: "12345 Marion St. Denver, CO")

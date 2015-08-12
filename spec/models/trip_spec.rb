@@ -57,23 +57,6 @@ RSpec.describe Trip, type: :model do
       expect(Trip.all.count).to eq(0)
     end
 
-    xit "it can add one extra" do
-      trip = create_trip
-      trip.extras.create(name: "Sherpa", description: "Carries your things", cost: 2500.00)
-      expect(trip.extras.count).to eq(1)
-      expect(trip.extras.first.name).to eq("Sherpa")
-      expect(trip.total_cost).to eq(7500.00)
-    end
-
-    xit "it can add multiple extra" do
-      trip = create_trip
-      trip.extras.create(name: "Sherpa", description: "Carries your things", cost: 2500.00)
-      trip.extras.create(name: "TV", description: "Watch television", cost: 8000.00)
-      trip.extras.create(name: "Gouda", description: "Cheese", cost: 2000.00)
-
-      expect(trip.extras.count).to eq(3)
-      expect(trip.total_cost).to eq(17500.00)
-    end
 
   end
 

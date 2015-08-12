@@ -38,8 +38,13 @@
     padding: 9px 12px 0 12px;
 }
 
+.nav-bar-link, .nav-bar-link:visited, .nav-bar-link:link, #logo, #logo:visited, #logo:link {
+    color: white;
+}
+
 .nav-bar-link:hover {
   background-color: rgba(0,0,0,.4);
+  text-decoration: none;
 }
 
 .username-link {
@@ -201,7 +206,6 @@ margin-left: 5%;
 
 .home-mission {
   text-align: center;
-  height: 400px;
   margin-top: 8%;
   margin-bottom: 45px;
 }
@@ -209,7 +213,8 @@ margin-left: 5%;
 .home-mission p {
   text-align: center;
   font-size: 1.5em;
-  padding: 75px;
+  line-height: 1.5em;
+  padding: 55px 0 75px 0;
   background-color: rgba(255, 255, 255, 0.6);
   background: rgba(255, 255, 255, 0.6);
 }

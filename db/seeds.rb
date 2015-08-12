@@ -1,16 +1,16 @@
 
 Destination.create(continent: "North America", description: "North American continent description.",
-                    lat: 41.8369, long: -87.6847, image_url: "south-america.jpg" )
+                   image_url: "south-america.jpg" )
 Destination.create(continent: "South America", description: "South American continent description.",
-                    lat: -42.8369, long: -17.6847, image_url: "south-america.jpg" )
+                   image_url: "south-america.jpg" )
 Destination.create(continent: "Europe", description: "European continent description.",
-                    lat: 21.8369, long: -47.6847, image_url: "europe.jpg" )
+                   image_url: "europe.jpg" )
 Destination.create(continent: "Asia", description: "Asian continent description.",
-                    lat: 31.8369, long: -77.6847, image_url: "asia.jpg" )
+                   image_url: "asia.jpg" )
 Destination.create(continent: "Africa", description: "African continent description.",
-                    lat: 21.8369, long: -67.6847, image_url: "africa.jpg" )
+                   image_url: "africa.jpg" )
 Destination.create(continent: "Oceania", description: "Oceanian continent description.",
-                    lat: -45.8369, long: -57.6847, image_url: "oceania.jpg" )
+                   image_url: "oceania.jpg" )
 
 Activity.create(name: "Hiking", description: "We loven to do ze hikes.", image_url: "hiker.jpg" )
 Activity.create(name: "Rafting", description: "Rafting Rulez!", image_url: "raft.jpg" )
@@ -22,21 +22,21 @@ Activity.create(name: "Hunting", description: "BANG.", image_url: "hunting.jpg" 
 image1 = File.open('app/assets/images/canadian-rockies.jpg')
 trip1 = Trip.new(destination_id: 1,activity_id: 1,name: "Canadian Rockies",
                  description: "Navigate the trails in Alberta and British Columbia.",
-                 trip_cost: 10000.00)
+                 trip_cost: 10000.00, lat: 53.1106, long: -119.1558)
 trip1.image = image1
 trip1.save
 
 image2 = File.open('app/assets/images/barrier.jpg')
 trip2 = Trip.new(destination_id: 6,activity_id: 3,name: "Great Barrier Reef",
                  description: "Dive deep and experience on of the most colorful places on the planet.",
-                 trip_cost: 21000.00)
+                 trip_cost: 21000.00, lat: 18.2861, long: 147.7000)
 trip2.image = image2
 trip2.save
 
 image3 = File.open('app/assets/images/safari.jpg')
 trip3 = Trip.new(destination_id: 5,activity_id: 6,name: "African Safari",
                  description: "Fulfill your dreams and capture the biggest game.",
-                 trip_cost: 15800.00)
+                 trip_cost: 15800.00, lat: -17.8333, long: 31.0500)
 trip3.image = image3
 trip3.save
 

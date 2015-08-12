@@ -6,15 +6,18 @@ class TripsController < ApplicationController
 
   def index
     @trips = Trip.all
+    @hash = Gmaps4rails.build_markers(@trips) do |trip, marker|
+      # binding.pry
+      marker.lat trip.lat
+      marker.lng trip.long
+    end
   end
 
   private
 
   def trip_params
-    params.require(:trip).permit(:name, :description, :trip_cost, :destination_id, :activity_id, :image_url, :image)
+    params.require(:trip).permit(:name, :description, :trip_cost,
+                                 :destination_id, :activity_id, :image, :lat, :long)
   end
-  
-  # WIP - update total cost of trip when there are extras
-    # trip.extras.each { |extra| trip.total_cost += extra.cost } if trip.extras
 
 end

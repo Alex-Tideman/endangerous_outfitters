@@ -6,7 +6,11 @@
 #nav-bar {
     position:absolute;
     background-color: rgba(0,0,0,.4);
-    padding: 10px;
+    padding-top: 10px;
+}
+
+#nav-bar .mdl-layout__header-row {
+  margin-bottom: 10px;
 }
 
 #nav-bar h1 {
@@ -25,9 +29,9 @@
     color: white;
     font-size: 1.1em;
     text-decoration: none;
-    height: 76px;
+    height: 75px;
     display: block;
-    padding: 8px 12px 0 12px;
+    padding: 9px 12px 0 12px;
 }
 
 .nav-bar-link:hover {
@@ -38,9 +42,9 @@
     color: white;
     font-size: 1.45em;
     text-decoration: none;
-    height: 76px;
+    height: 75px;
     display: block;
-    padding: 12px 0px 0 12px;
+    padding: 9px 13px 0 13px;
 }
 
 .username-link:hover {

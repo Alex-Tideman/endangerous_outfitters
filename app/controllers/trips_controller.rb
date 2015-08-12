@@ -13,7 +13,7 @@ class TripsController < ApplicationController
     @hash = Gmaps4rails.build_markers(@trips) do |trip, marker|
       marker.lat trip.lat
       marker.lng trip.long
-      marker.infowindow trip.name
+      marker.infowindow "<a id='map-links' href='#{trip_url(trip)}'>#{trip.name}</a>"
     end
   end
 

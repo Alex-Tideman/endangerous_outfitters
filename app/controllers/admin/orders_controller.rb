@@ -1,5 +1,5 @@
 class Admin::OrdersController < Admin::BaseController
-
+  
   def index
     @orders = Order.where(nil)
     filtering_params(params).each do |key, value|

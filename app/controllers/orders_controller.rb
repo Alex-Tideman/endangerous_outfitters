@@ -1,5 +1,7 @@
 class OrdersController < ApplicationController
 
+  has_scope :status
+
   def create
     if current_user
       order = current_user.orders.create

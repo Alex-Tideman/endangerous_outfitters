@@ -6,5 +6,5 @@ class Order < ActiveRecord::Base
   attr_accessor :cart
 
   enum status: %w(Ordered Paid Cancelled Completed)
-
+  scope :status, -> (status) { where status: status }
 end

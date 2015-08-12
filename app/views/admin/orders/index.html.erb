@@ -1,7 +1,16 @@
+
 <table id="order-table" class="mdl-data-table mdl-js-data-table"> '
   <thead>
+  <tr id="filter">
+    <td class="mdl-data-table__cell--non-numeric">Filter: </td>
+    <td class="mdl-data-table__cell--non-numeric"><%= link_to 'Filter Status - Ordered',   {controller: 'orders', action: 'index', :status => 0 }  %></td>
+    <td class="mdl-data-table__cell--non-numeric"><%= link_to 'Filter Status - Paid', {controller: 'orders', action: 'index', :status => 1 }  %></td>
+    <td class="mdl-data-table__cell--non-numeric"><%= link_to 'Filter Status - Cancelled',      {controller: 'orders', action: 'index', :status => 2 }  %></td>
+    <td class="mdl-data-table__cell--non-numeric"><%= link_to 'Filter Status - Completed', {controller: 'orders', action: 'index', :status => 3 }  %></td>
+    <td class="mdl-data-table__cell--non-numeric"><%= link_to 'Filter Status - All', admin_orders_path %></td>
+  </tr>
   <tr>
-    <th>Order Number</th>
+    <th class="mdl-data-table__cell--non-numeric">Order Number</th>
     <th class="mdl-data-table__cell--non-numeric">Trip</th>
     <th>Quantity</th>
     <th>Total Cost</th>
@@ -15,7 +24,7 @@
           <tr>
             <td><%= link_to order.id, admin_order_path(order) %></td>
             <td class="mdl-data-table__cell--non-numeric"><%= order_trip.trip.name %></td>
-            <td class="mdl-data-table__cell--non-numeric"><%= order_trip.quantity %></td>
+            <td><%= order_trip.quantity %></td>
             <td><%= number_to_currency(order_trip.trip.total_cost * order_trip.quantity) %></td>
             <td class="mdl-data-table__cell--non-numeric"><%= (order_trip.trip.created_at).to_formatted_s(:long) %></td>
             <td class="mdl-data-table__cell--non-numeric"><%= order.status %></td>
@@ -24,3 +33,5 @@
   <% end %>
   </tbody>
 </table>
+
+

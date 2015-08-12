@@ -23,6 +23,17 @@
           <td class="mdl-data-table__cell--non-numeric"><%= f.number_field :trip_cost %></td>
           <td class="mdl-data-table__cell--non-numeric"><%= f.select(:destination_id, Destination.all.map{ |d| ["#{d.continent}", d.id ] } ) %></td>
         </tr>
+
+        <tr>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.label :lat, "Latitude:" %></th>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.label :long, "Longitude:" %></th>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric"><%= f.number_field :lat %></td>
+          <td class="mdl-data-table__cell--non-numeric"><%= f.number_field :long %></td>
+        </tr>
+
+
         <tr>
           <th class="mdl-data-table__cell--non-numeric"><%= f.label :activity_id, "Activity:" %></th>
           <th class="mdl-data-table__cell--non-numeric"><%= f.label :image, "Image:" %></th>

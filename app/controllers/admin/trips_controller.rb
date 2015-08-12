@@ -28,11 +28,14 @@ class Admin::TripsController < Admin::BaseController
   end
 
   def update
+
     @trip = Trip.find(params[:id])
     if @trip.update(name: params[:trip][:name],
                     description: params[:trip][:description],
                     trip_cost: params[:trip][:trip_cost],
-                    image: params[:trip][:image])
+                    image: params[:trip][:image],
+                    lat: params[:trip][:lat],
+                    long: params[:trip][:long])
       flash[:notice] = "Trip updated!"
       redirect_to admin_trips_path
     else
@@ -50,6 +53,6 @@ class Admin::TripsController < Admin::BaseController
   private
 
   def trip_params
-    params.require(:trip).permit(:name, :description, :trip_cost, :destination_id, :activity_id, :image_url, :image)
+    params.require(:trip).permit(:name, :description, :trip_cost, :destination_id, :activity_id, :image_url, :image, :lat, :long)
   end
 end

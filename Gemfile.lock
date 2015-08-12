@@ -83,8 +83,10 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.5.2)
+    geocoder (1.2.9)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
+    gmaps4rails (2.1.2)
     i18n (0.7.0)
     jbuilder (2.3.1)
       activesupport (>= 3.0.0, < 5)
@@ -205,6 +207,7 @@ GEM
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    underscore-rails (1.8.3)
     unicorn (4.9.0)
       kgio (~> 2.6)
       rack
@@ -230,6 +233,8 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.1.0)
   database_cleaner
+  geocoder
+  gmaps4rails
   jbuilder (~> 2.0)
   jquery-rails
   launchy
@@ -242,6 +247,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   uglifier (>= 1.3.0)
+  underscore-rails
   unicorn
   web-console (~> 2.0)
 

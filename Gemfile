@@ -31,6 +31,10 @@ gem 'aws-sdk'
 # Use Unicorn as the app server
 gem 'unicorn'
 
+gem 'gmaps4rails'
+gem 'underscore-rails'
+gem 'geocoder'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

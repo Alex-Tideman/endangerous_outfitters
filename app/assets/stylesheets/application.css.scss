@@ -14,6 +14,8 @@
  *= require_self
  *= require material
  */
+
+
  @font-face {
 	font-family: 'icomoon';
 	src:font-url('icomoon.eot?vlkd6h');
@@ -131,6 +133,8 @@ a:hover {
     background:#000;
 }
 
+#username-link a, a:link, a:visited {
+  color: white;
 input[type="text"], input[type="password"], input[type="number"] {
 	padding: .6em .25em;
 }

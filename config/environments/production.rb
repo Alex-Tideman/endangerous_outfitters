@@ -24,8 +24,6 @@ Rails.application.configure do
   # Apache or NGINX already handles this.
   config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
-  config.serve_static_assets = true
-
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
@@ -43,7 +41,9 @@ config.paperclip_defaults = {
          :bucket => ENV['AWS_BUCKET'],
          :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
          :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'],
-         :url => ":s3_domain_url"
+         :url => ":s3_domain_url",
+         :path => "/:class/:attachment/:id_partition/:style/:filename",
+         :s3_host_name => "s3-us-west-2.amazonaws.com"
      }
  }
 

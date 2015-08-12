@@ -1,12 +1,20 @@
 .cart {
-  background:white;
+  background-image: 'texture.png';
+    background: oldlace;
 }
+
 
 .cart h3 {
   padding-top:10px;
   text-align:center;
   font-weight: 200;
   font-size: 42px;
+}
+
+#cart-title{
+  font-family: "Open Sans";
+  font-weight: bold;
+  color: black;
 }
 
 .cart-picture {

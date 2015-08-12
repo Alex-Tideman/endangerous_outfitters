@@ -1,4 +1,27 @@
+<div class="dashboard">
 <article>
-  <h2><%= @user.username %>'s Profile Page</h2>
-  <%= link_to "View Past Orders", orders_path %>
+  <h1 id="title"><%= @user.username %>'s Profile Page</h1>
+  <div class="demo-grid-2 mdl-grid">
+    <div class="mdl-cell mdl-cell--6-col">
+      <div id="user-card" class="mdl-card mdl-shadow--2dp demo-card-wide">
+        <div class= "mdl-card__title">
+          <h3 class="mdl-card__title-text">Edit</h3>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <%= link_to "Edit Profile", edit_user_path(@user), class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--6-col">
+      <div id="user-card" class="mdl-card mdl-shadow--2dp demo-card-wide">
+        <div class= "mdl-card__title">
+          <h3 class="mdl-card__title-text">View</h3>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <%= link_to "View All Orders", orders_path, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" %>
+        </div>
+      </div>
+    </div>
+  </div>
 </article>
+</div>

@@ -2,11 +2,12 @@ Rails.application.routes.draw do
   root "welcome#index"
 
   namespace :admin do
-    resources :users, :destinations, :activities, :trips, :extras
+    resources :users, :trips, :orders
   end
+
   get '/admin/dashboard', to: 'admin/dashboard#index'
 
-  resources :users, only: [:new, :create]
+  resources :users, only: [:new, :create, :edit, :update]
 
   resources :trips, only: [:index, :show]
 

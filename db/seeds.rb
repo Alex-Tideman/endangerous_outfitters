@@ -152,11 +152,11 @@ Extra.create(name: "Barometer Free Skydiving", description: "description", cost:
 Extra.create(name: "Rhino Jousting", description: "description", cost: 8000.00)
 Extra.create(name: "Giraffe Racing", description: "description", cost: 6000.00)
 
-User.create(username: "admin", password: "admin", role: 1)
-User.create(username: "Alex", password: "123")
-User.create(username: "Adam", password: "123")
-User.create(username: "Max", password: "Max")
-User.create(username: "David", password: "David")
+User.create(username: "admin", password: "admin", full_name: "Mr. Admin", address: "Admin Street", role: 1)
+User.create(username: "Alex", password: "123", full_name: "Alex Tideman", address: "12345 Marion St. Denver, CO")
+User.create(username: "Adam", password: "123", full_name: "Adam Caron", address: "45 Lincoln St.")
+User.create(username: "Max", password: "123", full_name: "Max Millington", address: "North Ave.")
+User.create(username: "David", password: "123", full_name: "David Shim", address: "Bangkok Lane")
 
 Review.create(name: "Arnold Schwarzenegger",
               content: "Ahftah trahvelig with Endangerous Ouhtfittahs, I hahve one thing to sahy...I'll be bahck.",

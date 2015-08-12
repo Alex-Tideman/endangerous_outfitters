@@ -1,4 +1,18 @@
-.order-table{
-  margin-top: 20%;
-  margin-left: 30%;
+
+#order-table {
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#order-table a, a:visited, a:link {
+  color: black;
+}
+
+#order-table td {
+  font-size: 12px;
+}
+
+#trip-col {
+  width: 150px;
 }

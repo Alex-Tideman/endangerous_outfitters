@@ -13,6 +13,7 @@
 #table-title {
     font-size: 32px;
     font-weight:800;
+    left: 90px;
 }
 
 .form-background table {
@@ -26,3 +27,9 @@
     font-size: 24px;
 }
 
+#user-card {
+  border: solid 1px #363636;
+  border-radius: 5px 5px 5px 5px;
+  margin-right: auto;
+  margin-left: auto;
+}

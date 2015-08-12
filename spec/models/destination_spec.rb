@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Destination, type: :model do
-  let(:destination) { Destination.new(continent: "Africa", description: "Over there", lat: 5.5, long: 6.6) }
+  let(:destination) { Destination.new(continent: "Africa", description: "Over there") }
 
   it 'is valid' do
     expect(destination).to be_valid
@@ -23,11 +23,6 @@ RSpec.describe Destination, type: :model do
 
   it 'has an array of activities' do
     expect(destination.activities).to eq([])
-  end
-
-  it 'has a longitude and latitude' do
-    expect(destination.long).to eq(6.6)
-    expect(destination.lat).to eq(5.5)
   end
 
 end

@@ -29,7 +29,7 @@
         <% @extras.each do |extra| %>
         <tr>
           <td class="mdl-data-table__cell--non-numeric"><%= link_to extra.name%></td>
-          <td>$<%= extra.cost %></td>
+          <td><%= number_to_currency(extra.cost) %></td>
           <% end %>
         </tr>
       </tbody>

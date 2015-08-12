@@ -7,6 +7,10 @@
     position:absolute;
     background-color: rgba(0,0,0,.4);
     padding-top: 10px;
+
+  -moz-box-shadow:    inset 0px 5px 20px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.3);
+  box-shadow:         inset 0px 5px 20px 0px rgba(0,0,0,0.3);
 }
 
 #nav-bar .mdl-layout__header-row {

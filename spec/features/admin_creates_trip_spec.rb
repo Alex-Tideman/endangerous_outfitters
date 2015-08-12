@@ -18,21 +18,21 @@ feature "Admin features" do
         click_link "Create a Trip"
 
         expect(current_path).to eq(new_admin_trip_path)
-        within("h2") { expect(page).to have_content("Create a New Trip") }
+        expect(page).to have_content("Create a New Trip")
       end
     end
 
     context "create-trip page" do
       it "creates a trip with valid params" do
         Destination.create(continent: "Asia", description: "description",
-                    lat: 31.8369, long: -77.6847, image_url: "asia.jpg" )
+                     image_url: "asia.jpg" )
         Activity.create(name: "Hiking", description: "We loven to do ze hikes.", image_url: "hiker.jpg" )
 
         visit admin_dashboard_path
         click_link "Create a Trip"
         fill_in "Trip Name:", with: "Awesome Trip of Awesome"
         fill_in "Description:", with: "The best trip ever. Here's a description."
-        fill_in "Price:", with: 20000.00
+        fill_in "Trip Cost:", with: 20000.00
         select("Asia", from: "Destination")
         # select("Hiking", from: "Activity")
         # page.attach_file("image_url", "hiker.jpg")

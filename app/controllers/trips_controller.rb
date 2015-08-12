@@ -11,7 +11,7 @@ class TripsController < ApplicationController
       marker.lng trip.long
       # marker.json({:id => trip.id})
     end
-    binding.pry
+    # binding.pry
   end
 
   private

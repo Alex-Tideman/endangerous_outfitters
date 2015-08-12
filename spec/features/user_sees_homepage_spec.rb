@@ -65,14 +65,16 @@ describe 'User features' do
     expect(current_path).to eq(root_path)
   end
 
-  xit "can create a user" do
+  it "can create a user" do
     visit root_path
     click_link("Register")
-    fill_in :username, with: "John"
-    fill_in :password, with: 1234
-    click_button("Submit")
+    fill_in "Username", with: "John"
+    fill_in "Password", with: 1234
+    fill_in "Full name", with: "John Coltrane"
+    fill_in "Address", with: "183 Blake St. "
+    click_button("Create User")
 
-    expect(page).to have_content("Welcome, John")
+    expect(page).to have_content("John!")
   end
 
 end

@@ -47,7 +47,7 @@ describe 'user can create order' do
         click_link_or_button("Checkout")
 
         expect(current_path).to eq "/orders"
-        expect(page).to have_content("Orders")
+        expect(page).to have_content("Order Number")
         expect(page).to have_content("Canadian Rockies")
 
         expect(user.orders.count).to eq(1)

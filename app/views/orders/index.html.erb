@@ -1,9 +1,8 @@
 <table id="order-table" class="mdl-data-table mdl-js-data-table"> '
   <thead>
   <tr>
+    <th class="mdl-data-table__cell--non-numeric"></th>
     <th>Order Number</th>
-    <th class="mdl-data-table__cell--non-numeric">Trip</th>
-    <th>Quantity</th>
     <th>Total Cost</th>
     <th class="mdl-data-table__cell--non-numeric">Date Ordered</th>
     <th class="mdl-data-table__cell--non-numeric">Status</th>
@@ -11,16 +10,13 @@
   </thead>
   <tbody>
   <%@orders.each do|order| %>
-      <% order.order_trips.each do |order_trip| %>
-          <tr>
-            <td><%= link_to order.id, order_path(order) %></td>
-            <td class="mdl-data-table__cell--non-numeric"><%= order_trip.trip.name %></td>
-            <td class="mdl-data-table__cell--non-numeric"><%= order_trip.quantity %></td>
-            <td><%= number_to_currency(order_trip.trip.total_cost * order_trip.quantity) %></td>
-            <td class="mdl-data-table__cell--non-numeric"><%= (order_trip.trip.created_at).to_formatted_s(:long) %></td>
-            <td class="mdl-data-table__cell--non-numeric"><%= order.status %></td>
-          </tr>
-      <% end %>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric"><%= link_to "View Order", order_path(order) %></td>
+      <td><%= link_to order.id, order_path(order) %></td>
+      <td><%= number_to_currency(order.sum_total_cost) %></td>
+      <td class="mdl-data-table__cell--non-numeric"><%= (order.created_at).to_formatted_s(:long) %></td>
+      <td class="mdl-data-table__cell--non-numeric"><%= order.status %></td>
+    </tr>
   <% end %>
   </tbody>
 </table>

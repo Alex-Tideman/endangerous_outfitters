@@ -9,9 +9,9 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create, :edit, :update]
 
-  resources :trips, only: [:index, :show]
-
   get '/profile', to: 'users#show'
+
+  resources :trips, only: [:index, :show]
 
   resources :activities, only: [:index, :show]
 

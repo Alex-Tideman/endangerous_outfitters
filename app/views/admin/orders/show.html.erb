@@ -1,7 +1,10 @@
+
 <table id="order-table" class="mdl-data-table mdl-js-data-table"> '
   <thead>
   <tr>
-    <th>Order Number</th>
+    <th id="table-title" class="mdl-data-table__cell--non-numeric">Order # <%= @order.id %></th>
+  </tr>
+  <tr>
     <th class="mdl-data-table__cell--non-numeric">Name</th>
     <th class="mdl-data-table__cell--non-numeric">Address</th>
     <th class="mdl-data-table__cell--non-numeric">Trip</th>
@@ -9,13 +12,11 @@
     <th>Total Cost</th>
     <th class="mdl-data-table__cell--non-numeric">Date Ordered</th>
     <th class="mdl-data-table__cell--non-numeric">Status</th>
-    <th class="mdl-data-table__cell--non-numeric">Change Status</th>
   </tr>
   </thead>
   <tbody>
       <% @order.order_trips.each do |order_trip| %>
       <tr>
-        <td><%= @order.id %></td>
         <td class="mdl-data-table__cell--non-numeric"><%= @order.user.full_name %></td>
         <td class="mdl-data-table__cell--non-numeric"><%= @order.user.address %></td>
         <td class="mdl-data-table__cell--non-numeric"><%= link_to order_trip.trip.name, trip_path(order_trip.trip) %></td>
@@ -23,12 +24,22 @@
         <td><%= number_to_currency(order_trip.trip.total_cost * order_trip.quantity) %></td>
         <td class="mdl-data-table__cell--non-numeric"><%= (order_trip.trip.created_at).to_formatted_s(:long) %></td>
         <td class="mdl-data-table__cell--non-numeric"><%= @order.status %></td>
-        <td class="mdl-data-table__cell--non-numeric">
-          <%= form_for @order, url: admin_order_path(@order) do |f| %>
-              <%= select(:order, :status, [['Ordered',0],['Paid',1],['Cancelled',2],['Completed',3]]) %>
-              <%= f.submit %>
-        <% end %></td>
       </tr>
-  <% end %>
+      <% end %>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric"></td>
+        <td class="mdl-data-table__cell--non-numeric"></td>
+        <td class="mdl-data-table__cell--non-numeric"></td>
+        <td class="mdl-data-table__cell--non-numeric"></td>
+        <td class="mdl-data-table__cell--non-numeric"></td>
+        <%= form_for @order, url: admin_order_path(@order) do |f| %>
+          <td>
+            <%= select(:order, :status, [['Ordered',0],['Paid',1],['Cancelled',2],['Completed',3]]) %>
+          </td>
+          <td>
+            <%= f.submit "Update Status" %>
+          </td>
+        <% end %>
+      </tr>
   </tbody>
 </table>

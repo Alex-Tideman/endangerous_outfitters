@@ -18,7 +18,7 @@ class @Gmaps.Google.Builders.Map extends Gmaps.Objects.BaseBuilder
 
   on_map_load: (onMapLoad)->
     @primitives().addListenerOnce @serviceObject, 'idle', onMapLoad
-
+    
   default_options: ->
     {
       mapTypeId: @primitives().mapTypes('SATELLITE') # HYBRID, ROADMAP, SATELLITE, TERRAIN

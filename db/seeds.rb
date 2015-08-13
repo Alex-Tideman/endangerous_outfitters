@@ -170,7 +170,7 @@ User.create(username: "admin", password: "admin", full_name: "Mr. Admin", addres
 User.create(username: "Alex", password: "123", full_name: "Alex Tideman", address: "12345 Marion St. Denver, CO")
 User.create(username: "Adam", password: "123", full_name: "Adam Caron", address: "45 Lincoln St.")
 User.create(username: "Max", password: "123", full_name: "Max Millington", address: "North Ave.")
-User.create(username: "David", password: "123", full_name: "David Shim", address: "Bangkok Lane")
+User.create(username: "David", password: "123", full_name: "David Shim", address: "Lane")
 
 Review.create(name: "Arnold Schwarzenegger",
               content: "Ahftah trahvelig with Endangerous Ouhtfittahs, I hahve one thing to sahy...I'll be bahck.",
@@ -190,4 +190,3 @@ Review.create(name: "Bruce Lee",
 Review.create(name: "The Rock",
               content: "Endangerous Outfitters smells what the Rock is cookin!",
               occupation: "Movie Star, Professional Wrestler", image_url: "rock.jpg")
-

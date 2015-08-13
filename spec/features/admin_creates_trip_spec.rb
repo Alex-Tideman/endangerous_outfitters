@@ -34,25 +34,34 @@ feature "Admin features" do
         fill_in "Description:", with: "The best trip ever. Here's a description."
         fill_in "Trip Cost:", with: 20000.00
         select("Asia", from: "Destination")
-        # select("Hiking", from: "Activity")
-        # page.attach_file("image_url", "hiker.jpg")
+
         click_button "Create Trip"
+        assert page.has_content?("Awesome")
         expect(current_path).to eq(trips_path)
       end
 
       it "doesn't create a trip with invalid params" do
-        # A trip must have a title, description and trip cost.
-        # A trip must have a destination.
-        # A trip must have an activity.
-        # The title and description cannot be empty.
-        # The title must be unique for all items in the system.
-        # The price must be a valid decimal numeric value and greater than zero.
-        # The photo is optional. If not present, a stand-in photo is used.
+        Destination.create(continent: "Asia", description: "description",
+                     image_url: "asia.jpg" )
+        Activity.create(name: "Hiking", description: "We loven to do ze hikes.", image_url: "hiker.jpg" )
+        Trip.create(name: "test trip", description: "description", trip_cost: 500000)
+
+        visit admin_dashboard_path
+        click_link "Create a Trip"
+
+        fill_in "Trip Name:", with: "Best Trip Ever"
+        click_button "Create Trip"
+
+        assert page.has_content?("Invalid input")
+        assert_equal "/admin/trips", current_path
+
+        fill_in "Trip Name:", with: "Best Trip Ever"
+        fill_in "Description:", with: "Best Description Ever"
+        click_button "Create Trip"
+
+        assert  page.has_content?("Invalid input")
+        assert_equal "/admin/trips", current_path
       end
     end
   end
-
-  # should be able to create a trip with existing destinations and activities,
-  # and also able to create a trip with a new activity.
-
 end

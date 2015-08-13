@@ -23,4 +23,6 @@ class TripsController < ApplicationController
                                  :destination_id, :activity_id, :image, :lat, :long)
   end
 
+  
+
 end

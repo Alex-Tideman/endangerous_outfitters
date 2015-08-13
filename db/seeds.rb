@@ -189,4 +189,4 @@ Review.create(name: "Bruce Lee",
               occupation: "Ninja Master, Chinese Secret Agent", image_url: "lee.jpg")
 Review.create(name: "The Rock",
               content: "Endangerous Outfitters smells what the Rock is cookin!",
-              occupation: "Movie Star, Professional Wrestler", image_url: "rock.jpg")
+              occupation: "Movie Star, Professional Wrestler", image_url: "the_rock.png")

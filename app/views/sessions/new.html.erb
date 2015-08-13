@@ -1,9 +1,11 @@
 <div class="form-background">
   <%= form_for(:session, url: login_path) do |f| %>
-      <table class="mdl-data-table mdl-js-data-table">
+      <table id = "whole-card" class="mdl-data-table mdl-js-data-table">
         <thead>
         <tr>
           <th id="table-title" class="mdl-data-table__cell--non-numeric">Login</th>
+          <th id="table-title" class="mdl-data-table__cell--non-numeric"></th>
+          <th id="table-title" class="mdl-data-table__cell--non-numeric"></th>
         </tr>
         <tr>
           <th class="mdl-data-table__cell--non-numeric"><%= f.label :username %></th>
@@ -13,9 +15,9 @@
         </thead>
         <tbody>
         <tr>
-          <td class="mdl-data-table__cell--non-numeric"><%= f.text_field :username %></td>
-          <td class="mdl-data-table__cell--non-numeric"><%= f.password_field :password %></td>
-          <td class="mdl-data-table__cell--non-numeric"><%= f.submit "Login" %></td>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.text_field :username %></th>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.password_field :password %></th>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.submit "Login" %></th>
         </tr>
         </tbody>
       </table>

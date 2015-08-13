@@ -1,9 +1,10 @@
 <div class="form-background">
   <%= form_for @user do |f| %>
-      <table class="mdl-data-table mdl-js-data-table">
+      <table id = "whole-card" class="mdl-data-table mdl-js-data-table">
         <thead>
         <tr>
           <th id="table-title" class="mdl-data-table__cell--non-numeric">Register</th>
+          <th id="table-title" class="mdl-data-table__cell--non-numeric"></th>
         </tr>
         <tr>
           <th class="mdl-data-table__cell--non-numeric"><%= f.label :username %></th>
@@ -25,7 +26,7 @@
         </tr>
         <tr>
           <th class="mdl-data-table__cell--non-numeric"></th>
-          <td class="mdl-data-table__cell--non-numeric"><%= f.submit %></td>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.submit %></th>
         </tr>
         </tbody>
       </table>

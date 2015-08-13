@@ -15,6 +15,9 @@
  *= require material
  */
 
+body, #container, .form-background{
+  height: 100%;
+}
 
 @font-face {
   font-family: 'icomoon';

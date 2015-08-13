@@ -89,25 +89,14 @@ article {
 #title {
   text-align: center;
   font-family: 'Open Sans', cursive;
-  font-weight: bold;
+  font-weight: 300;
   color: rgba(14, 9, 8, 0.75);
   border: solid 3px #363636;
   border-radius: 5px 5px 5px 5px;
-  background-color: rgba(247, 247, 247, 0.87);
+  background-color: rgba(247, 247, 247, 0.5);
   padding: 5px;
-  margin: 25px 80px 10px 50px;
-}
+  margin: 50px 80px 10px 50px;
 
-#trip-title {
-  text-align: center;
-  font-family: 'Open Sans', cursive;
-  font-weight: bold;
-  color: rgba(14, 9, 8, 0.75);
-  border: solid 3px #363636;
-  border-radius: 5px 5px 5px 5px;
-  background-color: rgba(247, 247, 247, 0.87);
-  padding: 5px;
-  margin: 25px 140px 10px 130px;
 }
 
 a, a:visited, a:link {
@@ -123,18 +112,17 @@ a:hover {
   text-align: center;
 }
 
-.flash_notice, .flash_error {
+.flash_notice, .flash_error, .flash_remove{
   font-size: 1.25em;
   padding: 12px 0px 10px 0px ;
   -moz-box-shadow:    inset 0px 5px 20px 0px rgba(0,0,0,0.4);
   -webkit-box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.4);
   box-shadow:         inset 0px 5px 20px 0px rgba(0,0,0,0.4);
+  color: white;
 }
 
 .flash_remove {
-  color: green;
-  text-align: center;
-  text-shadow: white 1px 1px 1px 1px;
+
 }
 
 #container {
@@ -214,4 +202,3 @@ select {
 #container .mdl-grid {
   padding: 8px 0;
 }
-

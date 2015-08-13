@@ -6,6 +6,7 @@ class Admin::TripsController < Admin::BaseController
 
   def new
     @trip = Trip.new
+    @title = "New"
   end
 
   def create
@@ -24,6 +25,7 @@ class Admin::TripsController < Admin::BaseController
   end
 
   def edit
+    @title = "Update"
     @trip = Trip.find(params[:id])
   end
 

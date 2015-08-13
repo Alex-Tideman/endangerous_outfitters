@@ -14,7 +14,6 @@
           <th id="name-col">Name</th>
           <th id="continent-col" class="mdl-data-table__cell--non-numeric">Location</th>
           <th id="activity-col">Activity</th>
-          <th id="extras-col" class="mdl-data-table__cell--non-numeric">Extras</th>
           <th id="price-col">Price</th>
           <th id="action-col">Action</th>
         </tr>
@@ -28,8 +27,7 @@
               <td id="trip-link" class="name mdl-data-table__cell--non-numeric"></button><%= link_to "#{trip.name}", trip_path(trip) %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.destination.continent %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.activity.name %></td>
-              <td class="mdl-data-table__cell--non-numeric"><%= trip.extras.map(&:name).join(' ') %></td>
-              <td><%= number_to_currency(trip.total_cost) %></td>
+              <td class="mdl-data-table__cell--non-numeric"><%= number_to_currency(trip.total_cost) %></td>
               <td id="delete-link"><%= link_to "Remove", cart_trip_path(trip), method: :delete%></td>
             </tr>
         <% end %>

@@ -28,5 +28,5 @@ class Cart
       data.except!(trip.id.to_s)
     end
   end
-  
+
 end

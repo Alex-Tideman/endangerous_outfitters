@@ -94,41 +94,30 @@
 }
 
 .icons {
-  margin-left:100px;
+  margin-left:175px;
 }
 
 .destination-text {
   font-size: 2.5em;
-  margin-left:70px;
+  margin-left:125px;
   margin-top:-10px;
   color: white;
-  text-shadow:
-  0.05em  .05em .05em black,
-  .01em -.01em .01em black,
-  -.01em  .01em .01em black,
-  -.01em -.01em .01em black;
+  text-shadow: 2px 2px 2px black;
 }
 .activity-text {
   font-size: 2.5em;
   margin-top:15px;
   margin-left:90px;
   color: white;
-  text-shadow:
-  0.05em  .05em .05em black,
-  .01em -.01em .01em black,
-  -.01em  .01em .01em black,
-  -.01em -.01em .01em black;
+
+text-shadow: 2px 2px 2px black;
 }
 .trip-text {
   font-size: 2.5em;
   margin-top:-40px;
-  margin-left:130px;
+  margin-left:75px;
   color: white;
-  text-shadow:
-  0.05em  .05em .05em black,
-  .01em -.01em .01em black,
-  -.01em  .01em .01em black,
-  -.01em -.01em .01em black;
+  text-shadow: 2px 2px 2px black;
 }
 
 .icon-globe{
@@ -150,6 +139,7 @@
     .01em -.01em .01em black,
     -.01em  .01em .01em black,
     -.01em -.01em .01em black;
+    margin-left: -50%;
 }
 
 
@@ -161,6 +151,7 @@
     .01em -.01em .01em black,
     -.01em  .01em .01em black,
     -.01em -.01em .01em black;
+    margin-left: -20%;
 
 
 }

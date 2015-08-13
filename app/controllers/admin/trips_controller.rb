@@ -28,7 +28,6 @@ class Admin::TripsController < Admin::BaseController
   end
 
   def update
-
     @trip = Trip.find(params[:id])
     if @trip.update(name: params[:trip][:name],
                     description: params[:trip][:description],
@@ -42,7 +41,6 @@ class Admin::TripsController < Admin::BaseController
       flash[:error] = "Invalid input - Please try updating trip again"
       render '/admin/trips/edit.html.erb'
     end
-
   end
 
   def destroy

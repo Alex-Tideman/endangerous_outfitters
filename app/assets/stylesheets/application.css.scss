@@ -133,7 +133,7 @@ a:hover {
   background:#000;
 }
 
-#username-link a, a:link, a:visited {
+#username-link a, #username-link a:link, #username-link a:visited {
   color: white;}
 
 input[type="text"], input[type="password"], input[type="number"] {
@@ -201,4 +201,10 @@ select {
 
 #container .mdl-grid {
   padding: 8px 0;
+}
+
+#container .mdl-layout-title{
+  padding-left: 0;
+  margin-left: 19%;
+
 }

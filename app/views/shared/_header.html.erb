@@ -1,0 +1,33 @@
+<header id="nav-bar" class="mdl-layout__header mdl-layout__header--transparent">
+  <div class="mdl-layout__header-row">
+    <!-- Title -->
+    <nav class="mdl-navigation">
+      <% if current_admin? %>
+          <span id="username-link" class="mdl-navigation__link"><%= link_to current_user.username, admin_dashboard_path, class: "username-link" %></span>
+          <span class="mdl-navigation__link"><%= link_to "Logout", logout_path, method: :delete, class: "nav-bar-link" %></span>
+      <% elsif current_user %>
+          <span class="mdl-navigation__link"><%= link_to current_user.username, profile_path, class: "username-link" %></span>
+          <span class="mdl-navigation__link"><%= link_to "Logout", logout_path, method: :delete, class: "nav-bar-link" %></span>
+      <% else %>
+          <span class="mdl-navigation__link"><%= link_to "Login", login_path, class: "nav-bar-link" %></span>
+          <span class="mdl-navigation__link"><%= link_to "Register", new_user_path, class: "nav-bar-link" %></span>
+      <% end %>
+    </nav>
+    <h1 class="mdl-layout-title"><%= link_to "Endangerous Outfitters", root_path, id: "logo" %></h1>
+    <!-- Add spacer, to align navigation to the right -->
+    <div class="mdl-layout-spacer"></div>
+    <!-- Navigation -->
+    <nav class="mdl-navigation">
+
+      <span class="mdl-navigation__link"><%= link_to "Destinations", destinations_path, class: "nav-bar-link" %></span>
+      <span class="mdl-navigation__link"><%= link_to "Activities", activities_path, class: "nav-bar-link" %></span>
+      <span class="mdl-navigation__link"><%= link_to "Trips", trips_path, class: "nav-bar-link" %></span>
+      <span id="cart-count" class="material-icons mdl-badge mdl-navigation__link"<% if !cart.data.values.empty? %>data-badge="<%= cart.data.values.reduce(:+) %>"><% end %><span class="mdl-navigation__link"><%= link_to "Cart", cart_path, class: "nav-bar-link" %></span></span>
+    </nav>
+  </div>
+  <div class="flash">
+    <% flash.each do |type, msg| %>
+        <%= content_tag  :div, msg, class: "flash_#{type}"%>
+    <% end %>
+  </div>
+</header>

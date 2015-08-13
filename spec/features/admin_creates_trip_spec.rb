@@ -18,7 +18,7 @@ feature "Admin features" do
         click_link "Create a Trip"
 
         expect(current_path).to eq(new_admin_trip_path)
-        expect(page).to have_content("Create a New Trip")
+        expect(page).to have_content("Create Trip")
       end
     end
 
@@ -55,6 +55,7 @@ feature "Admin features" do
         assert page.has_content?("Invalid input")
         assert_equal "/admin/trips", current_path
 
+        visit new_admin_trip_path
         fill_in "Trip Name:", with: "Best Trip Ever"
         fill_in "Description:", with: "Best Description Ever"
         click_button "Create Trip"

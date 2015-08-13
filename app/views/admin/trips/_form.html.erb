@@ -1,0 +1,54 @@
+<article>
+  <%= form_for([:admin, @trip], html: { multipart: true }) do |f| %>
+      <table id = "whole-card" class="mdl-data-table mdl-js-data-table edit-trip-table">
+        <thead>
+        <tr>
+          <th id="table-title" class="mdl-data-table__cell--non-numeric"><%= @title %> Trip</th>
+          <th id="table-title" class="mdl-data-table__cell--non-numeric"></th>
+        </tr>
+        <tr>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.label :name, "Trip Name:" %></th>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.label :description, "Description:" %></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric"><%= f.text_field :name %></td>
+          <td class="mdl-data-table__cell--non-numeric"><%= f.text_field :description %></td>
+        </tr>
+        <tr>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.label :trip_cost, "Trip Cost:" %></th>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.label :destination_id, "Destination:" %></th>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric"><%= f.number_field :trip_cost %></td>
+          <td class="mdl-data-table__cell--non-numeric"><%= f.select(:destination_id, Destination.all.map{ |d| ["#{d.continent}", d.id ] } ) %></td>
+        </tr>
+
+        <tr>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.label :lat, "Latitude:" %></th>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.label :long, "Longitude:" %></th>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric"><%= f.number_field :lat %></td>
+          <td class="mdl-data-table__cell--non-numeric"><%= f.number_field :long %></td>
+        </tr>
+
+
+        <tr>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.label :activity_id, "Activity:" %></th>
+          <th class="mdl-data-table__cell--non-numeric"><%= f.label :image, "Image:" %></th>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric"><%= f.select(:activity_id, Activity.all.map{ |a| ["#{a.name}", a.id] } ) %></td>
+          <td class="mdl-data-table__cell--non-numeric"><%= f.file_field :image %></td>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric"></td>
+          <td class="mdl-data-table__cell--non-numeric new-trip-submit"><%= f.submit "#{@title} Trip" %></td>
+        </tr>
+        </tr>
+        </tbody>
+      </table>
+  <% end %>
+</article>

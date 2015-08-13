@@ -34,7 +34,7 @@
           <span class="mdl-navigation__link"><%= link_to "Destinations", destinations_path, class: "nav-bar-link" %></span>
           <span class="mdl-navigation__link"><%= link_to "Activities", activities_path, class: "nav-bar-link" %></span>
           <span class="mdl-navigation__link"><%= link_to "Trips", trips_path, class: "nav-bar-link" %></span>
-          <div id="cart-count" class="material-icons mdl-badge" data-badge="<%= cart.data.values.reduce(:+) %>"><span class="mdl-navigation__link"><%= link_to "Cart", cart_path, class: "nav-bar-link" %></span></div>
+          <span id="cart-count" class="material-icons mdl-badge mdl-navigation__link"<% if !cart.data.values.empty? %>data-badge="<%= cart.data.values.reduce(:+) %>"><% end %><span class="mdl-navigation__link"><%= link_to "Cart", cart_path, class: "nav-bar-link" %></span></span>
         </nav>
       </div>
       <div class="flash">

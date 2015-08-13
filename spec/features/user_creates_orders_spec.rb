@@ -40,7 +40,7 @@ describe 'user can create order' do
         click_link_or_button "Book Trip"
 
         visit '/cart'
-        save_and_open_page
+      
         click_link_or_button("Checkout")
 
         expect(current_path).to eq "/orders"

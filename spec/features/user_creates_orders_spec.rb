@@ -48,7 +48,6 @@ describe 'user can create order' do
 
         expect(current_path).to eq "/orders"
         expect(page).to have_content("Order Number")
-        expect(page).to have_content("Canadian Rockies")
 
         expect(user.orders.count).to eq(1)
       end

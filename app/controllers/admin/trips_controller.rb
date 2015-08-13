@@ -6,7 +6,7 @@ class Admin::TripsController < Admin::BaseController
 
   def new
     @trip = Trip.new
-    @title = "New"
+    @title = "Create"
   end
 
   def create

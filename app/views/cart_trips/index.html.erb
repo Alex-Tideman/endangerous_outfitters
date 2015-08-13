@@ -27,7 +27,7 @@
               <td id="trip-link" class="name mdl-data-table__cell--non-numeric"></button><%= link_to "#{trip.name}", trip_path(trip) %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.destination.continent %></td>
               <td class="mdl-data-table__cell--non-numeric"><%= trip.activity.name %></td>
-              <td class="mdl-data-table__cell--non-numeric"><%= number_to_currency(trip.total_cost) %></td>
+              <td><%= number_to_currency(trip.total_cost) %></td>
               <td id="delete-link"><%= link_to "Remove", cart_trip_path(trip), method: :delete%></td>
             </tr>
         <% end %>
@@ -59,4 +59,3 @@
   </div>
   </div>
 </div>
-

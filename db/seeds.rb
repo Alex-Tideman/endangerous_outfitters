@@ -110,10 +110,10 @@ trip13 = Trip.new(destination_id: 6,activity_id: 2,name: "The Navua River",
 trip13.image = image13
 trip13.save
 
-image14 = File.open('app/assets/images/positano.jpg')
+image14 = File.open('app/assets/images/positano-it.jpg')
 trip14 = Trip.new(destination_id: 3,activity_id: 3,name: "Riviera Diving",
                   description: "See the fishes below the water, eat the fishes above the water in this Italian getaway.",
-                  trip_cost: 21000.00, lat: 48.38, long: 14.29)
+                  trip_cost: 21000.00, lat: 44.4111, long: 8.9328)
 trip14.image = image14
 trip14.save
 

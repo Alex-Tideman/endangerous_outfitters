@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150812163635) do
+ActiveRecord::Schema.define(version: 20150813045722) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,14 +30,6 @@ ActiveRecord::Schema.define(version: 20150812163635) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.text     "image_url"
-  end
-
-  create_table "extras", force: :cascade do |t|
-    t.text     "name"
-    t.text     "description"
-    t.float    "cost"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
   end
 
   create_table "order_trips", force: :cascade do |t|
@@ -66,14 +58,6 @@ ActiveRecord::Schema.define(version: 20150812163635) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-
-  create_table "trip_extras", force: :cascade do |t|
-    t.integer "trip_id"
-    t.integer "extra_id"
-  end
-
-  add_index "trip_extras", ["extra_id"], name: "index_trip_extras_on_extra_id", using: :btree
-  add_index "trip_extras", ["trip_id"], name: "index_trip_extras_on_trip_id", using: :btree
 
   create_table "trips", force: :cascade do |t|
     t.integer  "destination_id"
@@ -109,8 +93,6 @@ ActiveRecord::Schema.define(version: 20150812163635) do
   add_foreign_key "order_trips", "orders"
   add_foreign_key "order_trips", "trips"
   add_foreign_key "orders", "users"
-  add_foreign_key "trip_extras", "extras"
-  add_foreign_key "trip_extras", "trips"
   add_foreign_key "trips", "activities"
   add_foreign_key "trips", "destinations"
 end

@@ -17,7 +17,11 @@ class UsersController < ApplicationController
   end
 
   def show
+    if current_user == nil
+      redirect_to '/404'
+    else
       @user = User.find(current_user.id)
+    end
   end
 
   def edit

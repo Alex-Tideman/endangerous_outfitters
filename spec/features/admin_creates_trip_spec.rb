@@ -34,8 +34,7 @@ feature "Admin features" do
         fill_in "Description:", with: "The best trip ever. Here's a description."
         fill_in "Trip Cost:", with: 20000.00
         select("Asia", from: "Destination")
-        # select("Hiking", from: "Activity")
-        # page.attach_file("image_url", "hiker.jpg")
+
         click_button "Create Trip"
         assert page.has_content?("Awesome")
         expect(current_path).to eq(trips_path)

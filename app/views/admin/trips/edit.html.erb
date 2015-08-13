@@ -1,9 +1,10 @@
 <article>
   <%= form_for([:admin, @trip], html: { multipart: true }) do |f| %>
-      <table id = "whole-card" class="mdl-data-table mdl-js-data-table" id="edit-trip-table">
+      <table id = "whole-card" class="mdl-data-table mdl-js-data-table edit-trip-table">
         <thead>
         <tr>
           <th id="table-title" class="mdl-data-table__cell--non-numeric">Update a Trip</th>
+          <th id="table-title" class="mdl-data-table__cell--non-numeric"></th>
         </tr>
         <tr>
           <th class="mdl-data-table__cell--non-numeric"><%= f.label :name, "Trip Name:" %></th>
@@ -43,7 +44,7 @@
           <td class="mdl-data-table__cell--non-numeric"><%= f.file_field :image %></td>
         </tr>
         <tr>
-          <th class="mdl-data-table__cell--non-numeric"></th>
+          <td class="mdl-data-table__cell--non-numeric"></td>
           <td class="mdl-data-table__cell--non-numeric new-trip-submit"><%= f.submit "Update Trip" %></td>
         </tr>
         </tr>
